@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { 
   GraduationCap, 
   Heart, 
@@ -12,19 +14,23 @@ import {
   MapPin,
   Star,
   Calendar,
-  Award
+  Award,
+  Menu,
+  X
 } from "lucide-react";
 import heroBackgroundImage from "@/assets/school-students-bg.jpg";
 import schoolLogo from "@/assets/school-logo.png";
 import Navigation from "@/components/Navigation";
 
 const Index = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
   console.log("Index.tsx: Index component rendering");
   
   return (
     <div className="min-h-screen bg-background">
       {/* Top Contact Bar */}
-      <div className="bg-primary text-primary-foreground py-2">
+      <div className="bg-primary text-primary-foreground py-2 hidden md:block">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between text-sm">
             <div className="flex items-center space-x-6">
@@ -65,22 +71,129 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h1 className="text-2xl font-display font-bold text-foreground tracking-tight">KING'S KIDS</h1>
-                <p className="text-sm text-muted-foreground font-medium tracking-widest">CHRISTIAN SCHOOLS</p>
+                <h1 className="text-xl md:text-2xl font-display font-bold text-foreground tracking-tight">KING'S KIDS</h1>
+                <p className="text-xs md:text-sm text-muted-foreground font-medium tracking-widest">CHRISTIAN SCHOOLS</p>
               </div>
             </div>
+            
+            {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center">
               <Navigation />
             </nav>
-            <Button className="lg:hidden" variant="outline" size="sm">
-              Menu
-            </Button>
+            
+            {/* Mobile Menu Button */}
+            <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <Button className="lg:hidden" variant="outline" size="sm">
+                  <Menu className="h-4 w-4" />
+                  <span className="sr-only">Open menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                <div className="flex flex-col space-y-4 mt-4">
+                  <div className="flex items-center space-x-2 pb-4 border-b">
+                    <div className="w-8 h-8 rounded-lg overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/dfbc2b6e-0cab-4685-a3de-68f248f3e165.png" 
+                        alt="Logo" 
+                        className="w-full h-full object-contain bg-white p-1"
+                      />
+                    </div>
+                    <div>
+                      <h2 className="text-sm font-bold">KING'S KIDS</h2>
+                      <p className="text-xs text-muted-foreground">CHRISTIAN SCHOOLS</p>
+                    </div>
+                  </div>
+                  
+                  {/* Mobile Navigation Links */}
+                  <div className="flex flex-col space-y-2">
+                    <Link 
+                      to="/" 
+                      className="flex items-center px-4 py-2 text-sm font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Home
+                    </Link>
+                    
+                    {/* About Us Submenu */}
+                    <div className="px-4 py-2">
+                      <h3 className="text-sm font-medium text-muted-foreground mb-2">About Us</h3>
+                      <div className="ml-4 space-y-1">
+                        <Link to="#history" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Our History</Link>
+                        <Link to="#departments" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Departments/Units</Link>
+                        <Link to="#board" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Board of Governors</Link>
+                        <Link to="#management" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Management Team</Link>
+                        <Link to="#staff" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Staff Directory</Link>
+                        <Link to="#careers" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Careers</Link>
+                        <Link to="#alumni" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Alumni</Link>
+                      </div>
+                    </div>
+                    
+                    <Link 
+                      to="#schools" 
+                      className="flex items-center px-4 py-2 text-sm font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Facilities
+                    </Link>
+                    
+                    <Link 
+                      to="#admission" 
+                      className="flex items-center px-4 py-2 text-sm font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Admission
+                    </Link>
+                    
+                    {/* Our Schools Submenu */}
+                    <div className="px-4 py-2">
+                      <h3 className="text-sm font-medium text-muted-foreground mb-2">Our Schools</h3>
+                      <div className="ml-4 space-y-1">
+                        <Link to="/montessori" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Montessori</Link>
+                        <Link to="/highschool" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>High School</Link>
+                        <Link to="/basicstudies" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>School of Basic Studies</Link>
+                      </div>
+                    </div>
+                    
+                    <Link 
+                      to="#contact" 
+                      className="flex items-center px-4 py-2 text-sm font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Contact
+                    </Link>
+                  </div>
+                  
+                  {/* Mobile Contact Info */}
+                  <div className="pt-4 border-t">
+                    <div className="space-y-2">
+                      <div className="flex items-center space-x-2 text-sm">
+                        <Phone className="h-4 w-4 text-primary" />
+                        <span>+234 123 456 789</span>
+                      </div>
+                      <div className="flex items-center space-x-2 text-sm">
+                        <Mail className="h-4 w-4 text-primary" />
+                        <span>info@kingskidsschools.com</span>
+                      </div>
+                    </div>
+                    <div className="mt-4 space-y-2">
+                      <Button size="sm" asChild className="w-full">
+                        <Link to="/login" onClick={() => setMobileMenuOpen(false)}>Student Login</Link>
+                      </Button>
+                      <Button size="sm" variant="outline" asChild className="w-full">
+                        <Link to="#apply" onClick={() => setMobileMenuOpen(false)}>Online Applications</Link>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-20 px-4 overflow-hidden min-h-[80vh] flex items-center">
+      <section className="relative py-12 md:py-20 px-4 overflow-hidden min-h-[70vh] md:min-h-[80vh] flex items-center">
         {/* Animated Background Layers */}
         <div className="absolute inset-0">
           {/* Base background image with parallax effect */}
@@ -110,26 +223,26 @@ const Index = () => {
         
         {/* Content */}
         <div className="relative z-20 container mx-auto text-center">
-          <Badge className="mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md animate-fade-in shadow-lg">
+          <Badge className="mb-6 md:mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md animate-fade-in shadow-lg">
             <Star className="w-4 h-4 mr-2" />
             Nurturing Excellence Since 2012
           </Badge>
-          <h2 className="text-6xl lg:text-7xl font-display font-bold mb-8 text-white animate-fade-up leading-tight" style={{ animationDelay: '0.2s' }}>
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 md:mb-8 text-white animate-fade-up leading-tight" style={{ animationDelay: '0.2s' }}>
             Empowering Young Minds for
             <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent animate-pulse-glow font-display">Tomorrow's Leadership</span>
           </h2>
-          <p className="text-xl lg:text-2xl text-white/95 mb-10 max-w-4xl mx-auto animate-fade-up leading-relaxed" style={{ animationDelay: '0.4s' }}>
+          <p className="text-lg md:text-xl lg:text-2xl text-white/95 mb-8 md:mb-10 max-w-4xl mx-auto animate-fade-up leading-relaxed" style={{ animationDelay: '0.4s' }}>
             Join our family of exceptional schools offering world-class education from Montessori to High School, 
             supported by our dedicated Child and Youth Foundation.
           </p>
-          <div className="flex flex-wrap justify-center gap-6 animate-scale-in" style={{ animationDelay: '0.6s' }}>
-            <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-elegant hover:shadow-glow transition-all duration-500 hover:scale-110 px-8 py-4 text-lg font-semibold">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 animate-scale-in" style={{ animationDelay: '0.6s' }}>
+            <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-elegant hover:shadow-glow transition-all duration-500 hover:scale-110 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold w-full sm:w-auto">
               <Link to="/montessori">
                 <GraduationCap className="w-5 h-5 mr-2" />
                 Apply Now
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="border-white/40 text-white hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-500 hover:scale-110 px-8 py-4 text-lg font-semibold">
+            <Button size="lg" variant="outline" asChild className="border-white/40 text-white hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-500 hover:scale-110 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold w-full sm:w-auto">
               <Link to="#schools">
                 <BookOpen className="w-5 h-5 mr-2" />
                 Explore Schools
@@ -138,22 +251,22 @@ const Index = () => {
           </div>
           
           {/* Statistics */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16 animate-fade-up" style={{ animationDelay: '0.8s' }}>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mt-12 md:mt-16 animate-fade-up" style={{ animationDelay: '0.8s' }}>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-accent mb-2">28+</div>
-              <div className="text-white/80 font-medium">Years of Excellence</div>
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent mb-1 md:mb-2">28+</div>
+              <div className="text-white/80 font-medium text-xs md:text-sm">Years of Excellence</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-school-gold mb-2">2000+</div>
-              <div className="text-white/80 font-medium">Students Graduated</div>
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-school-gold mb-1 md:mb-2">2000+</div>
+              <div className="text-white/80 font-medium text-xs md:text-sm">Students Graduated</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-school-green mb-2">50+</div>
-              <div className="text-white/80 font-medium">Expert Teachers</div>
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-school-green mb-1 md:mb-2">50+</div>
+              <div className="text-white/80 font-medium text-xs md:text-sm">Expert Teachers</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-school-orange mb-2">4</div>
-              <div className="text-white/80 font-medium">School Levels</div>
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-school-orange mb-1 md:mb-2">4</div>
+              <div className="text-white/80 font-medium text-xs md:text-sm">School Levels</div>
             </div>
           </div>
         </div>
@@ -266,29 +379,29 @@ const Index = () => {
       </section>
 
       {/* Schools Section */}
-      <section id="schools" className="py-20 px-4">
+      <section id="schools" className="py-12 md:py-20 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <Badge className="mb-6 bg-accent/10 text-accent border-accent/20">
               Educational Programs
             </Badge>
-            <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground">Our Schools</h3>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground">Our Schools</h3>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Choose the perfect educational journey for your child with our comprehensive range of programs
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
             <Card className="group hover:shadow-elegant transition-all duration-500 hover:scale-105 border-0 shadow-card backdrop-blur-sm bg-gradient-card">
               <CardHeader className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-br from-school-blue/20 to-school-blue/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500">
-                  <Heart className="h-10 w-10 text-school-blue" />
+                <div className="w-16 md:w-20 h-16 md:h-20 bg-gradient-to-br from-school-blue/20 to-school-blue/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500">
+                  <Heart className="h-8 md:h-10 w-8 md:w-10 text-school-blue" />
                 </div>
-                <CardTitle className="text-school-blue text-xl font-bold">King's Kids Montessori</CardTitle>
-                <CardDescription className="text-lg">Ages 2-6 years • Foundation Learning</CardDescription>
+                <CardTitle className="text-school-blue text-lg md:text-xl font-bold">King's Kids Montessori</CardTitle>
+                <CardDescription className="text-base md:text-lg">Ages 2-6 years • Foundation Learning</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
-                <p className="mb-6 text-muted-foreground leading-relaxed">
+                <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
                   Nurturing creativity and independence through the proven Montessori method with hands-on learning experiences.
                 </p>
                 <Button className="w-full bg-school-blue hover:bg-school-blue/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
@@ -302,14 +415,14 @@ const Index = () => {
 
             <Card className="group hover:shadow-elegant transition-all duration-500 hover:scale-105 border-0 shadow-card backdrop-blur-sm bg-gradient-card">
               <CardHeader className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-br from-school-orange/20 to-school-orange/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500">
-                  <GraduationCap className="h-10 w-10 text-school-orange" />
+                <div className="w-16 md:w-20 h-16 md:h-20 bg-gradient-to-br from-school-orange/20 to-school-orange/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500">
+                  <GraduationCap className="h-8 md:h-10 w-8 md:w-10 text-school-orange" />
                 </div>
-                <CardTitle className="text-school-orange text-xl font-bold">King's Kids High School</CardTitle>
-                <CardDescription className="text-lg">JSS 1 - SS 3 • Secondary Education</CardDescription>
+                <CardTitle className="text-school-orange text-lg md:text-xl font-bold">King's Kids High School</CardTitle>
+                <CardDescription className="text-base md:text-lg">JSS 1 - SS 3 • Secondary Education</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
-                <p className="mb-6 text-muted-foreground leading-relaxed">
+                <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
                   Comprehensive secondary education preparing students for higher education and future success.
                 </p>
                 <Button className="w-full bg-school-orange hover:bg-school-orange/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>

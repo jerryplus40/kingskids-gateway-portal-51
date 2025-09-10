@@ -105,37 +105,27 @@ const Navigation = () => {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
-            Our Schools
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <div className="w-48 p-2">
-              <NavigationMenuLink asChild>
-                <Link
-                  to="/montessori"
-                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                >
-                  <div className="text-sm font-medium leading-none">Montessori School</div>
-                </Link>
-              </NavigationMenuLink>
-              <NavigationMenuLink asChild>
-                <Link
-                  to="/highschool"
-                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                >
-                  <div className="text-sm font-medium leading-none">High School</div>
-                </Link>
-              </NavigationMenuLink>
-              <NavigationMenuLink asChild>
-                <Link
-                  to="/basicstudies"
-                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                >
-                  <div className="text-sm font-medium leading-none">School of Basic Studies</div>
-                </Link>
-              </NavigationMenuLink>
-            </div>
-          </NavigationMenuContent>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link to="/montessori" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+              Montessori
+            </Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link to="/highschool" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+              High School
+            </Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link to="/basicstudies" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+              School of Basic Studies
+            </Link>
+          </NavigationMenuLink>
         </NavigationMenuItem>
 
         <NavigationMenuItem>

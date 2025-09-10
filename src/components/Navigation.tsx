@@ -108,7 +108,7 @@ const Navigation = () => {
           <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
             Our Schools
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="left-1/2 -translate-x-1/2">
+          <NavigationMenuContent>
             <div className="w-48 p-2">
               <NavigationMenuLink asChild>
                 <Link

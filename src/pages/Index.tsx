@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { 
@@ -18,8 +19,6 @@ import {
   Menu,
   X
 } from "lucide-react";
-import heroBackgroundImage from "@/assets/school-students-bg.jpg";
-import schoolLogo from "@/assets/school-logo.png";
 import Navigation from "@/components/Navigation";
 
 const Index = () => {
@@ -192,84 +191,196 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative py-12 md:py-20 px-4 overflow-hidden min-h-[70vh] md:min-h-[80vh] flex items-center">
-        {/* Animated Background Layers */}
-        <div className="absolute inset-0">
-          {/* Base background image with parallax effect */}
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110 animate-parallax-slow"
-            style={{ backgroundImage: `url(/lovable-uploads/b221a2af-caae-41aa-a241-115d00a63444.png)` }}
-          />
-          
-          {/* Dynamic gradient overlay with animation */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-school-blue/75 to-accent/65 animate-gradient-shift bg-[length:300%_300%]" />
-          
-          {/* Secondary animated gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent animate-parallax-medium" />
-          
-          {/* Shimmer effect overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-shimmer" />
-        </div>
+      {/* Hero Slider Section */}
+      <section className="relative overflow-hidden">
+        <Carousel 
+          className="w-full"
+          opts={{
+            align: "start",
+            loop: true,
+            duration: 20,
+          }}
+        >
+          <CarouselContent>
+            {/* Slide 1 - School Building Front */}
+            <CarouselItem>
+              <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                  <img 
+                    src="/lovable-uploads/b4b12bb8-bed2-4ebc-931c-a2a962b55df7.png" 
+                    alt="King's Kids Christian School Building" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-school-blue/75 to-accent/65" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent" />
+                </div>
 
-        {/* Floating geometric shapes */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-10 w-4 h-4 bg-accent/30 rounded-full animate-float" />
-          <div className="absolute top-32 right-20 w-6 h-6 bg-primary/20 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
-          <div className="absolute bottom-32 left-1/4 w-3 h-3 bg-school-gold/40 rounded-full animate-float" style={{ animationDelay: '0.5s' }} />
-          <div className="absolute top-40 left-1/3 w-2 h-2 bg-white/40 rounded-full animate-pulse-glow" />
-          <div className="absolute bottom-20 right-1/3 w-8 h-8 border-2 border-accent/20 rounded-full animate-float" style={{ animationDelay: '1.5s' }} />
-        </div>
-        
-        {/* Content */}
-        <div className="relative z-20 container mx-auto text-center">
-          <Badge className="mb-6 md:mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md animate-fade-in shadow-lg">
-            <Star className="w-4 h-4 mr-2" />
-            Nurturing Excellence Since 2012
-          </Badge>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 md:mb-8 text-white animate-fade-up leading-tight" style={{ animationDelay: '0.2s' }}>
-            Empowering Young Minds for
-            <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent animate-pulse-glow font-display">Tomorrow's Leadership</span>
-          </h2>
-          <p className="text-lg md:text-xl lg:text-2xl text-white/95 mb-8 md:mb-10 max-w-4xl mx-auto animate-fade-up leading-relaxed" style={{ animationDelay: '0.4s' }}>
-            Join our family of exceptional schools offering world-class education from Montessori to High School, 
-            supported by our dedicated Child and Youth Foundation.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 animate-scale-in" style={{ animationDelay: '0.6s' }}>
-            <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-elegant hover:shadow-glow transition-all duration-500 hover:scale-110 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold w-full sm:w-auto">
-              <Link to="/montessori">
-                <GraduationCap className="w-5 h-5 mr-2" />
-                Apply Now
-              </Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild className="border-white/40 text-white hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-500 hover:scale-110 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold w-full sm:w-auto">
-              <Link to="#schools">
-                <BookOpen className="w-5 h-5 mr-2" />
-                Explore Schools
-              </Link>
-            </Button>
-          </div>
+                {/* Floating geometric shapes */}
+                <div className="absolute inset-0 pointer-events-none">
+                  <div className="absolute top-20 left-10 w-4 h-4 bg-accent/30 rounded-full animate-float" />
+                  <div className="absolute top-32 right-20 w-6 h-6 bg-primary/20 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
+                  <div className="absolute bottom-32 left-1/4 w-3 h-3 bg-school-gold/40 rounded-full animate-float" style={{ animationDelay: '0.5s' }} />
+                </div>
+                
+                {/* Content */}
+                <div className="relative z-20 container mx-auto px-4 text-center">
+                  <Badge className="mb-6 md:mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md animate-fade-in shadow-lg">
+                    <Star className="w-4 h-4 mr-2" />
+                    A Christian Cambridge School
+                  </Badge>
+                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 md:mb-8 text-white animate-fade-up leading-tight">
+                    King's Kids
+                    <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent animate-pulse-glow font-display">No Substitute!</span>
+                  </h2>
+                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 mb-8 md:mb-10 max-w-4xl mx-auto animate-fade-up leading-relaxed">
+                    Great Things Are Happening Here - Join our family of exceptional schools offering world-class Christian education.
+                  </p>
+                  <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 animate-scale-in">
+                    <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105">
+                      <Link to="/montessori">
+                        <GraduationCap className="w-5 h-5 mr-2" />
+                        Apply Now
+                      </Link>
+                    </Button>
+                    <Button size="lg" variant="outline" asChild className="border-white/40 text-white hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
+                      <Link to="#schools">
+                        <BookOpen className="w-5 h-5 mr-2" />
+                        Explore Schools
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </CarouselItem>
+
+            {/* Slide 2 - Remember Your Creator */}
+            <CarouselItem>
+              <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                  <img 
+                    src="/lovable-uploads/59b5ff11-5cd8-4812-902f-16387f07dfa3.png" 
+                    alt="King's Kids School Campus" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-school-blue/70 to-accent/60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
+                </div>
+
+                {/* Floating geometric shapes */}
+                <div className="absolute inset-0 pointer-events-none">
+                  <div className="absolute top-40 left-1/3 w-2 h-2 bg-white/40 rounded-full animate-pulse-glow" />
+                  <div className="absolute bottom-20 right-1/3 w-8 h-8 border-2 border-accent/20 rounded-full animate-float" />
+                </div>
+                
+                {/* Content */}
+                <div className="relative z-20 container mx-auto px-4 text-center">
+                  <Badge className="mb-6 md:mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md animate-fade-in shadow-lg">
+                    <BookOpen className="w-4 h-4 mr-2" />
+                    Ecclesiastes 12:1
+                  </Badge>
+                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 md:mb-8 text-white animate-fade-up leading-tight">
+                    Remember Now Your Creator
+                    <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent animate-pulse-glow font-display">In The Days Of Your Youth</span>
+                  </h2>
+                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 mb-8 md:mb-10 max-w-4xl mx-auto animate-fade-up leading-relaxed">
+                    Building character and faith alongside academic excellence for over 28 years.
+                  </p>
+                  <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 animate-scale-in">
+                    <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105">
+                      <Link to="#about">
+                        <Heart className="w-5 h-5 mr-2" />
+                        Our Mission
+                      </Link>
+                    </Button>
+                    <Button size="lg" variant="outline" asChild className="border-white/40 text-white hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
+                      <Link to="#contact">
+                        <Users className="w-5 h-5 mr-2" />
+                        Join Our Family
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </CarouselItem>
+
+            {/* Slide 3 - Educational Tour */}
+            <CarouselItem>
+              <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                  <img 
+                    src="/lovable-uploads/87ff614b-72c4-4a5b-8918-743060138383.png" 
+                    alt="King's Kids Students Educational Tour" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/75 via-school-blue/65 to-accent/55" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
+                </div>
+
+                {/* Floating geometric shapes */}
+                <div className="absolute inset-0 pointer-events-none">
+                  <div className="absolute top-20 right-10 w-4 h-4 bg-school-gold/30 rounded-full animate-float" />
+                  <div className="absolute bottom-32 left-20 w-6 h-6 bg-primary/20 rounded-lg animate-float" />
+                </div>
+                
+                {/* Content */}
+                <div className="relative z-20 container mx-auto px-4 text-center">
+                  <Badge className="mb-6 md:mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md animate-fade-in shadow-lg">
+                    <MapPin className="w-4 h-4 mr-2" />
+                    Educational Excellence
+                  </Badge>
+                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 md:mb-8 text-white animate-fade-up leading-tight">
+                    Empowering Young Minds
+                    <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent animate-pulse-glow font-display">Beyond The Classroom</span>
+                  </h2>
+                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 mb-8 md:mb-10 max-w-4xl mx-auto animate-fade-up leading-relaxed">
+                    Our students explore the world, gaining real-world experience through educational tours and practical learning.
+                  </p>
+                  <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 animate-scale-in">
+                    <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105">
+                      <Link to="#programs">
+                        <Award className="w-5 h-5 mr-2" />
+                        Our Programs
+                      </Link>
+                    </Button>
+                    <Button size="lg" variant="outline" asChild className="border-white/40 text-white hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
+                      <Link to="#gallery">
+                        <Calendar className="w-5 h-5 mr-2" />
+                        View Gallery
+                      </Link>
+                    </Button>
+                  </div>
+
+                  {/* Statistics */}
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mt-12 md:mt-16 animate-fade-up">
+                    <div className="text-center">
+                      <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent mb-1 md:mb-2">28+</div>
+                      <div className="text-white/80 font-medium text-xs md:text-sm">Years of Excellence</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-school-gold mb-1 md:mb-2">2000+</div>
+                      <div className="text-white/80 font-medium text-xs md:text-sm">Students Graduated</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-school-green mb-1 md:mb-2">50+</div>
+                      <div className="text-white/80 font-medium text-xs md:text-sm">Expert Teachers</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-school-orange mb-1 md:mb-2">4</div>
+                      <div className="text-white/80 font-medium text-xs md:text-sm">School Levels</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CarouselItem>
+          </CarouselContent>
           
-          {/* Statistics */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mt-12 md:mt-16 animate-fade-up" style={{ animationDelay: '0.8s' }}>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent mb-1 md:mb-2">28+</div>
-              <div className="text-white/80 font-medium text-xs md:text-sm">Years of Excellence</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-school-gold mb-1 md:mb-2">2000+</div>
-              <div className="text-white/80 font-medium text-xs md:text-sm">Students Graduated</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-school-green mb-1 md:mb-2">50+</div>
-              <div className="text-white/80 font-medium text-xs md:text-sm">Expert Teachers</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-school-orange mb-1 md:mb-2">4</div>
-              <div className="text-white/80 font-medium text-xs md:text-sm">School Levels</div>
-            </div>
-          </div>
-        </div>
+          {/* Enhanced Navigation Arrows */}
+          <CarouselPrevious className="left-4 md:left-8 h-12 w-12 bg-white/10 border-white/20 backdrop-blur-md hover:bg-white/20 hover:scale-110 transition-all duration-200 text-white shadow-lg" />
+          <CarouselNext className="right-4 md:right-8 h-12 w-12 bg-white/10 border-white/20 backdrop-blur-md hover:bg-white/20 hover:scale-110 transition-all duration-200 text-white shadow-lg" />
+        </Carousel>
       </section>
 
       {/* About Section */}

@@ -3,8 +3,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { 
   GraduationCap, 
   Heart, 
@@ -23,6 +24,9 @@ import Navigation from "@/components/Navigation";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const autoplayPlugin = useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true })
+  );
   
   console.log("Index.tsx: Index component rendering");
   
@@ -195,11 +199,14 @@ const Index = () => {
       <section className="relative overflow-hidden">
         <Carousel 
           className="w-full"
+          plugins={[autoplayPlugin.current]}
           opts={{
             align: "start",
             loop: true,
-            duration: 20,
+            duration: 30,
           }}
+          onMouseEnter={autoplayPlugin.current.stop}
+          onMouseLeave={autoplayPlugin.current.reset}
         >
           <CarouselContent>
             {/* Slide 1 - School Building Front */}
@@ -210,7 +217,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/b4b12bb8-bed2-4ebc-931c-a2a962b55df7.png" 
                     alt="King's Kids Christian School Building" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-school-blue/75 to-accent/65" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent" />
@@ -243,7 +250,7 @@ const Index = () => {
                         Apply Now
                       </Link>
                     </Button>
-                    <Button size="lg" variant="outline" asChild className="border-white/40 text-white hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
+                    <Button size="lg" variant="outline" asChild className="border-white/40 text-blue-400 hover:text-blue-300 hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
                       <Link to="#schools">
                         <BookOpen className="w-5 h-5 mr-2" />
                         Explore Schools
@@ -262,7 +269,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/59b5ff11-5cd8-4812-902f-16387f07dfa3.png" 
                     alt="King's Kids School Campus" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns-reverse"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-school-blue/70 to-accent/60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
@@ -294,7 +301,7 @@ const Index = () => {
                         Our Mission
                       </Link>
                     </Button>
-                    <Button size="lg" variant="outline" asChild className="border-white/40 text-white hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
+                    <Button size="lg" variant="outline" asChild className="border-white/40 text-blue-400 hover:text-blue-300 hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
                       <Link to="#contact">
                         <Users className="w-5 h-5 mr-2" />
                         Join Our Family
@@ -313,7 +320,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/87ff614b-72c4-4a5b-8918-743060138383.png" 
                     alt="King's Kids Students Educational Tour" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/75 via-school-blue/65 to-accent/55" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
@@ -345,7 +352,7 @@ const Index = () => {
                         Our Programs
                       </Link>
                     </Button>
-                    <Button size="lg" variant="outline" asChild className="border-white/40 text-white hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
+                    <Button size="lg" variant="outline" asChild className="border-white/40 text-blue-400 hover:text-blue-300 hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
                       <Link to="#gallery">
                         <Calendar className="w-5 h-5 mr-2" />
                         View Gallery

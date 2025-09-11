@@ -161,6 +161,22 @@ export default {
             opacity: "0.8",
             boxShadow: "0 0 40px hsl(var(--primary) / 0.6)"
           }
+        },
+        "ken-burns": {
+          "0%": { 
+            transform: "scale(1) translateX(0px) translateY(0px)"
+          },
+          "100%": { 
+            transform: "scale(1.1) translateX(-20px) translateY(-10px)"
+          }
+        },
+        "ken-burns-reverse": {
+          "0%": { 
+            transform: "scale(1.1) translateX(-20px) translateY(-10px)"
+          },
+          "100%": { 
+            transform: "scale(1) translateX(0px) translateY(0px)"
+          }
         }
       },
       animation: {
@@ -175,6 +191,8 @@ export default {
         "gradient-shift": "gradient-shift 8s ease-in-out infinite",
         "shimmer": "shimmer 2s linear infinite",
         "pulse-glow": "pulse-glow 3s ease-in-out infinite",
+        "ken-burns": "ken-burns 8s ease-in-out infinite alternate",
+        "ken-burns-reverse": "ken-burns-reverse 8s ease-in-out infinite alternate",
       },
     },
   },

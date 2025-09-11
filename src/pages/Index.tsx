@@ -838,6 +838,106 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Newsletter Subscription Section */}
+      <section className="relative overflow-hidden">
+        {/* Photo Collage */}
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-48 md:h-64">
+          {/* Photo 1 - School Building */}
+          <div className="relative overflow-hidden group">
+            <img 
+              src="/lovable-uploads/b4b12bb8-bed2-4ebc-931c-a2a962b55df7.png" 
+              alt="School Building"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Photo 2 - Students in Library */}
+          <div className="relative overflow-hidden group">
+            <img 
+              src="/lovable-uploads/59b5ff11-5cd8-4812-902f-16387f07dfa3.png" 
+              alt="Students Learning"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Photo 3 - Educational Tour */}
+          <div className="relative overflow-hidden group">
+            <img 
+              src="/lovable-uploads/87ff614b-72c4-4a5b-8918-743060138383.png" 
+              alt="Educational Tour"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-school-gold/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Photo 4 - School Activities */}
+          <div className="relative overflow-hidden group">
+            <img 
+              src="/lovable-uploads/6f3faff4-396a-4ae0-83ca-482ebe95b218.png" 
+              alt="School Activities"
+              className="w-full h-full object-cover object-left transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-school-green/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Photo 5 - Repeat for visual balance */}
+          <div className="relative overflow-hidden group hidden md:block">
+            <img 
+              src="/lovable-uploads/b4b12bb8-bed2-4ebc-931c-a2a962b55df7.png" 
+              alt="School Excellence"
+              className="w-full h-full object-cover object-right transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Photo 6 - More activities */}
+          <div className="relative overflow-hidden group hidden lg:block">
+            <img 
+              src="/lovable-uploads/6f3faff4-396a-4ae0-83ca-482ebe95b218.png" 
+              alt="Student Achievements"
+              className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-school-orange/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+        </div>
+
+        {/* Newsletter Subscription */}
+        <div className="bg-gradient-to-r from-red-600 via-red-500 to-red-600 py-12 md:py-16">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+              {/* Newsletter Text */}
+              <div className="text-center md:text-left">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4">
+                  Subscribe To Our Newsletter
+                </h3>
+                <p className="text-lg md:text-xl text-white/90 font-medium">
+                  Subscribe Us And Tell Us About Your Story
+                </p>
+              </div>
+
+              {/* Subscription Form */}
+              <div className="w-full md:w-auto md:min-w-96">
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    className="flex-1 px-6 py-4 rounded-lg border-0 bg-white/95 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-white/50 focus:bg-white transition-all duration-200"
+                  />
+                  <Button 
+                    size="lg" 
+                    className="bg-white text-red-600 hover:bg-white/90 font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  >
+                    Subscribe
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-foreground text-background py-16">
         <div className="container mx-auto px-4">

@@ -140,7 +140,7 @@ const Navigation = () => {
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link to="#contact" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+            <Link to="/contact" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
               Contact
             </Link>
           </NavigationMenuLink>

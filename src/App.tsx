@@ -11,6 +11,7 @@ import HighSchoolDashboard from "./pages/HighSchoolDashboard";
 import BasicStudiesDashboard from "./pages/BasicStudiesDashboard";
 import FoundationDashboard from "./pages/FoundationDashboard";
 import Login from "./pages/Login";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/montessori" element={<MontessoriDashboard />} />
               <Route path="/highschool" element={<HighSchoolDashboard />} />
               <Route path="/basicstudies" element={<BasicStudiesDashboard />} />

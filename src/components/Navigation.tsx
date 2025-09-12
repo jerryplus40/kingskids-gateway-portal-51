@@ -139,6 +139,40 @@ const Navigation = () => {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
+          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+            Media
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <div className="w-48 p-2">
+              <NavigationMenuLink asChild>
+                <Link
+                  to="/gallery"
+                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                >
+                  <div className="text-sm font-medium leading-none">Gallery</div>
+                </Link>
+              </NavigationMenuLink>
+              <NavigationMenuLink asChild>
+                <Link
+                  to="/news"
+                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                >
+                  <div className="text-sm font-medium leading-none">News</div>
+                </Link>
+              </NavigationMenuLink>
+              <NavigationMenuLink asChild>
+                <Link
+                  to="/events"
+                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                >
+                  <div className="text-sm font-medium leading-none">Events</div>
+                </Link>
+              </NavigationMenuLink>
+            </div>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
             <Link to="/contact" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
               Contact

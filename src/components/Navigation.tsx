@@ -147,11 +147,53 @@ const Navigation = () => {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link to="#admission" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
-              Admission
-            </Link>
-          </NavigationMenuLink>
+          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+            Admission
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <div className="w-48 p-2">
+              <NavigationMenuLink asChild>
+                <Link
+                  to="/how-to-apply"
+                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                >
+                  <div className="text-sm font-medium leading-none">How to apply</div>
+                </Link>
+              </NavigationMenuLink>
+              <NavigationMenuLink asChild>
+                <Link
+                  to="/school-fees"
+                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                >
+                  <div className="text-sm font-medium leading-none">Schools fees</div>
+                </Link>
+              </NavigationMenuLink>
+              <NavigationMenuLink asChild>
+                <Link
+                  to="/entrance-exam-dates"
+                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                >
+                  <div className="text-sm font-medium leading-none">Entrance Exam dates</div>
+                </Link>
+              </NavigationMenuLink>
+              <NavigationMenuLink asChild>
+                <Link
+                  to="/arrange-visit"
+                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                >
+                  <div className="text-sm font-medium leading-none">Arrange a visit</div>
+                </Link>
+              </NavigationMenuLink>
+              <NavigationMenuLink asChild>
+                <Link
+                  to="/admission-faqs"
+                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                >
+                  <div className="text-sm font-medium leading-none">FAQs</div>
+                </Link>
+              </NavigationMenuLink>
+            </div>
+          </NavigationMenuContent>
         </NavigationMenuItem>
 
         <NavigationMenuItem>

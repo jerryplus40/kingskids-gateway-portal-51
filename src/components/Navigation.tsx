@@ -93,7 +93,7 @@ const Navigation = () => {
             Facilities
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-48 p-2">
+            <div className="w-64 p-2">
               <NavigationMenuLink asChild>
                 <Link
                   to="/classrooms"
@@ -151,7 +151,7 @@ const Navigation = () => {
             Admission
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-48 p-2">
+            <div className="w-64 p-2">
               <NavigationMenuLink asChild>
                 <Link
                   to="/how-to-apply"
@@ -201,7 +201,7 @@ const Navigation = () => {
             Our Schools
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-48 p-2">
+            <div className="w-64 p-2">
               <NavigationMenuLink asChild>
                 <Link
                   to="/montessori"
@@ -235,7 +235,7 @@ const Navigation = () => {
             Media
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-48 p-2">
+            <div className="w-64 p-2">
               <NavigationMenuLink asChild>
                 <Link
                   to="/gallery"

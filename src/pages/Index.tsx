@@ -847,7 +847,7 @@ const Index = () => {
 
       {/* Newsletter Subscription Section */}
       <section className="relative overflow-hidden">
-        {/* Photo Collage */}
+        {/* Photo Collage - First Row */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-48 md:h-64">
           {/* Photo 1 - School Building */}
           <div className="relative overflow-hidden group">
@@ -905,6 +905,132 @@ const Index = () => {
               src="/lovable-uploads/6f3faff4-396a-4ae0-83ca-482ebe95b218.png" 
               alt="Student Achievements"
               className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-school-orange/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+        </div>
+
+        {/* Photo Collage - Second Row - Graduation Photos */}
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-48 md:h-64">
+          {/* Graduate 1 - Adeosin Adeola Adebimpe */}
+          <div className="relative overflow-hidden group">
+            <img 
+              src="/lovable-uploads/adeosin-adeola-adebimpe.jpg" 
+              alt="Graduate - Adeosin Adeola Adebimpe"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Graduate 2 - Ansel Joseph Akpan */}
+          <div className="relative overflow-hidden group">
+            <img 
+              src="/lovable-uploads/ansel-joseph-akpan.jpg" 
+              alt="Graduate - Ansel Joseph Akpan"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Graduate 3 - Calistus Chimobi Chukwuma */}
+          <div className="relative overflow-hidden group">
+            <img 
+              src="/lovable-uploads/calistus-chimobi-chukwuma.jpg" 
+              alt="Graduate - Calistus Chimobi Chukwuma"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-school-gold/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Graduate 4 - Columbus Munachimso Oleka */}
+          <div className="relative overflow-hidden group">
+            <img 
+              src="/lovable-uploads/columbus-munachimso-oleka.jpg" 
+              alt="Graduate - Columbus Munachimso Oleka"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-school-green/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Graduate 5 - Enyiekan-Awasi Irvine Obot */}
+          <div className="relative overflow-hidden group hidden md:block">
+            <img 
+              src="/lovable-uploads/enyiekan-awasi-irvine-obot.jpg" 
+              alt="Graduate - Enyiekan-Awasi Irvine Obot"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Graduate 6 - GC5A0117e */}
+          <div className="relative overflow-hidden group hidden lg:block">
+            <img 
+              src="/lovable-uploads/gc5a0117e.jpg" 
+              alt="Graduate - Academic Excellence"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-school-orange/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+        </div>
+
+        {/* Photo Collage - Third Row - More Graduation Photos */}
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-48 md:h-64">
+          {/* Graduate 7 - GC5A0121er */}
+          <div className="relative overflow-hidden group">
+            <img 
+              src="/lovable-uploads/gc5a0121er.jpg" 
+              alt="Graduate - Outstanding Achievement"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Graduate 8 - Imohabasi Emmanuel Akpabio */}
+          <div className="relative overflow-hidden group">
+            <img 
+              src="/lovable-uploads/imohabasi-emmanuel-akpabio.jpg" 
+              alt="Graduate - Imohabasi Emmanuel Akpabio"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Graduate 9 - Udoessien Godshand Etim */}
+          <div className="relative overflow-hidden group">
+            <img 
+              src="/lovable-uploads/udoessien-godshand-etim.jpg" 
+              alt="Graduate - Udoessien Godshand Etim"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-school-gold/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Repeat Graduate for visual balance */}
+          <div className="relative overflow-hidden group">
+            <img 
+              src="/lovable-uploads/adeosin-adeola-adebimpe.jpg" 
+              alt="Graduate Success Story"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-school-green/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Repeat Graduate for medium screens */}
+          <div className="relative overflow-hidden group hidden md:block">
+            <img 
+              src="/lovable-uploads/ansel-joseph-akpan.jpg" 
+              alt="Excellence in Education"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </div>
+          
+          {/* Repeat Graduate for large screens */}
+          <div className="relative overflow-hidden group hidden lg:block">
+            <img 
+              src="/lovable-uploads/calistus-chimobi-chukwuma.jpg" 
+              alt="Academic Achievement"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-school-orange/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>

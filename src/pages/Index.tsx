@@ -21,6 +21,8 @@ import {
   X
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import montessoriLogo from "@/assets/mont_logo.png";
+import highSchoolLogo from "@/assets/high_school_logo.png";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -512,8 +514,8 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
             <Card className="group hover:shadow-elegant transition-all duration-500 hover:scale-105 border-0 shadow-card backdrop-blur-sm bg-gradient-card">
               <CardHeader className="text-center">
-                <div className="w-16 md:w-20 h-16 md:h-20 bg-gradient-to-br from-school-blue/20 to-school-blue/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500">
-                  <Heart className="h-8 md:h-10 w-8 md:w-10 text-school-blue" />
+                <div className="w-16 md:w-20 h-16 md:h-20 bg-gradient-to-br from-school-blue/20 to-school-blue/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500 overflow-hidden">
+                  <img src={montessoriLogo} alt="Montessori Logo" className="h-full w-full object-contain p-1" />
                 </div>
                 <CardTitle className="text-school-blue text-lg md:text-xl font-bold">King's Kids Montessori</CardTitle>
                 <CardDescription className="text-base md:text-lg">Ages 2-6 years • Foundation Learning</CardDescription>
@@ -533,8 +535,8 @@ const Index = () => {
 
             <Card className="group hover:shadow-elegant transition-all duration-500 hover:scale-105 border-0 shadow-card backdrop-blur-sm bg-gradient-card">
               <CardHeader className="text-center">
-                <div className="w-16 md:w-20 h-16 md:h-20 bg-gradient-to-br from-school-orange/20 to-school-orange/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500">
-                  <GraduationCap className="h-8 md:h-10 w-8 md:w-10 text-school-orange" />
+                <div className="w-16 md:w-20 h-16 md:h-20 bg-gradient-to-br from-school-orange/20 to-school-orange/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500 overflow-hidden">
+                  <img src={highSchoolLogo} alt="High School Logo" className="h-full w-full object-contain p-1" />
                 </div>
                 <CardTitle className="text-school-orange text-lg md:text-xl font-bold">King's Kids High School</CardTitle>
                 <CardDescription className="text-base md:text-lg">JSS 1 - SS 3 • Secondary Education</CardDescription>

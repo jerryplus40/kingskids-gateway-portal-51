@@ -766,7 +766,7 @@ const Index = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Email</h4>
                     <p className="text-muted-foreground">info@kingskidsschools.com</p>
-                    <p className="text-muted-foreground">admissions@kingskidsschools.com</p>
+                    <p className="text-muted-foreground">info@kingskidschools.com</p>
                   </div>
                 </div>
               </Card>

@@ -45,7 +45,7 @@ const Index = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>Email: info@kingskidsschools.com</span>
+                <span>Email: info@kingskidschools.com</span>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -178,7 +178,7 @@ const Index = () => {
                       </div>
                       <div className="flex items-center space-x-2 text-sm">
                         <Mail className="h-4 w-4 text-primary" />
-                        <span>info@kingskidsschools.com</span>
+                        <span>info@kingskidschools.com</span>
                       </div>
                     </div>
                     <div className="mt-4 space-y-2">
@@ -765,7 +765,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                    <p className="text-muted-foreground">info@kingskidsschools.com</p>
+                    <p className="text-muted-foreground">info@kingskidschools.com</p>
                     <p className="text-muted-foreground">info@kingskidschools.com</p>
                   </div>
                 </div>
@@ -1124,7 +1124,7 @@ const Index = () => {
                 </li>
                 <li className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-primary" />
-                  <span className="text-background/80 text-sm">info@kingskidsschools.com</span>
+                  <span className="text-background/80 text-sm">info@kingskidschools.com</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <MapPin className="h-4 w-4 text-primary mt-0.5" />

@@ -778,8 +778,10 @@ const Index = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Address</h4>
-                    <p className="text-muted-foreground">123 Education Boulevard</p>
-                    <p className="text-muted-foreground">Victoria Island, Lagos, Nigeria</p>
+                    <p className="text-muted-foreground font-medium">MONTESSORI:</p>
+                    <p className="text-muted-foreground text-sm">Plot 185, Line F, Ewet Housing Estate, Uyo, Akwa Ibom State</p>
+                    <p className="text-muted-foreground font-medium mt-2">HIGH SCHOOL:</p>
+                    <p className="text-muted-foreground text-sm">Plot 14, Line J, Sam Edem Street, Ewet Housing Estate, Uyo, Akwa Ibom State</p>
                   </div>
                 </div>
               </Card>
@@ -1128,7 +1130,12 @@ const Index = () => {
                 </li>
                 <li className="flex items-start space-x-3">
                   <MapPin className="h-4 w-4 text-primary mt-0.5" />
-                  <span className="text-background/80 text-sm">123 Education Boulevard<br/>Victoria Island, Lagos</span>
+                  <span className="text-background/80 text-sm">
+                    <strong>MONTESSORI:</strong><br/>
+                    Plot 185, Line F, Ewet Housing Estate, Uyo, Akwa Ibom State<br/>
+                    <strong>HIGH SCHOOL:</strong><br/>
+                    Plot 14, Line J, Sam Edem Street, Ewet Housing Estate, Uyo, Akwa Ibom State
+                  </span>
                 </li>
               </ul>
             </div>

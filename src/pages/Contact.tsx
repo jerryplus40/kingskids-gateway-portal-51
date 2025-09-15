@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -97,6 +97,26 @@ const Contact = () => {
                 <h3 className="text-lg font-semibold text-foreground mb-2">Email</h3>
                 <p className="text-muted-foreground">info@kingskidschools.com</p>
                 <p className="text-muted-foreground">info@kingskidschools.com</p>
+              </div>
+            </div>
+
+            {/* Address */}
+            <div className="flex items-start space-x-4">
+              <div className="bg-blue-100 p-3 rounded-lg">
+                <MapPin className="h-6 w-6 text-blue-600" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">Address</h3>
+                <div className="space-y-2">
+                  <div>
+                    <p className="text-muted-foreground font-medium">MONTESSORI:</p>
+                    <p className="text-muted-foreground text-sm">Plot 185, Line F, Ewet Housing Estate, Uyo, Akwa Ibom State</p>
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground font-medium">HIGH SCHOOL:</p>
+                    <p className="text-muted-foreground text-sm">Plot 14, Line J, Sam Edem Street, Ewet Housing Estate, Uyo, Akwa Ibom State</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

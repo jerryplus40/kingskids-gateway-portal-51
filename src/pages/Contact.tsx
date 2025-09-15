@@ -83,8 +83,8 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Phone</h3>
-                <p className="text-muted-foreground">+234 123 456 789</p>
-                <p className="text-muted-foreground">+234 987 654 321</p>
+                <p className="text-muted-foreground">+2348058403852</p>
+                <p className="text-muted-foreground">+2347038962803</p>
               </div>
             </div>
 
@@ -169,7 +169,7 @@ const Contact = () => {
                       id="phone"
                       name="phone"
                       type="tel"
-                      placeholder="+234 123 456 789"
+                      placeholder="+2348058403852"
                       value={formData.phone}
                       onChange={handleInputChange}
                       className="w-full"

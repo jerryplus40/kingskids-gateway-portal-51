@@ -41,7 +41,7 @@ const Index = () => {
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>Call: +234 123 456 789</span>
+                <span>Call: +2348058403852</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
@@ -174,7 +174,7 @@ const Index = () => {
                     <div className="space-y-2">
                       <div className="flex items-center space-x-2 text-sm">
                         <Phone className="h-4 w-4 text-primary" />
-                        <span>+234 123 456 789</span>
+                        <span>+2348058403852</span>
                       </div>
                       <div className="flex items-center space-x-2 text-sm">
                         <Mail className="h-4 w-4 text-primary" />
@@ -752,8 +752,8 @@ const Index = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Phone</h4>
-                    <p className="text-muted-foreground">+234 123 456 789</p>
-                    <p className="text-muted-foreground">+234 987 654 321</p>
+                    <p className="text-muted-foreground">+2348058403852</p>
+                    <p className="text-muted-foreground">+2347038962803</p>
                   </div>
                 </div>
               </Card>
@@ -1120,7 +1120,7 @@ const Index = () => {
               <ul className="space-y-4">
                 <li className="flex items-center space-x-3">
                   <Phone className="h-4 w-4 text-primary" />
-                  <span className="text-background/80 text-sm">+234 123 456 789</span>
+                  <span className="text-background/80 text-sm">+2348058403852</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-primary" />

@@ -402,7 +402,7 @@ const Index = () => {
               </Badge>
               <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground leading-tight">
                 Excellence in Education
-                <span className="text-primary block">Since 1995</span>
+                <span className="text-primary block">Since 2012</span>
               </h3>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 For nearly three decades, King's Kids Schools has been at the forefront of educational excellence, 

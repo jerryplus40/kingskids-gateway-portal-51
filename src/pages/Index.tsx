@@ -56,7 +56,7 @@ const Index = () => {
                 <Link to="/login">Student Login</Link>
               </Button>
               <Button size="sm" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-                <Link to="#apply">Online Applications →</Link>
+                <Link to="#apply">Portal →</Link>
               </Button>
             </div>
           </div>

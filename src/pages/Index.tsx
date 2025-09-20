@@ -237,7 +237,7 @@ const Index = () => {
                   
                   {/* Mobile Contact Info */}
                   <div className="pt-4 border-t">
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                       <div className="flex items-center space-x-2 text-sm">
                         <Phone className="h-4 w-4 text-primary" />
                         <span>+2348058403852</span>
@@ -247,13 +247,67 @@ const Index = () => {
                         <span>info@kingskidschools.com</span>
                       </div>
                     </div>
-                    <div className="mt-4 space-y-2">
-                      <Button size="sm" asChild className="w-full">
-                        <Link to="/login" onClick={() => setMobileMenuOpen(false)}>Student Login</Link>
-                      </Button>
-                      <Button size="sm" variant="outline" asChild className="w-full">
-                        <Link to="#apply" onClick={() => setMobileMenuOpen(false)}>Online Applications</Link>
-                      </Button>
+                    
+                    {/* Login Section */}
+                    <div className="mt-6 space-y-3">
+                      <div>
+                        <h3 className="text-sm font-semibold text-foreground mb-2 flex items-center">
+                          <span className="mr-2">🔐</span>
+                          Login
+                        </h3>
+                        <div className="space-y-2">
+                          <Collapsible>
+                            <CollapsibleTrigger className="flex items-center justify-between w-full px-3 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors">
+                              Students
+                              <ChevronDown className="h-4 w-4 transition-transform data-[state=open]:rotate-180" />
+                            </CollapsibleTrigger>
+                            <CollapsibleContent className="mt-2 space-y-1">
+                              <Button size="sm" variant="outline" asChild className="w-full justify-start">
+                                <a href="https://kkcm.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                                  Montessori
+                                </a>
+                              </Button>
+                              <Button size="sm" variant="outline" asChild className="w-full justify-start">
+                                <a href="https://kkcihs.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                                  High School
+                                </a>
+                              </Button>
+                            </CollapsibleContent>
+                          </Collapsible>
+                          
+                          <Collapsible>
+                            <CollapsibleTrigger className="flex items-center justify-between w-full px-3 py-2 text-sm font-medium bg-secondary text-secondary-foreground rounded-md hover:bg-secondary/90 transition-colors">
+                              Teachers
+                              <ChevronDown className="h-4 w-4 transition-transform data-[state=open]:rotate-180" />
+                            </CollapsibleTrigger>
+                            <CollapsibleContent className="mt-2 space-y-1">
+                              <Button size="sm" variant="outline" asChild className="w-full justify-start">
+                                <a href="https://kkcm.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                                  Montessori
+                                </a>
+                              </Button>
+                              <Button size="sm" variant="outline" asChild className="w-full justify-start">
+                                <a href="https://kkcihs.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                                  High School
+                                </a>
+                              </Button>
+                            </CollapsibleContent>
+                          </Collapsible>
+                        </div>
+                      </div>
+                      
+                      {/* Portal Section */}
+                      <div>
+                        <h3 className="text-sm font-semibold text-foreground mb-2 flex items-center">
+                          <span className="mr-2">🌐</span>
+                          Portal
+                        </h3>
+                        <Button size="sm" asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                          <a href="https://portal.kingskidschools.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                            Access Portal →
+                          </a>
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </div>

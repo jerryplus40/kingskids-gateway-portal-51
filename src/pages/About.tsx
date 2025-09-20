@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Users, GraduationCap, BookOpen, Award, Building } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Users, GraduationCap, BookOpen, Award, Building, ChevronDown, ChevronUp } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const About = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const shortText = "King's Kids Christian Schools was established on February 13, 2014, with the Corporate Affairs Commission under registration number RC 110796. As an offshoot of Child and Youth Foundation (CYF), a non-denominational, Bible-centered Faith-Based Non-Governmental Organization, our main aim is evangelizing and discipling children and youths into the kingdom of God.";
+
+  const fullText = `King's Kids Christian Schools was established on February 13, 2014, with the Corporate Affairs Commission under registration number RC 110796.
+
+King's Kids Christian Schools is an offshoot of Child and Youth Foundation (CYF), a non-denominational, Bible-centered Faith-Based Non-Governmental Organization with the main aim of evangelizing and discipling children and youths into the kingdom of God to know the Lord Jesus, so that they can grow up to be good citizens.
+
+The objectives of the organization include:
+• To evangelize and disciple children and youth
+• To establish Good News Bible Clubs in the neighborhood of children and youth
+• To organize periodic seminars and trainings for teachers of children and youth
+• To organize annual camp conferences for children and youth
+• To establish schools and hospitals in their communities of operation
+
+The educational arm of CYF, under the umbrella of King's Kids Christian Schools, has embarked on solving specific problems that have for long bedeviled our education sector. It has the Christian Montessori Education to provide the needed environment for the proper education of the child, a specialized Day High School to solve the problem of juvenile delinquency and related issues, and a Basic Studies Programme to build up or strengthen academic and Christian foundation of the youth for a successful higher education and life. We also run an entrepreneurial programme for the development of skills for youth who may deem it necessary.`;
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -34,15 +52,40 @@ const About = () => {
           <div className="text-center mb-16">
             <Badge variant="outline" className="mb-4">Our Heritage</Badge>
             <h2 className="text-4xl font-bold mb-6">Our Rich History</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              King’s Kids Christian Schools was established in February 13, 2014 with the Corporate Affairs Commission with the registration number RC 110796
-
-King’s Kids Christian Schools is as an offshoot of Child and Youth Foundation (CYF), a non- denominational, Bible-centered (Faith- Based Non-Governmental Organization) with the main aim of evangelizing and discipling children and youths into the kingdom of God to know the Lord Jesus, so that they can grow up to be good citizens. 
-
-The objectives of the organization include; to evangelize and disciple children and youth; to establish Good News Bible Clubs in the neighborhood of children and youth; to organize periodic seminars and trainings for teachers of children and youth; to organize annual camp conferences for children and youth; and to establish schools and hospitals in their communities of operation.
-
-The educational arm of CYF, under the umbrella of King's Kids Christian Schools, has embarked on solving specific problems that have for long bedeviled our education sector. It has the Christian Montessori Education to provide the needed environment for the proper education of the child, a specialized Day High School to solve the problem of juvenile delinquency and related issues, and a Basic Studies Programme to build up or strengthen academic and Christian foundation of the youth for a successful higher education and life. We also run an entrepreneurial programme for the development of skills for youth who may deem it necessary..
-            </p>
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-card border rounded-lg p-8 shadow-sm">
+                <div className="text-left space-y-4">
+                  {isExpanded ? (
+                    <div className="whitespace-pre-line text-muted-foreground leading-relaxed">
+                      {fullText}
+                    </div>
+                  ) : (
+                    <p className="text-muted-foreground leading-relaxed">
+                      {shortText}
+                    </p>
+                  )}
+                  <div className="flex justify-center pt-4">
+                    <Button
+                      variant="outline"
+                      onClick={() => setIsExpanded(!isExpanded)}
+                      className="gap-2"
+                    >
+                      {isExpanded ? (
+                        <>
+                          Read Less
+                          <ChevronUp className="w-4 h-4" />
+                        </>
+                      ) : (
+                        <>
+                          Read More
+                          <ChevronDown className="w-4 h-4" />
+                        </>
+                      )}
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">

@@ -1044,11 +1044,11 @@ const Index = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-school-gold/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
           
-          {/* Photo 4 - School Activities */}
+          {/* Photo 4 - Graduation Ceremony */}
           <div className="relative overflow-hidden group">
             <img 
-              src="/lovable-uploads/6f3faff4-396a-4ae0-83ca-482ebe95b218.png" 
-              alt="School Activities"
+              src="/lovable-uploads/graduation-kids-ceremony.jpg" 
+              alt="Graduation Ceremony - Students"
               className="w-full h-full object-cover object-left transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-school-green/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -1064,11 +1064,11 @@ const Index = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
           
-          {/* Photo 6 - More activities */}
+          {/* Photo 6 - Graduation Officials */}
           <div className="relative overflow-hidden group hidden lg:block">
             <img 
-              src="/lovable-uploads/6f3faff4-396a-4ae0-83ca-482ebe95b218.png" 
-              alt="Student Achievements"
+              src="/lovable-uploads/graduation-officials-ceremony.jpg" 
+              alt="Graduation Ceremony - Officials"
               className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-school-orange/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

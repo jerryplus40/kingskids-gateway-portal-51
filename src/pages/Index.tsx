@@ -562,6 +562,118 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Three Column Gallery Section */}
+      <section className="py-20 px-4 bg-gradient-to-br from-school-blue/5 via-background to-accent/5">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
+              Learning Experience
+            </Badge>
+            <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground">
+              Discover Our Learning Environment
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Experience hands-on learning through our specialized programs
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Preschool */}
+            <div className="group relative overflow-hidden rounded-3xl shadow-elegant hover:shadow-xl transition-all duration-700 hover:scale-105">
+              <div className="aspect-[4/5] relative">
+                <img 
+                  src="/lovable-uploads/gc5a0117e.jpg" 
+                  alt="Preschool learning environment with young children engaged in educational activities" 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500" />
+                
+                {/* Floating animation elements */}
+                <div className="absolute top-4 right-4 w-8 h-8 bg-accent/30 rounded-full animate-bounce opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200" />
+                <div className="absolute bottom-20 left-4 w-6 h-6 bg-school-gold/40 rounded-lg animate-pulse opacity-0 group-hover:opacity-100 transition-all duration-500 delay-300" />
+                
+                {/* Text content with pop-in effect */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                  <h4 className="text-2xl font-display font-bold mb-3 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 animate-fade-in">
+                    Preschool
+                  </h4>
+                  <p className="text-white/90 leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200 animate-fade-in">
+                    Nurturing early childhood development through play-based learning, social interaction, and foundational skills building in a safe, loving environment.
+                  </p>
+                  <div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-300 animate-scale-in">
+                    <Badge className="bg-white/20 text-white border-white/30 backdrop-blur-sm">
+                      Ages 2-5
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Science Practical */}
+            <div className="group relative overflow-hidden rounded-3xl shadow-elegant hover:shadow-xl transition-all duration-700 hover:scale-105">
+              <div className="aspect-[4/5] relative">
+                <img 
+                  src="/lovable-uploads/gc5a0121er.jpg" 
+                  alt="Students conducting hands-on science experiments in modern laboratory" 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-school-blue/80 via-school-blue/30 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500" />
+                
+                {/* Floating animation elements */}
+                <div className="absolute top-6 left-6 w-10 h-10 bg-school-green/30 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200" />
+                <div className="absolute bottom-24 right-6 w-4 h-4 bg-accent/50 rounded-full animate-bounce opacity-0 group-hover:opacity-100 transition-all duration-500 delay-400" />
+                
+                {/* Text content with pop-in effect */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                  <h4 className="text-2xl font-display font-bold mb-3 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 animate-fade-in">
+                    Science Practical
+                  </h4>
+                  <p className="text-white/90 leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200 animate-fade-in">
+                    State-of-the-art laboratory facilities where students explore scientific concepts through hands-on experiments and research-based learning.
+                  </p>
+                  <div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-300 animate-scale-in">
+                    <Badge className="bg-white/20 text-white border-white/30 backdrop-blur-sm">
+                      All Levels
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* ICT Practical */}
+            <div className="group relative overflow-hidden rounded-3xl shadow-elegant hover:shadow-xl transition-all duration-700 hover:scale-105">
+              <div className="aspect-[4/5] relative">
+                <img 
+                  src="/lovable-uploads/school-building-hero.jpg" 
+                  alt="Students learning information and communication technology in modern computer lab" 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-accent/80 via-accent/30 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500" />
+                
+                {/* Floating animation elements */}
+                <div className="absolute top-8 right-8 w-6 h-6 bg-primary/40 rounded-lg animate-pulse opacity-0 group-hover:opacity-100 transition-all duration-500 delay-250" />
+                <div className="absolute bottom-28 left-8 w-8 h-8 bg-school-gold/30 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-all duration-500 delay-350" />
+                
+                {/* Text content with pop-in effect */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                  <h4 className="text-2xl font-display font-bold mb-3 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 animate-fade-in">
+                    ICT Practical
+                  </h4>
+                  <p className="text-white/90 leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200 animate-fade-in">
+                    Modern computer labs equipped with latest technology to develop digital literacy, coding skills, and prepare students for the digital future.
+                  </p>
+                  <div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-300 animate-scale-in">
+                    <Badge className="bg-white/20 text-white border-white/30 backdrop-blur-sm">
+                      Primary-Secondary
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Schools Section */}
       <section id="schools" className="py-12 md:py-20 px-4">
         <div className="container mx-auto">

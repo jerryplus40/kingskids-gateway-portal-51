@@ -888,6 +888,114 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Award of Excellence Section */}
+      <section className="py-20 px-4 bg-gradient-to-br from-school-gold/5 via-accent/5 to-primary/5 relative overflow-hidden">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <Badge className="mb-6 bg-school-gold/20 text-school-gold border-school-gold/30 animate-pulse-glow">
+              <Award className="w-4 h-4 mr-2" />
+              Award of Excellence
+            </Badge>
+            <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground">
+              Celebrating Achievement
+            </h3>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
+              Recognizing outstanding academic performance and character development
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Award Image with Cute Effects */}
+            <div className="relative group">
+              {/* Floating decoration elements */}
+              <div className="absolute -top-4 -left-4 w-16 h-16 bg-school-gold/20 rounded-full animate-float opacity-80" />
+              <div className="absolute -bottom-6 -right-6 w-12 h-12 bg-accent/30 rounded-full animate-bounce opacity-70" />
+              <div className="absolute top-8 -right-8 w-8 h-8 bg-primary/25 rounded-lg animate-pulse opacity-60" />
+              
+              {/* Main image container */}
+              <div className="relative overflow-hidden rounded-3xl shadow-elegant hover:shadow-2xl transition-all duration-500 group-hover:scale-105 bg-gradient-to-br from-white/50 to-white/20 p-2 backdrop-blur-sm border border-school-gold/20">
+                <div className="relative overflow-hidden rounded-2xl">
+                  <img 
+                    src="/lovable-uploads/award-ceremony.jpg" 
+                    alt="Award of Excellence Ceremony - Students receiving recognition for outstanding academic achievement"
+                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  
+                  {/* Gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-school-gold/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  
+                  {/* Sparkle effects */}
+                  <div className="absolute top-6 left-6 w-2 h-2 bg-white rounded-full animate-ping opacity-0 group-hover:opacity-100 transition-all duration-300 delay-100" />
+                  <div className="absolute bottom-8 right-8 w-3 h-3 bg-school-gold rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-all duration-300 delay-200" />
+                  <div className="absolute top-1/3 right-6 w-1 h-1 bg-white rounded-full animate-ping opacity-0 group-hover:opacity-100 transition-all duration-300 delay-300" />
+                </div>
+              </div>
+              
+              {/* Award badge floating element */}
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
+                <div className="bg-gradient-to-r from-school-gold to-accent p-3 rounded-full shadow-glow animate-bounce">
+                  <Award className="w-6 h-6 text-white" />
+                </div>
+              </div>
+            </div>
+
+            {/* Award Content */}
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4 group">
+                  <div className="w-14 h-14 bg-gradient-to-br from-school-gold/20 to-school-gold/10 rounded-2xl flex items-center justify-center group-hover:animate-pulse-glow transition-all duration-300">
+                    <Star className="w-7 h-7 text-school-gold" />
+                  </div>
+                  <div>
+                    <h4 className="text-2xl font-bold text-foreground mb-1">Academic Excellence</h4>
+                    <p className="text-muted-foreground">Outstanding performance in all subjects</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4 group">
+                  <div className="w-14 h-14 bg-gradient-to-br from-accent/20 to-accent/10 rounded-2xl flex items-center justify-center group-hover:animate-pulse-glow transition-all duration-300">
+                    <Heart className="w-7 h-7 text-accent" />
+                  </div>
+                  <div>
+                    <h4 className="text-2xl font-bold text-foreground mb-1">Character Development</h4>
+                    <p className="text-muted-foreground">Demonstrating Christian values and leadership</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4 group">
+                  <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center group-hover:animate-pulse-glow transition-all duration-300">
+                    <Users className="w-7 h-7 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="text-2xl font-bold text-foreground mb-1">Community Impact</h4>
+                    <p className="text-muted-foreground">Contributing positively to school and society</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Achievement stats */}
+              <div className="grid grid-cols-2 gap-6 pt-8 border-t border-border/50">
+                <div className="text-center group">
+                  <div className="text-3xl font-bold text-school-gold mb-2 group-hover:animate-pulse">100+</div>
+                  <div className="text-sm text-muted-foreground">Awards Given</div>
+                </div>
+                <div className="text-center group">
+                  <div className="text-3xl font-bold text-accent mb-2 group-hover:animate-pulse">15</div>
+                  <div className="text-sm text-muted-foreground">Years Running</div>
+                </div>
+              </div>
+
+              <div className="pt-6">
+                <Button size="lg" className="bg-gradient-to-r from-school-gold to-accent hover:from-school-gold/90 hover:to-accent/90 text-white shadow-glow hover:shadow-elegant transition-all duration-300 hover:scale-105">
+                  <Award className="w-5 h-5 mr-2" />
+                  View Award Recipients
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-gradient-to-br from-foreground/5 to-primary/5">
         <div className="container mx-auto">

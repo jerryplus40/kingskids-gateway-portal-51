@@ -67,8 +67,8 @@ const Header = () => {
                   </DropdownMenuSub>
                 </DropdownMenuContent>
               </DropdownMenu>
-              <Button size="sm" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-                <Link to="#apply">Portal →</Link>
+              <Button size="sm" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90" asChild>
+                <a href="https://portal.kingskidschools.com/" target="_blank" rel="noopener noreferrer">Portal →</a>
               </Button>
             </div>
           </div>

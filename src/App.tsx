@@ -15,6 +15,11 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Careers from "./pages/Careers";
 import Alumni from "./pages/Alumni";
+import Classrooms from "./pages/Classrooms";
+import Library from "./pages/Library";
+import MusicStudio from "./pages/MusicStudio";
+import ScienceLab from "./pages/ScienceLab";
+import Hostel from "./pages/Hostel";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +44,11 @@ const App = () => {
               <Route path="/highschool" element={<HighSchoolDashboard />} />
               <Route path="/basicstudies" element={<BasicStudiesDashboard />} />
               <Route path="/foundation" element={<FoundationDashboard />} />
+              <Route path="/classrooms" element={<Classrooms />} />
+              <Route path="/library" element={<Library />} />
+              <Route path="/music-studio" element={<MusicStudio />} />
+              <Route path="/science-lab" element={<ScienceLab />} />
+              <Route path="/hostel" element={<Hostel />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

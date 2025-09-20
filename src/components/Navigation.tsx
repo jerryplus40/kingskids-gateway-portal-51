@@ -96,7 +96,7 @@ const Navigation = () => {
             <div className="w-64 p-2">
               <NavigationMenuLink asChild>
                 <Link
-                  to="#"
+                  to="/classrooms"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Classrooms</div>
@@ -112,7 +112,7 @@ const Navigation = () => {
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
-                  to="#"
+                  to="/library"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Library</div>
@@ -120,7 +120,7 @@ const Navigation = () => {
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
-                  to="#"
+                  to="/music-studio"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Music Studio</div>
@@ -128,7 +128,7 @@ const Navigation = () => {
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
-                  to="#"
+                  to="/science-lab"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Science Lab</div>
@@ -136,7 +136,7 @@ const Navigation = () => {
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
-                  to="#"
+                  to="/hostel"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Hostel</div>

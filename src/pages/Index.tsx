@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { Link } from "react-router-dom";
@@ -18,7 +19,8 @@ import {
   Calendar,
   Award,
   Menu,
-  X
+  X,
+  ChevronDown
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import montessoriLogo from "@/assets/mont_logo.png";
@@ -120,19 +122,22 @@ const Index = () => {
                       Home
                     </Link>
                     
-                    {/* About Us Submenu */}
-                    <div className="px-4 py-2">
-                      <h3 className="text-sm font-medium text-muted-foreground mb-2">About Us</h3>
-                      <div className="ml-4 space-y-1">
-                        <Link to="#history" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Our History</Link>
-                        <Link to="#departments" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Departments/Units</Link>
-                        <Link to="#board" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Board of Governors</Link>
-                        <Link to="#management" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Management Team</Link>
-                        <Link to="#staff" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Staff Directory</Link>
-                        <Link to="#careers" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Careers</Link>
-                        <Link to="#alumni" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Alumni</Link>
-                      </div>
-                    </div>
+                    {/* About Us Submenu - Collapsible */}
+                    <Collapsible>
+                      <CollapsibleTrigger className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
+                        About Us
+                        <ChevronDown className="h-4 w-4 transition-transform data-[state=open]:rotate-180" />
+                      </CollapsibleTrigger>
+                      <CollapsibleContent className="ml-4 space-y-1 pb-2">
+                        <Link to="#history" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Our History</Link>
+                        <Link to="#departments" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Departments/Units</Link>
+                        <Link to="#board" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Board of Governors</Link>
+                        <Link to="#management" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Management Team</Link>
+                        <Link to="#staff" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Staff Directory</Link>
+                        <Link to="#careers" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Careers</Link>
+                        <Link to="#alumni" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Alumni</Link>
+                      </CollapsibleContent>
+                    </Collapsible>
                     
                     <Link 
                       to="#schools" 
@@ -150,15 +155,18 @@ const Index = () => {
                       Admission
                     </Link>
                     
-                    {/* Our Schools Submenu */}
-                    <div className="px-4 py-2">
-                      <h3 className="text-sm font-medium text-muted-foreground mb-2">Our Schools</h3>
-                      <div className="ml-4 space-y-1">
-                        <Link to="/montessori" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Montessori</Link>
-                        <Link to="/highschool" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>High School</Link>
-                        <Link to="/basicstudies" className="block text-sm py-1 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>School of Basic Studies</Link>
-                      </div>
-                    </div>
+                    {/* Our Schools Submenu - Collapsible */}
+                    <Collapsible>
+                      <CollapsibleTrigger className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
+                        Our Schools
+                        <ChevronDown className="h-4 w-4 transition-transform data-[state=open]:rotate-180" />
+                      </CollapsibleTrigger>
+                      <CollapsibleContent className="ml-4 space-y-1 pb-2">
+                        <Link to="/montessori" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Montessori</Link>
+                        <Link to="/highschool" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>High School</Link>
+                        <Link to="/basicstudies" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>School of Basic Studies</Link>
+                      </CollapsibleContent>
+                    </Collapsible>
                     
                     <Link 
                       to="#contact" 
@@ -386,9 +394,9 @@ const Index = () => {
             </CarouselItem>
           </CarouselContent>
           
-          {/* Enhanced Navigation Arrows */}
-          <CarouselPrevious className="left-4 md:left-8 h-12 w-12 bg-white/10 border-white/20 backdrop-blur-md hover:bg-white/20 hover:scale-110 transition-all duration-200 text-white shadow-lg" />
-          <CarouselNext className="right-4 md:right-8 h-12 w-12 bg-white/10 border-white/20 backdrop-blur-md hover:bg-white/20 hover:scale-110 transition-all duration-200 text-white shadow-lg" />
+          {/* Enhanced Navigation Arrows - Hidden on mobile */}
+          <CarouselPrevious className="hidden md:flex left-4 md:left-8 h-12 w-12 bg-white/10 border-white/20 backdrop-blur-md hover:bg-white/20 hover:scale-110 transition-all duration-200 text-white shadow-lg" />
+          <CarouselNext className="hidden md:flex right-4 md:right-8 h-12 w-12 bg-white/10 border-white/20 backdrop-blur-md hover:bg-white/20 hover:scale-110 transition-all duration-200 text-white shadow-lg" />
         </Carousel>
       </section>
 

@@ -468,12 +468,12 @@ const Index = () => {
               </Badge>
               <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground leading-tight">
                 Excellence in Education
-                <span className="text-primary block">Since 2012</span>
+                <span className="text-primary block">Since 2014</span>
               </h3>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                King's Kids Christian Schools  
-offers a specialised education built upon Christian principles and 
-the drive for excellence.
+                For nearly three decades, King's Kids Schools has been at the forefront of educational excellence, 
+                nurturing young minds and shaping future leaders. Our comprehensive approach combines academic rigor 
+                with character development, ensuring every student reaches their full potential.
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center p-6 bg-card rounded-2xl shadow-card">
@@ -584,7 +584,7 @@ the drive for excellence.
                   <img src={montessoriLogo} alt="Montessori Logo" className="h-full w-full object-contain p-1" />
                 </div>
                 <CardTitle className="text-school-blue text-lg md:text-xl font-bold">King's Kids Montessori</CardTitle>
-                <CardDescription className="text-base md:text-lg">Ages 2-6 years • Foundation Learning</CardDescription>
+                <CardDescription className="text-base md:text-lg">Foundation Learning</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
                 <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
@@ -605,11 +605,14 @@ the drive for excellence.
                   <img src={highSchoolLogo} alt="High School Logo" className="h-full w-full object-contain p-1" />
                 </div>
                 <CardTitle className="text-school-orange text-lg md:text-xl font-bold">King's Kids High School</CardTitle>
-                <CardDescription className="text-base md:text-lg">JSS 1 - SS 3 • Secondary Education</CardDescription>
+                <CardDescription className="text-base md:text-lg">Junior Cambridge 1-3, Senior Cambridge 1-3</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
                 <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
-                  Comprehensive secondary education preparing students for higher education and future success.
+                  Preparing students for 
+Junior Cambridge 1-3 and 
+Senior Cambridge 1-3 
+including WAEC and NECO.
                 </p>
                 <Button className="w-full bg-school-orange hover:bg-school-orange/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                   <Link to="/highschool">
@@ -626,11 +629,15 @@ the drive for excellence.
                   <BookOpen className="h-10 w-10 text-school-green" />
                 </div>
                 <CardTitle className="text-school-green text-xl font-bold">King's Kids Basic Studies</CardTitle>
-                <CardDescription className="text-lg">Primary 1-6 • Foundation Education</CardDescription>
+                <CardDescription className="text-lg">The PATHWAY to 
+National and International Universities</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
                 <p className="mb-6 text-muted-foreground leading-relaxed">
-                  Strong academic foundation with emphasis on literacy, numeracy and character development.
+                  Preparing Students for Degree 
+foundation and Cambridge 
+A-level Programmes including SAT, 
+TOFEL and IELTS examinations.
                 </p>
                 <Button className="w-full bg-school-green hover:bg-school-green/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                   <Link to="/basicstudies">
@@ -1209,7 +1216,7 @@ the drive for excellence.
 
           <div className="border-t border-background/20 mt-12 pt-8 text-center">
             <p className="text-background/60 text-sm">
-              © 2024 King's Kids Schools. All rights reserved. | Privacy Policy | Terms of Service
+              © 2025 King's Kids Schools. All rights reserved. | Privacy Policy | Terms of Service
             </p>
           </div>
         </div>

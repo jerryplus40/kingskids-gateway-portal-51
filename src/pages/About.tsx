@@ -7,8 +7,13 @@ const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[60vh] bg-gradient-to-br from-primary via-primary-foreground to-secondary overflow-hidden">
-        <div className="absolute inset-0 bg-black/20" />
+      <section 
+        className="relative h-[60vh] overflow-hidden bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('/src/assets/school-students-bg.jpg')`
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/70 to-secondary/80" />
         <div className="container mx-auto px-4 relative z-10 h-full flex items-center">
           <div className="max-w-3xl text-white">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">About Krismore College</h1>

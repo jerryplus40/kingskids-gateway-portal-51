@@ -227,12 +227,41 @@ const Header = () => {
                         <span>info@kingskidschools.com</span>
                       </div>
                     </div>
-                    <div className="mt-4 space-y-2">
+                    <div className="mt-4 space-y-3">
+                      {/* Mobile Login Dropdown */}
+                      <div className="space-y-2">
+                        <p className="text-sm font-medium text-muted-foreground">Login Options</p>
+                        <div className="grid grid-cols-2 gap-2">
+                          <Button size="sm" variant="outline" asChild className="text-xs">
+                            <a href="https://kkcm.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                              Montessori Students
+                            </a>
+                          </Button>
+                          <Button size="sm" variant="outline" asChild className="text-xs">
+                            <a href="https://kkcihs.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                              High School Students
+                            </a>
+                          </Button>
+                        </div>
+                        <div className="grid grid-cols-2 gap-2">
+                          <Button size="sm" variant="outline" asChild className="text-xs">
+                            <a href="https://kkcm.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                              Montessori Teachers
+                            </a>
+                          </Button>
+                          <Button size="sm" variant="outline" asChild className="text-xs">
+                            <a href="https://kkcihs.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                              High School Teachers
+                            </a>
+                          </Button>
+                        </div>
+                      </div>
+                      
+                      {/* Mobile Portal Button */}
                       <Button size="sm" asChild className="w-full">
-                        <Link to="/login" onClick={() => setMobileMenuOpen(false)}>Student Login</Link>
-                      </Button>
-                      <Button size="sm" variant="outline" asChild className="w-full">
-                        <Link to="#apply" onClick={() => setMobileMenuOpen(false)}>Online Applications</Link>
+                        <a href="https://portal.kingskidschools.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                          Portal →
+                        </a>
                       </Button>
                     </div>
                   </div>

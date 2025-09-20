@@ -65,10 +65,10 @@ const Index = () => {
                     </DropdownMenuSubTrigger>
                     <DropdownMenuSubContent>
                       <DropdownMenuItem asChild>
-                        <Link to="/montessori">Montessori</Link>
+                        <a href="https://kkcm.priscor.com/" target="_blank" rel="noopener noreferrer">Montessori</a>
                       </DropdownMenuItem>
                       <DropdownMenuItem asChild>
-                        <Link to="/highschool">High School</Link>
+                        <a href="https://kkcihs.priscor.com/" target="_blank" rel="noopener noreferrer">High School</a>
                       </DropdownMenuItem>
                     </DropdownMenuSubContent>
                   </DropdownMenuSub>
@@ -78,10 +78,10 @@ const Index = () => {
                     </DropdownMenuSubTrigger>
                     <DropdownMenuSubContent>
                       <DropdownMenuItem asChild>
-                        <Link to="/login?role=teacher&school=montessori">Montessori</Link>
+                        <a href="https://kkcm.priscor.com/" target="_blank" rel="noopener noreferrer">Montessori</a>
                       </DropdownMenuItem>
                       <DropdownMenuItem asChild>
-                        <Link to="/login?role=teacher&school=highschool">High School</Link>
+                        <a href="https://kkcihs.priscor.com/" target="_blank" rel="noopener noreferrer">High School</a>
                       </DropdownMenuItem>
                     </DropdownMenuSubContent>
                   </DropdownMenuSub>

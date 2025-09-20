@@ -468,12 +468,10 @@ const Index = () => {
               </Badge>
               <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground leading-tight">
                 Excellence in Education
-                <span className="text-primary block">Since 2012</span>
+                <span className="text-primary block">Since 2014</span>
               </h3>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                For nearly three decades, King's Kids Schools has been at the forefront of educational excellence, 
-                nurturing young minds and shaping future leaders. Our comprehensive approach combines academic rigor 
-                with character development, ensuring every student reaches their full potential.
+                Established in February 2014. King's Kids Christian Schools offers a specialised education built upon Christian principles and the drive for excellence.
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center p-6 bg-card rounded-2xl shadow-card">
@@ -507,7 +505,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground">
               Excellence in Education
-              <span className="text-primary block">Since 1995</span>
+              <span className="text-primary block">Since 2014</span>
             </h3>
           </div>
           
@@ -1152,7 +1150,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-display font-bold">KING'S KIDS SCHOOLS</h3>
-                  <p className="text-background/70 text-sm tracking-widest">EXCELLENCE SINCE 1995</p>
+                  <p className="text-background/70 text-sm tracking-widest">EXCELLENCE SINCE 2014</p>
                 </div>
               </div>
               <p className="text-background/80 mb-6 leading-relaxed">

@@ -19,9 +19,9 @@ const About = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/70 to-secondary/80" />
         <div className="container mx-auto px-4 relative z-10 h-full flex items-center">
           <div className="max-w-3xl text-white">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">About Krismore College</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">King's Kids Christian Schools</h1>
             <p className="text-xl md:text-2xl opacity-90">
-              Excellence in education since our founding. Shaping minds, building futures, and creating leaders for tomorrow.
+              No Substitute
             </p>
           </div>
         </div>
@@ -35,7 +35,13 @@ const About = () => {
             <Badge variant="outline" className="mb-4">Our Heritage</Badge>
             <h2 className="text-4xl font-bold mb-6">Our Rich History</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Founded with a vision to provide world-class education, Krismore College has been at the forefront of educational excellence.
+              King’s Kids Christian Schools was established in February 13, 2014 with the Corporate Affairs Commission with the registration number RC 110796
+
+King’s Kids Christian Schools is as an offshoot of Child and Youth Foundation (CYF), a non- denominational, Bible-centered (Faith- Based Non-Governmental Organization) with the main aim of evangelizing and discipling children and youths into the kingdom of God to know the Lord Jesus, so that they can grow up to be good citizens. 
+
+The objectives of the organization include; to evangelize and disciple children and youth; to establish Good News Bible Clubs in the neighborhood of children and youth; to organize periodic seminars and trainings for teachers of children and youth; to organize annual camp conferences for children and youth; and to establish schools and hospitals in their communities of operation.
+
+The educational arm of CYF, under the umbrella of King's Kids Christian Schools, has embarked on solving specific problems that have for long bedeviled our education sector. It has the Christian Montessori Education to provide the needed environment for the proper education of the child, a specialized Day High School to solve the problem of juvenile delinquency and related issues, and a Basic Studies Programme to build up or strengthen academic and Christian foundation of the youth for a successful higher education and life. We also run an entrepreneurial programme for the development of skills for youth who may deem it necessary..
             </p>
           </div>
 

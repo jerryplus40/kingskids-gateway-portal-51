@@ -584,11 +584,11 @@ const Index = () => {
                   <img src={montessoriLogo} alt="Montessori Logo" className="h-full w-full object-contain p-1" />
                 </div>
                 <CardTitle className="text-school-blue text-lg md:text-xl font-bold">King's Kids Montessori</CardTitle>
-                <CardDescription className="text-base md:text-lg">Ages 2-6 years • Foundation Learning</CardDescription>
+                <CardDescription className="text-base md:text-lg">Foundation Learning</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
                 <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
-                  Nurturing creativity and independence through the proven Montessori method with hands-on learning experiences.
+                  Preschool: Creche, Foundation 1 & 2, Reception. Grade 1 - 5.
                 </p>
                 <Button className="w-full bg-school-blue hover:bg-school-blue/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                   <Link to="/montessori">
@@ -605,11 +605,11 @@ const Index = () => {
                   <img src={highSchoolLogo} alt="High School Logo" className="h-full w-full object-contain p-1" />
                 </div>
                 <CardTitle className="text-school-orange text-lg md:text-xl font-bold">King's Kids High School</CardTitle>
-                <CardDescription className="text-base md:text-lg">JSS 1 - SS 3 • Secondary Education</CardDescription>
+                <CardDescription className="text-base md:text-lg">Secondary Education</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
                 <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
-                  Comprehensive secondary education preparing students for higher education and future success.
+                  Preparing students for Junior Cambridge 1-3 and Senior Cambridge 1-3, including WAEC and NECO.
                 </p>
                 <Button className="w-full bg-school-orange hover:bg-school-orange/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                   <Link to="/highschool">
@@ -626,11 +626,11 @@ const Index = () => {
                   <BookOpen className="h-10 w-10 text-school-green" />
                 </div>
                 <CardTitle className="text-school-green text-xl font-bold">King's Kids Basic Studies</CardTitle>
-                <CardDescription className="text-lg">Degree Foundation and Cambridge A-Level Programmes</CardDescription>
+                <CardDescription className="text-lg">Primary 1-6 • Foundation Education</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
                 <p className="mb-6 text-muted-foreground leading-relaxed">
-                  Preparing Students for Degree foundation and Cambridge A-level Programmes, including SAT, TOFEL and IELTS examinations.
+                  Strong academic foundation with emphasis on literacy, numeracy and character development.
                 </p>
                 <Button className="w-full bg-school-green hover:bg-school-green/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                   <Link to="/basicstudies">

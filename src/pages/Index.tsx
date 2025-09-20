@@ -503,10 +503,9 @@ const Index = () => {
       <section className="py-20 px-4 bg-gray-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground">
-              Excellence in Education
-              <span className="text-primary block">Since 1995</span>
-            </h3>
+              <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground">
+                Our Commitment to Excellence
+              </h3>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -1150,7 +1149,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-display font-bold">KING'S KIDS SCHOOLS</h3>
-                  <p className="text-background/70 text-sm tracking-widest">EXCELLENCE SINCE 1995</p>
+                  <p className="text-background/70 text-sm tracking-widest">PREMIER EDUCATION</p>
                 </div>
               </div>
               <p className="text-background/80 mb-6 leading-relaxed">

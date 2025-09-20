@@ -20,6 +20,12 @@ import Library from "./pages/Library";
 import MusicStudio from "./pages/MusicStudio";
 import ScienceLab from "./pages/ScienceLab";
 import Hostel from "./pages/Hostel";
+import PESports from "./pages/PESports";
+import HowToApply from "./pages/HowToApply";
+import SchoolFees from "./pages/SchoolFees";
+import EntranceExamsDate from "./pages/EntranceExamsDate";
+import ArrangeAVisit from "./pages/ArrangeAVisit";
+import FAQs from "./pages/FAQs";
 
 const queryClient = new QueryClient();
 
@@ -49,6 +55,12 @@ const App = () => {
               <Route path="/music-studio" element={<MusicStudio />} />
               <Route path="/science-lab" element={<ScienceLab />} />
               <Route path="/hostel" element={<Hostel />} />
+              <Route path="/pe-sports" element={<PESports />} />
+              <Route path="/how-to-apply" element={<HowToApply />} />
+              <Route path="/school-fees" element={<SchoolFees />} />
+              <Route path="/entrance-exams-date" element={<EntranceExamsDate />} />
+              <Route path="/arrange-a-visit" element={<ArrangeAVisit />} />
+              <Route path="/faqs" element={<FAQs />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

@@ -154,7 +154,7 @@ const Navigation = () => {
             <div className="w-64 p-2">
               <NavigationMenuLink asChild>
                 <Link
-                  to="#"
+                  to="/how-to-apply"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">How to apply</div>
@@ -162,7 +162,7 @@ const Navigation = () => {
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
-                  to="#"
+                  to="/school-fees"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Schools fees</div>
@@ -170,7 +170,7 @@ const Navigation = () => {
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
-                  to="#"
+                  to="/entrance-exams-date"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Entrance Exam dates</div>
@@ -178,7 +178,7 @@ const Navigation = () => {
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
-                  to="#"
+                  to="/arrange-a-visit"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Arrange a visit</div>
@@ -186,7 +186,7 @@ const Navigation = () => {
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
-                  to="#"
+                  to="/faqs"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">FAQs</div>

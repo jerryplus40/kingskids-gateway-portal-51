@@ -26,6 +26,9 @@ import SchoolFees from "./pages/SchoolFees";
 import EntranceExamsDate from "./pages/EntranceExamsDate";
 import ArrangeAVisit from "./pages/ArrangeAVisit";
 import FAQs from "./pages/FAQs";
+import Gallery from "./pages/Gallery";
+import News from "./pages/News";
+import Events from "./pages/Events";
 
 const queryClient = new QueryClient();
 
@@ -61,6 +64,9 @@ const App = () => {
               <Route path="/entrance-exams-date" element={<EntranceExamsDate />} />
               <Route path="/arrange-a-visit" element={<ArrangeAVisit />} />
               <Route path="/faqs" element={<FAQs />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/news" element={<News />} />
+              <Route path="/events" element={<Events />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

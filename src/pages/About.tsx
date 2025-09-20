@@ -2,10 +2,13 @@ import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Users, GraduationCap, BookOpen, Award, Building } from 'lucide-react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const About = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
+      <Header />
       {/* Hero Section */}
       <section 
         className="relative h-[60vh] overflow-hidden bg-cover bg-center bg-no-repeat"
@@ -306,6 +309,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

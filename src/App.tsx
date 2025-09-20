@@ -15,10 +15,6 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Careers from "./pages/Careers";
 import Alumni from "./pages/Alumni";
-import Facilities from "./pages/Facilities";
-import Admission from "./pages/Admission";
-import OurSchool from "./pages/OurSchool";
-import Media from "./pages/Media";
 
 const queryClient = new QueryClient();
 
@@ -39,10 +35,6 @@ const App = () => {
               <Route path="/about" element={<About />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/alumni" element={<Alumni />} />
-              <Route path="/facilities" element={<Facilities />} />
-              <Route path="/admission" element={<Admission />} />
-              <Route path="/our-school" element={<OurSchool />} />
-              <Route path="/media" element={<Media />} />
               <Route path="/montessori" element={<MontessoriDashboard />} />
               <Route path="/highschool" element={<HighSchoolDashboard />} />
               <Route path="/basicstudies" element={<BasicStudiesDashboard />} />

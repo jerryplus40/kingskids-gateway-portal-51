@@ -227,38 +227,50 @@ const Header = () => {
                         <span>info@kingskidschools.com</span>
                       </div>
                     </div>
+                    
+                    {/* Mobile Login Section */}
                     <div className="mt-4 space-y-3">
-                      {/* Mobile Login Dropdown */}
-                      <div className="space-y-2">
-                        <p className="text-sm font-medium text-muted-foreground">Login Options</p>
-                        <div className="grid grid-cols-2 gap-2">
-                          <Button size="sm" variant="outline" asChild className="text-xs">
-                            <a href="https://kkcm.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
-                              Montessori Students
-                            </a>
-                          </Button>
-                          <Button size="sm" variant="outline" asChild className="text-xs">
-                            <a href="https://kkcihs.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
-                              High School Students
-                            </a>
-                          </Button>
-                        </div>
-                        <div className="grid grid-cols-2 gap-2">
-                          <Button size="sm" variant="outline" asChild className="text-xs">
-                            <a href="https://kkcm.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
-                              Montessori Teachers
-                            </a>
-                          </Button>
-                          <Button size="sm" variant="outline" asChild className="text-xs">
-                            <a href="https://kkcihs.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
-                              High School Teachers
-                            </a>
-                          </Button>
-                        </div>
-                      </div>
+                      <Collapsible>
+                        <CollapsibleTrigger className="flex items-center justify-between w-full px-4 py-3 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">
+                          Login
+                          <ChevronDown className="h-4 w-4 transition-transform data-[state=open]:rotate-180" />
+                        </CollapsibleTrigger>
+                        <CollapsibleContent className="mt-2 space-y-3">
+                          <div className="space-y-2">
+                            <p className="text-xs font-medium text-muted-foreground px-2">Students</p>
+                            <div className="grid grid-cols-1 gap-2">
+                              <Button size="sm" variant="outline" asChild className="text-xs justify-start">
+                                <a href="https://kkcm.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                                  Montessori
+                                </a>
+                              </Button>
+                              <Button size="sm" variant="outline" asChild className="text-xs justify-start">
+                                <a href="https://kkcihs.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                                  High School
+                                </a>
+                              </Button>
+                            </div>
+                          </div>
+                          <div className="space-y-2">
+                            <p className="text-xs font-medium text-muted-foreground px-2">Teachers</p>
+                            <div className="grid grid-cols-1 gap-2">
+                              <Button size="sm" variant="outline" asChild className="text-xs justify-start">
+                                <a href="https://kkcm.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                                  Montessori
+                                </a>
+                              </Button>
+                              <Button size="sm" variant="outline" asChild className="text-xs justify-start">
+                                <a href="https://kkcihs.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                                  High School
+                                </a>
+                              </Button>
+                            </div>
+                          </div>
+                        </CollapsibleContent>
+                      </Collapsible>
                       
                       {/* Mobile Portal Button */}
-                      <Button size="sm" asChild className="w-full">
+                      <Button size="sm" asChild className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90">
                         <a href="https://portal.kingskidschools.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
                           Portal →
                         </a>

@@ -12,6 +12,9 @@ import BasicStudiesDashboard from "./pages/BasicStudiesDashboard";
 import FoundationDashboard from "./pages/FoundationDashboard";
 import Login from "./pages/Login";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
+import Careers from "./pages/Careers";
+import Alumni from "./pages/Alumni";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +32,9 @@ const App = () => {
               <Route path="/" element={<Index />} />
               <Route path="/login" element={<Login />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/careers" element={<Careers />} />
+              <Route path="/alumni" element={<Alumni />} />
               <Route path="/montessori" element={<MontessoriDashboard />} />
               <Route path="/highschool" element={<HighSchoolDashboard />} />
               <Route path="/basicstudies" element={<BasicStudiesDashboard />} />

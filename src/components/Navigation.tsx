@@ -30,7 +30,7 @@ const Navigation = () => {
             <div className="w-64 p-2">
               <NavigationMenuLink asChild>
                 <Link
-                  to="#history"
+                  to="/about#history"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Our History</div>
@@ -38,7 +38,7 @@ const Navigation = () => {
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
-                  to="#departments"
+                  to="/about#departments"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Departments/Units</div>
@@ -46,7 +46,7 @@ const Navigation = () => {
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
-                  to="#board"
+                  to="/about#board"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Board of Governors</div>
@@ -54,7 +54,7 @@ const Navigation = () => {
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
-                  to="#management"
+                  to="/about#management"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Management Team</div>
@@ -62,7 +62,7 @@ const Navigation = () => {
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
-                  to="#staff"
+                  to="/about#staff"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Staff Directory</div>
@@ -70,7 +70,7 @@ const Navigation = () => {
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
-                  to="#careers"
+                  to="/careers"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Careers</div>
@@ -78,7 +78,7 @@ const Navigation = () => {
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
-                  to="#alumni"
+                  to="/alumni"
                   className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
                   <div className="text-sm font-medium leading-none">Alumni</div>

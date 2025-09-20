@@ -466,8 +466,14 @@ const Index = () => {
               <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
                 About King's Kids Schools
               </Badge>
+              <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground leading-tight">
+                Excellence in Education
+                <span className="text-primary block">Since 2012</span>
+              </h3>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Established in September 2014, King's Kids Christian Schools offers a specialised education built upon Christian principles and the drive for excellence.
+                For nearly three decades, King's Kids Schools has been at the forefront of educational excellence, 
+                nurturing young minds and shaping future leaders. Our comprehensive approach combines academic rigor 
+                with character development, ensuring every student reaches their full potential.
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center p-6 bg-card rounded-2xl shadow-card">

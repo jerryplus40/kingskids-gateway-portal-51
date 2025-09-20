@@ -139,22 +139,37 @@ const Index = () => {
                       </CollapsibleContent>
                     </Collapsible>
                     
-                    <Link 
-                      to="#schools" 
-                      className="flex items-center px-4 py-2 text-sm font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      Facilities
-                    </Link>
+                    {/* Facilities Submenu - Collapsible */}
+                    <Collapsible>
+                      <CollapsibleTrigger className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
+                        Facilities
+                        <ChevronDown className="h-4 w-4 transition-transform data-[state=open]:rotate-180" />
+                      </CollapsibleTrigger>
+                      <CollapsibleContent className="ml-4 space-y-1 pb-2">
+                        <Link to="#classrooms" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Classrooms</Link>
+                        <Link to="/pe-sports" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>P.E Sports</Link>
+                        <Link to="#library" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Library</Link>
+                        <Link to="#music-studio" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Music Studio</Link>
+                        <Link to="#science-lab" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Science Lab</Link>
+                        <Link to="#hostel" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Hostel</Link>
+                      </CollapsibleContent>
+                    </Collapsible>
                     
-                    <Link 
-                      to="#admission" 
-                      className="flex items-center px-4 py-2 text-sm font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      Admission
-                    </Link>
-                    
+                    {/* Admission Submenu - Collapsible */}
+                    <Collapsible>
+                      <CollapsibleTrigger className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
+                        Admission
+                        <ChevronDown className="h-4 w-4 transition-transform data-[state=open]:rotate-180" />
+                      </CollapsibleTrigger>
+                      <CollapsibleContent className="ml-4 space-y-1 pb-2">
+                        <Link to="#how-to-apply" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>How to apply</Link>
+                        <Link to="#school-fees" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Schools fees</Link>
+                        <Link to="#entrance-exam" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Entrance Exam dates</Link>
+                        <Link to="#arrange-visit" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Arrange a visit</Link>
+                        <Link to="#faqs" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>FAQs</Link>
+                      </CollapsibleContent>
+                    </Collapsible>
+
                     {/* Our Schools Submenu - Collapsible */}
                     <Collapsible>
                       <CollapsibleTrigger className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
@@ -168,8 +183,21 @@ const Index = () => {
                       </CollapsibleContent>
                     </Collapsible>
                     
+                    {/* Media Submenu - Collapsible */}
+                    <Collapsible>
+                      <CollapsibleTrigger className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors">
+                        Media
+                        <ChevronDown className="h-4 w-4 transition-transform data-[state=open]:rotate-180" />
+                      </CollapsibleTrigger>
+                      <CollapsibleContent className="ml-4 space-y-1 pb-2">
+                        <Link to="#gallery" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Gallery</Link>
+                        <Link to="#news" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>News</Link>
+                        <Link to="#events" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Events</Link>
+                      </CollapsibleContent>
+                    </Collapsible>
+                    
                     <Link 
-                      to="#contact" 
+                      to="/contact" 
                       className="flex items-center px-4 py-2 text-sm font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
                       onClick={() => setMobileMenuOpen(false)}
                     >

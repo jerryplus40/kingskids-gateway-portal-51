@@ -490,13 +490,13 @@ const Index = () => {
               <div className="absolute -top-1 -right-3 w-2 h-2 bg-primary rounded-full animate-pulse opacity-80" style={{ animationDelay: '0.5s' }} />
               <div className="absolute -bottom-2 -left-1 w-2 h-2 bg-accent rounded-full animate-pulse opacity-70" style={{ animationDelay: '1s' }} />
               
-              <div className="aspect-square bg-gradient-to-br from-school-gold/30 via-primary/20 to-accent/30 rounded-3xl p-6 transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl">
+              <div className="aspect-square bg-gradient-to-br from-school-gold/30 via-primary/20 to-accent/30 rounded-3xl p-3 md:p-6 transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl">
                 <div className="w-full h-full bg-card/95 backdrop-blur-sm rounded-2xl shadow-elegant overflow-hidden relative flex flex-col">
                   {/* Background pattern */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
                   
                   {/* Award ceremony image - taking up most of the space */}
-                  <div className="relative flex-1 overflow-hidden rounded-t-2xl">
+                  <div className="relative flex-1 min-h-0 overflow-hidden rounded-t-2xl">
                     <img 
                       src="/lovable-uploads/excellence-award-ceremony.jpg" 
                       alt="Excellence Award Ceremony - Students receiving recognition" 
@@ -505,27 +505,27 @@ const Index = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-transparent to-transparent" />
                     
                     {/* Floating award icon */}
-                    <div className="absolute top-2 right-2 bg-school-gold/90 backdrop-blur-sm rounded-full p-2 shadow-lg">
-                      <Award className="w-4 h-4 text-white animate-pulse" />
+                    <div className="absolute top-2 right-2 bg-school-gold/90 backdrop-blur-sm rounded-full p-1.5 md:p-2 shadow-lg">
+                      <Award className="w-3 h-3 md:w-4 md:h-4 text-white animate-pulse" />
                     </div>
                   </div>
                   
                   {/* Content section - moved to bottom */}
-                  <div className="p-3 text-center relative bg-card/95 backdrop-blur-sm">
-                    <h4 className="text-lg font-bold text-foreground mb-1 flex items-center justify-center gap-2">
-                      <span className="animate-bounce">🏆</span>
-                      Excellence Award
-                      <span className="animate-bounce" style={{ animationDelay: '0.2s' }}>✨</span>
+                  <div className="p-2 md:p-3 text-center relative bg-card/95 backdrop-blur-sm flex-shrink-0">
+                    <h4 className="text-sm md:text-lg font-bold text-foreground mb-1 flex items-center justify-center gap-1 md:gap-2">
+                      <span className="animate-bounce text-xs md:text-base">🏆</span>
+                      <span className="text-xs md:text-lg">Excellence Award</span>
+                      <span className="animate-bounce text-xs md:text-base" style={{ animationDelay: '0.2s' }}>✨</span>
                     </h4>
                     <p className="text-xs text-muted-foreground leading-relaxed">
                       Outstanding Educational Achievement
                     </p>
                     
                     {/* Decorative elements */}
-                    <div className="mt-2 flex justify-center space-x-1">
-                      <div className="w-1.5 h-1.5 bg-school-gold rounded-full animate-pulse" />
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" style={{ animationDelay: '0.3s' }} />
-                      <div className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" style={{ animationDelay: '0.6s' }} />
+                    <div className="mt-1 md:mt-2 flex justify-center space-x-1">
+                      <div className="w-1 h-1 md:w-1.5 md:h-1.5 bg-school-gold rounded-full animate-pulse" />
+                      <div className="w-1 h-1 md:w-1.5 md:h-1.5 bg-primary rounded-full animate-pulse" style={{ animationDelay: '0.3s' }} />
+                      <div className="w-1 h-1 md:w-1.5 md:h-1.5 bg-accent rounded-full animate-pulse" style={{ animationDelay: '0.6s' }} />
                     </div>
                   </div>
                 </div>

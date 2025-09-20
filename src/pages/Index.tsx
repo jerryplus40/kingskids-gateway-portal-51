@@ -491,18 +491,18 @@ const Index = () => {
               <div className="absolute -bottom-2 -left-1 w-2 h-2 bg-accent rounded-full animate-pulse opacity-70" style={{ animationDelay: '1s' }} />
               
               <div className="aspect-square bg-gradient-to-br from-school-gold/30 via-primary/20 to-accent/30 rounded-3xl p-6 transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl">
-                <div className="w-full h-full bg-card/95 backdrop-blur-sm rounded-2xl shadow-elegant overflow-hidden relative">
+                <div className="w-full h-full bg-card/95 backdrop-blur-sm rounded-2xl shadow-elegant overflow-hidden relative flex flex-col">
                   {/* Background pattern */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
                   
-                  {/* Award ceremony image */}
-                  <div className="relative h-32 overflow-hidden rounded-t-2xl">
+                  {/* Award ceremony image - taking up most of the space */}
+                  <div className="relative flex-1 overflow-hidden rounded-t-2xl">
                     <img 
                       src="/lovable-uploads/excellence-award-ceremony.jpg" 
                       alt="Excellence Award Ceremony - Students receiving recognition" 
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-transparent to-transparent" />
                     
                     {/* Floating award icon */}
                     <div className="absolute top-2 right-2 bg-school-gold/90 backdrop-blur-sm rounded-full p-2 shadow-lg">
@@ -510,22 +510,22 @@ const Index = () => {
                     </div>
                   </div>
                   
-                  {/* Content section */}
-                  <div className="p-4 text-center relative">
-                    <h4 className="text-xl font-bold text-foreground mb-2 flex items-center justify-center gap-2">
+                  {/* Content section - moved to bottom */}
+                  <div className="p-3 text-center relative bg-card/95 backdrop-blur-sm">
+                    <h4 className="text-lg font-bold text-foreground mb-1 flex items-center justify-center gap-2">
                       <span className="animate-bounce">🏆</span>
                       Excellence Award
                       <span className="animate-bounce" style={{ animationDelay: '0.2s' }}>✨</span>
                     </h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      Recognized for Outstanding Educational Achievement & Student Excellence
+                    <p className="text-xs text-muted-foreground leading-relaxed">
+                      Outstanding Educational Achievement
                     </p>
                     
                     {/* Decorative elements */}
-                    <div className="mt-3 flex justify-center space-x-1">
-                      <div className="w-2 h-2 bg-school-gold rounded-full animate-pulse" />
-                      <div className="w-2 h-2 bg-primary rounded-full animate-pulse" style={{ animationDelay: '0.3s' }} />
-                      <div className="w-2 h-2 bg-accent rounded-full animate-pulse" style={{ animationDelay: '0.6s' }} />
+                    <div className="mt-2 flex justify-center space-x-1">
+                      <div className="w-1.5 h-1.5 bg-school-gold rounded-full animate-pulse" />
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" style={{ animationDelay: '0.3s' }} />
+                      <div className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" style={{ animationDelay: '0.6s' }} />
                     </div>
                   </div>
                 </div>

@@ -468,10 +468,12 @@ const Index = () => {
               </Badge>
               <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground leading-tight">
                 Excellence in Education
-                <span className="text-primary block">Since 2012</span>
+                <span className="text-primary block">Since 2014</span>
               </h3>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                King's Kids Christian Schools offers a specialised education built upon Christian principles and the drive for excellence.
+                For nearly three decades, King's Kids Schools has been at the forefront of educational excellence, 
+                nurturing young minds and shaping future leaders. Our comprehensive approach combines academic rigor 
+                with character development, ensuring every student reaches their full potential.
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center p-6 bg-card rounded-2xl shadow-card">
@@ -503,9 +505,10 @@ const Index = () => {
       <section className="py-20 px-4 bg-gray-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-              <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground">
-                Our Commitment to Excellence
-              </h3>
+            <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground">
+              Excellence in Education
+              <span className="text-primary block">Since 1995</span>
+            </h3>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -1149,7 +1152,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-display font-bold">KING'S KIDS SCHOOLS</h3>
-                  <p className="text-background/70 text-sm tracking-widest">PREMIER EDUCATION</p>
+                  <p className="text-background/70 text-sm tracking-widest">EXCELLENCE SINCE 1995</p>
                 </div>
               </div>
               <p className="text-background/80 mb-6 leading-relaxed">

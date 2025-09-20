@@ -578,12 +578,12 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Preschool */}
+            {/* Graduation Ceremony */}
             <div className="group relative overflow-hidden rounded-3xl shadow-elegant hover:shadow-xl transition-all duration-700 hover:scale-105">
               <div className="aspect-[4/5] relative">
                 <img 
-                  src="/lovable-uploads/gc5a0117e.jpg" 
-                  alt="Preschool learning environment with young children engaged in educational activities" 
+                  src="/lovable-uploads/graduation-ceremony.jpg" 
+                  alt="Graduation ceremony with students in caps and gowns celebrating academic achievement" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500" />
@@ -595,14 +595,14 @@ const Index = () => {
                 {/* Text content with pop-in effect */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                   <h4 className="text-2xl font-display font-bold mb-3 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 animate-fade-in">
-                    Preschool
+                    Graduation Ceremony
                   </h4>
                   <p className="text-white/90 leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200 animate-fade-in">
-                    Nurturing early childhood development through play-based learning, social interaction, and foundational skills building in a safe, loving environment.
+                    Celebrating academic achievements and milestone moments as our students transition to the next chapter of their educational journey.
                   </p>
                   <div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-300 animate-scale-in">
                     <Badge className="bg-white/20 text-white border-white/30 backdrop-blur-sm">
-                      Ages 2-5
+                      Academic Excellence
                     </Badge>
                   </div>
                 </div>
@@ -613,7 +613,7 @@ const Index = () => {
             <div className="group relative overflow-hidden rounded-3xl shadow-elegant hover:shadow-xl transition-all duration-700 hover:scale-105">
               <div className="aspect-[4/5] relative">
                 <img 
-                  src="/lovable-uploads/gc5a0121er.jpg" 
+                  src="/lovable-uploads/science-practical.jpg" 
                   alt="Students conducting hands-on science experiments in modern laboratory" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -644,7 +644,7 @@ const Index = () => {
             <div className="group relative overflow-hidden rounded-3xl shadow-elegant hover:shadow-xl transition-all duration-700 hover:scale-105">
               <div className="aspect-[4/5] relative">
                 <img 
-                  src="/lovable-uploads/school-building-hero.jpg" 
+                  src="/lovable-uploads/ict-practical.jpg" 
                   alt="Students learning information and communication technology in modern computer lab" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />

@@ -660,14 +660,14 @@ const Index = () => {
       </section>
 
       {/* Schools Section */}
-      <section id="schools" className="py-12 md:py-20 px-4">
-        <div className="container mx-auto">
-          <div className="text-center mb-12 md:mb-16">
-            <Badge className="mb-6 bg-accent/10 text-accent border-accent/20">
+      <section id="schools" className="py-12 md:py-20 px-2 sm:px-4">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12 md:mb-16 px-2">
+            <Badge className="mb-4 sm:mb-6 bg-accent/10 text-accent border-accent/20">
               Educational Programs
             </Badge>
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground">Our Schools</h3>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4 sm:mb-6 text-foreground leading-tight">Our Schools</h3>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2">
               Choose the perfect educational journey for your child with our comprehensive range of programs
             </p>
           </div>
@@ -737,52 +737,51 @@ const Index = () => {
             </Card>
           </div>
 
-          {/* Foundation Card */}
-          <Card className="relative overflow-hidden bg-gradient-to-br from-accent/15 via-primary/10 to-school-gold/5 border-accent/30 shadow-elegant backdrop-blur-sm">
-            <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent animate-shimmer" />
-            <CardHeader className="relative z-10">
-              <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
-                <div className="w-20 h-20 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center animate-pulse-glow">
-                  <Users className="h-10 w-10 text-accent" />
-                </div>
-                <div className="text-center md:text-left">
-                  <CardTitle className="text-accent text-3xl font-bold mb-2">Child and Youth Foundation</CardTitle>
-                  <CardDescription className="text-xl text-muted-foreground">Supporting underprivileged children's education across communities</CardDescription>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent className="relative z-10">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                  <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
-                    Our foundation provides educational opportunities for less privileged children through comprehensive scholarships, 
-                    community outreach programs, and sustainable development initiatives.
-                  </p>
-                  <div className="grid grid-cols-2 gap-4 text-center">
-                    <div>
-                      <div className="text-2xl font-bold text-accent">500+</div>
-                      <div className="text-sm text-muted-foreground">Children Supported</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-primary">15</div>
-                      <div className="text-sm text-muted-foreground">Communities Reached</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col justify-center space-y-6">
-                  <Button size="lg" asChild className="bg-accent hover:bg-accent/90 shadow-glow hover:shadow-elegant transition-all duration-500 hover:scale-105 py-4 text-lg font-semibold">
-                    <Link to="/foundation">
-                      <Heart className="w-5 h-5 mr-2" />
-                      View Foundation
-                    </Link>
-                  </Button>
-                  <Button size="lg" variant="outline" className="border-accent/30 text-accent hover:bg-accent/10 backdrop-blur-sm shadow-card hover:shadow-lg transition-all duration-300 py-4 text-lg">
-                    Learn More About Our Impact
-                  </Button>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+           {/* Foundation Card */}
+           <Card className="relative overflow-hidden bg-gradient-to-br from-accent/15 via-primary/10 to-school-gold/5 border-accent/30 shadow-elegant backdrop-blur-sm mx-2 sm:mx-0">
+             <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent animate-shimmer" />
+             <CardHeader className="relative z-10 px-4 sm:px-6">
+               <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+                 <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center animate-pulse-glow">
+                   <Users className="h-8 w-8 sm:h-10 sm:w-10 text-accent" />
+                 </div>
+                 <div className="text-center md:text-left w-full">
+                   <CardTitle className="text-accent text-2xl sm:text-3xl font-bold mb-2 leading-tight">Child and Youth Foundation</CardTitle>
+                   <CardDescription className="text-lg sm:text-xl text-muted-foreground leading-relaxed">Supporting underprivileged children's education across communities</CardDescription>
+                 </div>
+               </div>
+             </CardHeader>
+             <CardContent className="relative z-10 px-4 sm:px-6">
+               <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+                 <div className="w-full">
+                   <p className="text-muted-foreground mb-6 text-base sm:text-lg leading-relaxed break-words">
+                     Our foundation provides educational opportunities for less privileged children through comprehensive scholarships, community outreach programs, and sustainable development initiatives.
+                   </p>
+                   <div className="grid grid-cols-2 gap-4 text-center">
+                     <div>
+                       <div className="text-xl sm:text-2xl font-bold text-accent">500+</div>
+                       <div className="text-xs sm:text-sm text-muted-foreground">Children Supported</div>
+                     </div>
+                     <div>
+                       <div className="text-xl sm:text-2xl font-bold text-primary">15</div>
+                       <div className="text-xs sm:text-sm text-muted-foreground">Communities Reached</div>
+                     </div>
+                   </div>
+                 </div>
+                 <div className="flex flex-col justify-center space-y-4 sm:space-y-6 w-full">
+                   <Button size="lg" asChild className="bg-accent hover:bg-accent/90 shadow-glow hover:shadow-elegant transition-all duration-500 hover:scale-105 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full">
+                     <Link to="/foundation">
+                       <Heart className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                       View Foundation
+                     </Link>
+                   </Button>
+                   <Button size="lg" variant="outline" className="border-accent/30 text-accent hover:bg-accent/10 backdrop-blur-sm shadow-card hover:shadow-lg transition-all duration-300 py-3 sm:py-4 text-base sm:text-lg w-full">
+                     Learn More About Our Impact
+                   </Button>
+                 </div>
+               </div>
+             </CardContent>
+           </Card>
         </div>
       </section>
 
@@ -1237,73 +1236,80 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-foreground text-background py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-4 gap-12">
+      <footer className="bg-foreground text-background py-12 sm:py-16">
+        <div className="container mx-auto px-2 sm:px-4 max-w-7xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center">
-                  <GraduationCap className="h-6 w-6 text-primary-foreground" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary rounded-2xl flex items-center justify-center">
+                  <GraduationCap className="h-5 w-5 sm:h-6 sm:w-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-display font-bold">KING'S KIDS SCHOOLS</h3>
-                  <p className="text-background/70 text-sm tracking-widest">EXCELLENCE SINCE 2014</p>
+                  <h3 className="text-lg sm:text-xl font-display font-bold leading-tight">KING'S KIDS SCHOOLS</h3>
+                  <p className="text-background/70 text-xs sm:text-sm tracking-widest">EXCELLENCE SINCE 2014</p>
                 </div>
               </div>
-              <p className="text-background/80 mb-6 leading-relaxed">
+              <p className="text-background/80 mb-6 leading-relaxed text-sm sm:text-base">
                 Empowering young minds for tomorrow's leadership through comprehensive education 
                 programs from Montessori to High School, supported by our Youth Foundation.
               </p>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="icon" className="text-background hover:bg-background/10">
-                  <Phone className="h-5 w-5" />
+                  <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
                 <Button variant="ghost" size="icon" className="text-background hover:bg-background/10">
-                  <Mail className="h-5 w-5" />
+                  <Mail className="h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
                 <Button variant="ghost" size="icon" className="text-background hover:bg-background/10">
-                  <MapPin className="h-5 w-5" />
+                  <MapPin className="h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
               </div>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-6 text-lg">Quick Links</h4>
+              <h4 className="font-semibold mb-6 text-base sm:text-lg">Quick Links</h4>
               <ul className="space-y-3">
-                <li><Link to="#about" className="text-background/80 hover:text-background transition-colors">About Us</Link></li>
-                <li><Link to="#schools" className="text-background/80 hover:text-background transition-colors">Our Schools</Link></li>
-                <li><Link to="#admission" className="text-background/80 hover:text-background transition-colors">Admissions</Link></li>
-                <li><Link to="#services" className="text-background/80 hover:text-background transition-colors">Services</Link></li>
-                <li><Link to="/foundation" className="text-background/80 hover:text-background transition-colors">Foundation</Link></li>
+                <li><Link to="#about" className="text-background/80 hover:text-background transition-colors text-sm sm:text-base">About Us</Link></li>
+                <li><Link to="#schools" className="text-background/80 hover:text-background transition-colors text-sm sm:text-base">Our Schools</Link></li>
+                <li><Link to="#admission" className="text-background/80 hover:text-background transition-colors text-sm sm:text-base">Admissions</Link></li>
+                <li><Link to="#services" className="text-background/80 hover:text-background transition-colors text-sm sm:text-base">Services</Link></li>
+                <li><Link to="/foundation" className="text-background/80 hover:text-background transition-colors text-sm sm:text-base">Foundation</Link></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-6 text-lg">Contact Info</h4>
+              <h4 className="font-semibold mb-6 text-base sm:text-lg">Contact Info</h4>
               <ul className="space-y-4">
-                <li className="flex items-center space-x-3">
-                  <Phone className="h-4 w-4 text-primary" />
-                  <span className="text-background/80 text-sm">+2348058403852</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <Mail className="h-4 w-4 text-primary" />
-                  <span className="text-background/80 text-sm">info@kingskidschools.com</span>
+                <li className="flex items-start space-x-3">
+                  <Phone className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                  <div className="text-background/80 text-sm sm:text-base break-words">
+                    <div>+2348058403852</div>
+                    <div className="mt-1">+2347038962803</div>
+                  </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <MapPin className="h-4 w-4 text-primary mt-0.5" />
-                  <span className="text-background/80 text-sm">
-                    <strong>MONTESSORI:</strong><br/>
-                    Plot 185, Line F, Ewet Housing Estate, Uyo, Akwa Ibom State<br/>
-                    <strong>HIGH SCHOOL:</strong><br/>
-                    Plot 14, Line J, Sam Edem Street, Ewet Housing Estate, Uyo, Akwa Ibom State
-                  </span>
+                  <Mail className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-background/80 text-sm sm:text-base break-all">info@kingskidschools.com</span>
+                </li>
+                <li className="flex items-start space-x-3">
+                  <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                  <div className="text-background/80 text-sm sm:text-base leading-relaxed">
+                    <div className="mb-3">
+                      <strong>MONTESSORI:</strong><br/>
+                      Plot 185, Line F, Ewet Housing Estate, Uyo, Akwa Ibom State
+                    </div>
+                    <div>
+                      <strong>HIGH SCHOOL:</strong><br/>
+                      Plot 14, Line J, Sam Edem Street, Ewet Housing Estate, Uyo, Akwa Ibom State
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="border-t border-background/20 mt-12 pt-8 text-center">
-            <p className="text-background/60 text-sm">
+          <div className="border-t border-background/20 mt-8 sm:mt-12 pt-6 sm:pt-8 text-center">
+            <p className="text-background/60 text-xs sm:text-sm px-2 leading-relaxed">
               © 2024 King's Kids Schools. All rights reserved. | Privacy Policy | Terms of Service
             </p>
           </div>

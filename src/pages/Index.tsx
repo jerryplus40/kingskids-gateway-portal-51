@@ -593,18 +593,13 @@ const Index = () => {
                 <div className="absolute bottom-20 left-4 w-6 h-6 bg-school-gold/40 rounded-lg animate-pulse opacity-0 group-hover:opacity-100 transition-all duration-500 delay-300" />
                 
                 {/* Text content with quick crawl-in effect */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-out">
-                  <h4 className="text-2xl font-display font-bold mb-3 opacity-0 group-hover:opacity-100 transition-all duration-200 delay-50">
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-out bg-gradient-to-t from-black/80 to-transparent">
+                  <h4 className="text-lg font-display font-bold mb-1 opacity-0 group-hover:opacity-100 transition-all duration-200 delay-50 leading-tight">
                     Graduation Ceremony
                   </h4>
-                  <p className="text-white/90 leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-200 delay-100">
-                    Celebrating academic achievements and milestone moments as our students transition to the next chapter of their educational journey.
+                  <p className="text-white/90 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-all duration-200 delay-100">
+                    Celebrating academic achievements and milestone moments in our students' journey.
                   </p>
-                  <div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-200 delay-150">
-                    <Badge className="bg-white/20 text-white border-white/30 backdrop-blur-sm">
-                      Academic Excellence
-                    </Badge>
-                  </div>
                 </div>
               </div>
             </div>
@@ -624,18 +619,13 @@ const Index = () => {
                 <div className="absolute bottom-24 right-6 w-4 h-4 bg-accent/50 rounded-full animate-bounce opacity-0 group-hover:opacity-100 transition-all duration-500 delay-400" />
                 
                 {/* Text content with quick crawl-in effect */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-out">
-                  <h4 className="text-2xl font-display font-bold mb-3 opacity-0 group-hover:opacity-100 transition-all duration-200 delay-50">
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-out bg-gradient-to-t from-black/80 to-transparent">
+                  <h4 className="text-lg font-display font-bold mb-1 opacity-0 group-hover:opacity-100 transition-all duration-200 delay-50 leading-tight">
                     Science Practical
                   </h4>
-                  <p className="text-white/90 leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-200 delay-100">
-                    State-of-the-art laboratory facilities where students explore scientific concepts through hands-on experiments and research-based learning.
+                  <p className="text-white/90 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-all duration-200 delay-100">
+                    Hands-on experiments and laboratory experiences that bring science to life.
                   </p>
-                  <div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-200 delay-150">
-                    <Badge className="bg-white/20 text-white border-white/30 backdrop-blur-sm">
-                      All Levels
-                    </Badge>
-                  </div>
                 </div>
               </div>
             </div>
@@ -655,18 +645,13 @@ const Index = () => {
                 <div className="absolute bottom-28 left-8 w-8 h-8 bg-school-gold/30 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-all duration-500 delay-350" />
                 
                 {/* Text content with quick crawl-in effect */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-out">
-                  <h4 className="text-2xl font-display font-bold mb-3 opacity-0 group-hover:opacity-100 transition-all duration-200 delay-50">
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-out bg-gradient-to-t from-black/80 to-transparent">
+                  <h4 className="text-lg font-display font-bold mb-1 opacity-0 group-hover:opacity-100 transition-all duration-200 delay-50 leading-tight">
                     ICT Practical
                   </h4>
-                  <p className="text-white/90 leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-200 delay-100">
-                    Modern computer labs equipped with latest technology to develop digital literacy, coding skills, and prepare students for the digital future.
+                  <p className="text-white/90 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-all duration-200 delay-100">
+                    Modern technology integration preparing students for the digital future.
                   </p>
-                  <div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-200 delay-150">
-                    <Badge className="bg-white/20 text-white border-white/30 backdrop-blur-sm">
-                      Primary-Secondary
-                    </Badge>
-                  </div>
                 </div>
               </div>
             </div>

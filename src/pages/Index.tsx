@@ -88,7 +88,7 @@ const Index = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
               <Button size="sm" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-                <Link to="#apply">Portal →</Link>
+                <Link to="https://portal.kingskidschools.com/">Portal →</Link>
               </Button>
             </div>
           </div>

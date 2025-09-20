@@ -10,7 +10,7 @@ const About = () => {
       <section 
         className="relative h-[60vh] overflow-hidden bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/src/assets/school-students-bg.jpg')`
+          backgroundImage: `url('/lovable-uploads/school-building-hero.jpg')`
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/70 to-secondary/80" />

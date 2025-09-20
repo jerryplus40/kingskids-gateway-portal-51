@@ -471,9 +471,9 @@ const Index = () => {
                 <span className="text-primary block">Since 2012</span>
               </h3>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                For nearly three decades, King's Kids Schools has been at the forefront of educational excellence, 
-                nurturing young minds and shaping future leaders. Our comprehensive approach combines academic rigor 
-                with character development, ensuring every student reaches their full potential.
+                King's Kids Christian Schools  
+offers a specialised education built upon Christian principles and 
+the drive for excellence.
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center p-6 bg-card rounded-2xl shadow-card">

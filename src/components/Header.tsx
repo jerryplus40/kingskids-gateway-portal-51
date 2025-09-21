@@ -187,9 +187,10 @@ const Header = () => {
                         <ChevronDown className="h-4 w-4 transition-transform data-[state=open]:rotate-180" />
                       </CollapsibleTrigger>
                       <CollapsibleContent className="ml-4 space-y-1 pb-2">
-                        <Link to="/montessori" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Montessori</Link>
-                        <Link to="/highschool" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>High School</Link>
-                        <Link to="/basicstudies" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>School of Basic Studies</Link>
+                        <Link to="/montessori-dashboard" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Montessori</Link>
+                        <Link to="/high-school-dashboard" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>High School</Link>
+                        <Link to="/basic-studies-dashboard" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>School of Basic Studies</Link>
+                        <Link to="/foundation-dashboard" className="block text-sm py-1 px-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Foundation</Link>
                       </CollapsibleContent>
                     </Collapsible>
                     

@@ -235,39 +235,28 @@ const Index = () => {
                     </Link>
                   </div>
                   
-                  {/* Mobile Contact Info */}
+                  {/* Mobile Login & Portal Section */}
                   <div className="pt-4 border-t">
-                    <div className="space-y-3">
-                      <div className="flex items-center space-x-2 text-sm">
-                        <Phone className="h-4 w-4 text-primary" />
-                        <span>+2348058403852</span>
-                      </div>
-                      <div className="flex items-center space-x-2 text-sm">
-                        <Mail className="h-4 w-4 text-primary" />
-                        <span>info@kingskidschools.com</span>
-                      </div>
-                    </div>
-                    
                     {/* Login Section */}
-                    <div className="mt-6 space-y-3">
+                    <div className="space-y-4">
                       <div>
-                        <h3 className="text-sm font-semibold text-foreground mb-2 flex items-center">
+                        <h3 className="text-sm font-semibold text-foreground mb-3 flex items-center">
                           <span className="mr-2">🔐</span>
                           Login
                         </h3>
                         <div className="space-y-2">
                           <Collapsible>
-                            <CollapsibleTrigger className="flex items-center justify-between w-full px-3 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors">
+                            <CollapsibleTrigger className="flex items-center justify-between w-full px-3 py-2.5 text-sm font-medium bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors">
                               Students
                               <ChevronDown className="h-4 w-4 transition-transform data-[state=open]:rotate-180" />
                             </CollapsibleTrigger>
                             <CollapsibleContent className="mt-2 space-y-1">
-                              <Button size="sm" variant="outline" asChild className="w-full justify-start">
+                              <Button size="sm" variant="outline" asChild className="w-full justify-start text-left">
                                 <a href="https://kkcm.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
                                   Montessori
                                 </a>
                               </Button>
-                              <Button size="sm" variant="outline" asChild className="w-full justify-start">
+                              <Button size="sm" variant="outline" asChild className="w-full justify-start text-left">
                                 <a href="https://kkcihs.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
                                   High School
                                 </a>
@@ -276,17 +265,17 @@ const Index = () => {
                           </Collapsible>
                           
                           <Collapsible>
-                            <CollapsibleTrigger className="flex items-center justify-between w-full px-3 py-2 text-sm font-medium bg-secondary text-secondary-foreground rounded-md hover:bg-secondary/90 transition-colors">
+                            <CollapsibleTrigger className="flex items-center justify-between w-full px-3 py-2.5 text-sm font-medium bg-secondary text-secondary-foreground rounded-md hover:bg-secondary/90 transition-colors">
                               Teachers
                               <ChevronDown className="h-4 w-4 transition-transform data-[state=open]:rotate-180" />
                             </CollapsibleTrigger>
                             <CollapsibleContent className="mt-2 space-y-1">
-                              <Button size="sm" variant="outline" asChild className="w-full justify-start">
+                              <Button size="sm" variant="outline" asChild className="w-full justify-start text-left">
                                 <a href="https://kkcm.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
                                   Montessori
                                 </a>
                               </Button>
-                              <Button size="sm" variant="outline" asChild className="w-full justify-start">
+                              <Button size="sm" variant="outline" asChild className="w-full justify-start text-left">
                                 <a href="https://kkcihs.priscor.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
                                   High School
                                 </a>
@@ -298,13 +287,13 @@ const Index = () => {
                       
                       {/* Portal Section */}
                       <div>
-                        <h3 className="text-sm font-semibold text-foreground mb-2 flex items-center">
+                        <h3 className="text-sm font-semibold text-foreground mb-3 flex items-center">
                           <span className="mr-2">🌐</span>
                           Portal
                         </h3>
-                        <Button size="sm" asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                        <Button size="sm" asChild className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-medium">
                           <a href="https://portal.kingskidschools.com/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
-                            Access Portal →
+                            Portal →
                           </a>
                         </Button>
                       </div>

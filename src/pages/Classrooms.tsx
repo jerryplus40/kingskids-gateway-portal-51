@@ -1,33 +1,23 @@
-import { ArrowLeft, Users, Monitor, BookOpen, Lightbulb } from "lucide-react";
+import { Users, Monitor, BookOpen, Lightbulb } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Classrooms = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-background">
-      {/* Navigation */}
-      <nav className="bg-background/80 backdrop-blur-md border-b sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <Button variant="ghost" asChild>
-              <Link to="/" className="flex items-center gap-2">
-                <ArrowLeft className="h-4 w-4" />
-                Back to Home
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       {/* Hero Section */}
-      <section className="relative py-20 px-4">
+      <section className="relative py-12 md:py-20 px-4">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10" />
         <div className="relative max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6">
             Modern <span className="text-primary">Classrooms</span>
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             State-of-the-art learning environments designed to inspire creativity, 
             collaboration, and academic excellence in every student.
           </p>
@@ -151,11 +141,12 @@ const Classrooms = () => {
               <Link to="/contact">Schedule a Visit</Link>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <Link to="/admission">Learn About Admission</Link>
+              <Link to="/how-to-apply">Learn About Admission</Link>
             </Button>
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

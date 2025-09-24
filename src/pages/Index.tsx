@@ -796,8 +796,12 @@ const Index = () => {
 
             <Card className="group hover:shadow-elegant transition-all duration-500 hover:scale-105 border-0 shadow-card backdrop-blur-sm bg-gradient-card">
               <CardHeader className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-br from-school-green/20 to-school-green/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500">
-                  <BookOpen className="h-10 w-10 text-school-green" />
+                <div className="w-20 h-20 bg-gradient-to-br from-school-green/20 to-school-green/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500 overflow-hidden">
+                  <img 
+                    src="/src/assets/kings-kids-logo.png" 
+                    alt="King's Kids Basic Studies Logo" 
+                    className="w-16 h-16 object-contain"
+                  />
                 </div>
                 <CardTitle className="text-school-green text-xl font-bold">King's Kids Basic Studies</CardTitle>
                 <CardDescription className="text-lg">Primary 1-6 • Foundation Education</CardDescription>

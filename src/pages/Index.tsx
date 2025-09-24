@@ -26,6 +26,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel,
 import Navigation from "@/components/Navigation";
 import montessoriLogo from "@/assets/mont_logo.png";
 import highSchoolLogo from "@/assets/high_school_logo.png";
+import kingsKidsLogo from "@/assets/kings-kids-logo.png";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -798,7 +799,7 @@ const Index = () => {
               <CardHeader className="text-center">
                 <div className="w-20 h-20 bg-gradient-to-br from-school-green/20 to-school-green/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500 overflow-hidden">
                   <img 
-                    src="/src/assets/kings-kids-logo.png" 
+                    src={kingsKidsLogo} 
                     alt="King's Kids Basic Studies Logo" 
                     className="w-16 h-16 object-contain"
                   />

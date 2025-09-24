@@ -17,18 +17,8 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
 
-  const handleAboutNav = (hash: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    setMobileMenuOpen(false);
-    navigate(`/about#${hash}`);
-    setTimeout(() => {
-      const el = document.getElementById(hash);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }, 150);
-  };
   
+
   return (
     <>
       {/* Top Contact Bar */}
@@ -153,23 +143,23 @@ const Header = () => {
                         <ChevronDown className="h-4 w-4 transition-transform data-[state=open]:rotate-180 text-secondary" />
                       </CollapsibleTrigger>
                       <CollapsibleContent className="ml-4 mt-3 space-y-2 pb-3 bg-background/50 backdrop-blur-sm rounded-lg border border-border/30 p-2">
-                        <Link to="/about#history" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={handleAboutNav('history')}>
+                        <Link to="/about#history" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={() => setMobileMenuOpen(false)}>
                           <span className="text-xs mr-3 text-muted-foreground">📚</span>
                           Our History
                         </Link>
-                        <Link to="/about#departments" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={handleAboutNav('departments')}>
+                        <Link to="/about#departments" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={() => setMobileMenuOpen(false)}>
                           <span className="text-xs mr-3 text-muted-foreground">🏛️</span>
                           Departments/Units
                         </Link>
-                        <Link to="/about#board" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={handleAboutNav('board')}>
+                        <Link to="/about#board" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={() => setMobileMenuOpen(false)}>
                           <span className="text-xs mr-3 text-muted-foreground">👥</span>
                           Board of Governors
                         </Link>
-                        <Link to="/about#management" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={handleAboutNav('management')}>
+                        <Link to="/about#management" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={() => setMobileMenuOpen(false)}>
                           <span className="text-xs mr-3 text-muted-foreground">💼</span>
                           Management Team
                         </Link>
-                        <Link to="/about#staff" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={handleAboutNav('staff')}>
+                        <Link to="/about#staff" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={() => setMobileMenuOpen(false)}>
                           <span className="text-xs mr-3 text-muted-foreground">👨‍🏫</span>
                           Staff Directory
                         </Link>

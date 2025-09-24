@@ -132,20 +132,41 @@ const Header = () => {
                       Home
                     </Link>
                     
-                    {/* About Us Submenu - Collapsible */}
+                     {/* About Us Submenu - Collapsible */}
                     <Collapsible>
-                      <CollapsibleTrigger className="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold rounded-xl bg-gradient-to-r from-secondary/10 to-accent/5 text-foreground hover:from-secondary/15 hover:to-accent/10 transition-all duration-200 border border-secondary/10">
+                      <CollapsibleTrigger className="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold rounded-xl bg-gradient-to-r from-secondary/10 to-accent/5 text-foreground hover:from-secondary/15 hover:to-accent/10 transition-all duration-200 border border-secondary/10 shadow-sm">
                         About Us
                         <ChevronDown className="h-4 w-4 transition-transform data-[state=open]:rotate-180 text-secondary" />
                       </CollapsibleTrigger>
-                      <CollapsibleContent className="ml-6 mt-3 space-y-2 pb-3">
-                        <Link to="/about#history" className="block text-sm py-2 px-3 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200" onClick={() => setMobileMenuOpen(false)}>Our History</Link>
-                        <Link to="/about#departments" className="block text-sm py-2 px-3 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200" onClick={() => setMobileMenuOpen(false)}>Departments/Units</Link>
-                        <Link to="/about#board" className="block text-sm py-2 px-3 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200" onClick={() => setMobileMenuOpen(false)}>Board of Governors</Link>
-                        <Link to="/about#management" className="block text-sm py-2 px-3 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200" onClick={() => setMobileMenuOpen(false)}>Management Team</Link>
-                        <Link to="/about#staff" className="block text-sm py-2 px-3 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200" onClick={() => setMobileMenuOpen(false)}>Staff Directory</Link>
-                        <Link to="/careers" className="block text-sm py-2 px-3 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200" onClick={() => setMobileMenuOpen(false)}>Careers</Link>
-                        <Link to="/alumni" className="block text-sm py-2 px-3 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200" onClick={() => setMobileMenuOpen(false)}>Alumni</Link>
+                      <CollapsibleContent className="ml-4 mt-3 space-y-2 pb-3 bg-background/50 backdrop-blur-sm rounded-lg border border-border/30 p-2">
+                        <Link to="/about#history" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={() => setMobileMenuOpen(false)}>
+                          <span className="text-xs mr-3 text-muted-foreground">📚</span>
+                          Our History
+                        </Link>
+                        <Link to="/about#departments" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={() => setMobileMenuOpen(false)}>
+                          <span className="text-xs mr-3 text-muted-foreground">🏛️</span>
+                          Departments/Units
+                        </Link>
+                        <Link to="/about#board" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={() => setMobileMenuOpen(false)}>
+                          <span className="text-xs mr-3 text-muted-foreground">👥</span>
+                          Board of Governors
+                        </Link>
+                        <Link to="/about#management" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={() => setMobileMenuOpen(false)}>
+                          <span className="text-xs mr-3 text-muted-foreground">💼</span>
+                          Management Team
+                        </Link>
+                        <Link to="/about#staff" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={() => setMobileMenuOpen(false)}>
+                          <span className="text-xs mr-3 text-muted-foreground">👨‍🏫</span>
+                          Staff Directory
+                        </Link>
+                        <Link to="/careers" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={() => setMobileMenuOpen(false)}>
+                          <span className="text-xs mr-3 text-muted-foreground">💼</span>
+                          Careers
+                        </Link>
+                        <Link to="/alumni" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={() => setMobileMenuOpen(false)}>
+                          <span className="text-xs mr-3 text-muted-foreground">🎓</span>
+                          Alumni
+                        </Link>
                       </CollapsibleContent>
                     </Collapsible>
                     

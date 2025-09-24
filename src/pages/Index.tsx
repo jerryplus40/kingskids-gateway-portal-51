@@ -822,45 +822,42 @@ const Index = () => {
           </div>
 
            {/* Foundation Card */}
-           <Card className="relative overflow-hidden bg-gradient-to-br from-accent/15 via-primary/10 to-school-gold/5 border-accent/30 shadow-elegant backdrop-blur-sm mx-2 sm:mx-0">
+           <Card className="relative overflow-hidden bg-gradient-to-br from-accent/15 via-primary/10 to-school-gold/5 border-accent/30 shadow-elegant backdrop-blur-sm mx-3 sm:mx-0">
              <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent animate-shimmer" />
-             <CardHeader className="relative z-10 px-4 sm:px-6">
-               <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
-                 <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center animate-pulse-glow">
-                   <Users className="h-8 w-8 sm:h-10 sm:w-10 text-accent" />
+             <CardHeader className="relative z-10 px-4 sm:px-6 pb-4">
+               <div className="flex flex-col items-center space-y-4 text-center">
+                 <div className="w-20 h-20 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center animate-pulse-glow">
+                   <Users className="h-10 w-10 text-accent" />
                  </div>
-                 <div className="text-center md:text-left w-full">
-                   <CardTitle className="text-accent text-2xl sm:text-3xl font-bold mb-2 leading-tight">Child and Youth Foundation</CardTitle>
-                   <CardDescription className="text-lg sm:text-xl text-muted-foreground leading-relaxed">Supporting underprivileged children's education across communities</CardDescription>
+                 <div className="w-full">
+                   <CardTitle className="text-accent text-xl sm:text-2xl md:text-3xl font-bold mb-2 leading-tight">Child and Youth Foundation</CardTitle>
+                   <CardDescription className="text-base sm:text-lg text-muted-foreground leading-relaxed px-2">Supporting underprivileged children's education across communities</CardDescription>
                  </div>
                </div>
              </CardHeader>
-             <CardContent className="relative z-10 px-4 sm:px-6">
-               <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+             <CardContent className="relative z-10 px-4 sm:px-6 pt-2">
+               <div className="space-y-6">
                  <div className="w-full">
-                   <p className="text-muted-foreground mb-6 text-base sm:text-lg leading-relaxed break-words">
+                   <p className="text-muted-foreground mb-6 text-sm sm:text-base leading-relaxed text-center px-2">
                      Our foundation provides educational opportunities for less privileged children through comprehensive scholarships, community outreach programs, and sustainable development initiatives.
                    </p>
-                   <div className="grid grid-cols-2 gap-4 text-center">
-                     <div>
-                       <div className="text-xl sm:text-2xl font-bold text-accent">500+</div>
+                   <div className="grid grid-cols-2 gap-4 mb-6">
+                     <div className="text-center p-3 bg-gradient-to-br from-accent/10 to-accent/5 rounded-lg">
+                       <div className="text-2xl sm:text-3xl font-bold text-accent mb-1">500+</div>
                        <div className="text-xs sm:text-sm text-muted-foreground">Children Supported</div>
                      </div>
-                     <div>
-                       <div className="text-xl sm:text-2xl font-bold text-primary">15</div>
+                     <div className="text-center p-3 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg">
+                       <div className="text-2xl sm:text-3xl font-bold text-primary mb-1">15</div>
                        <div className="text-xs sm:text-sm text-muted-foreground">Communities Reached</div>
                      </div>
                    </div>
                  </div>
-                 <div className="flex flex-col justify-center space-y-4 sm:space-y-6 w-full">
-                   <Button size="lg" asChild className="bg-accent hover:bg-accent/90 shadow-glow hover:shadow-elegant transition-all duration-500 hover:scale-105 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full">
+                 <div className="flex flex-col space-y-3 w-full">
+                   <Button size="lg" asChild className="bg-accent hover:bg-accent/90 shadow-glow hover:shadow-elegant transition-all duration-500 py-3 sm:py-4 text-sm sm:text-base font-semibold w-full">
                      <Link to="/foundation">
-                       <Heart className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                       <Heart className="w-4 h-4 mr-2" />
                        View Foundation
                      </Link>
-                   </Button>
-                   <Button size="lg" variant="outline" className="border-accent/30 text-accent hover:bg-accent/10 backdrop-blur-sm shadow-card hover:shadow-lg transition-all duration-300 py-3 sm:py-4 text-base sm:text-lg w-full">
-                     Learn More About Our Impact
                    </Button>
                  </div>
                </div>

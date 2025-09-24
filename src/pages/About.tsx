@@ -1,13 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Users, GraduationCap, BookOpen, Award, Building, ChevronDown, ChevronUp } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useLocation } from 'react-router-dom';
 
 const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      const targetId = location.hash.slice(1);
+      const el = document.getElementById(targetId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }, [location]);
 
   const shortText = "King's Kids Christian Schools was established on February 13, 2014, with the Corporate Affairs Commission under registration number RC 110796. As an offshoot of Child and Youth Foundation (CYF), a non-denominational, Bible-centered Faith-Based Non-Governmental Organization, our main aim is evangelizing and discipling children and youths into the kingdom of God.";
 

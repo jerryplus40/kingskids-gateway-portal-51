@@ -139,4 +139,15 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Ensure anchored sections are visible below sticky header on mobile */
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+
+  @media (min-width: 768px) {
+    section[id] {
+      scroll-margin-top: 6.5rem;
+    }
+  }
 }

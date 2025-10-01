@@ -1093,7 +1093,7 @@ const Index = () => {
       {/* Newsletter Subscription Section */}
       <section className="relative overflow-hidden">
         {/* Photo Collage - First Row */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-48 md:h-64">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-40 md:h-64">
           {/* Photo 1 - School Building */}
           <div className="relative overflow-hidden group">
             <img 
@@ -1156,7 +1156,7 @@ const Index = () => {
         </div>
 
         {/* Photo Collage - Second Row - Graduation Photos */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-48 md:h-64">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-40 md:h-64">
           {/* Graduate 1 - Adeosin Adeola Adebimpe */}
           <div className="relative overflow-hidden group">
             <img 
@@ -1219,7 +1219,7 @@ const Index = () => {
         </div>
 
         {/* Photo Collage - Third Row - More Graduation Photos */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-48 md:h-64">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-40 md:h-64">
           {/* Graduate 7 - GC5A0121er */}
           <div className="relative overflow-hidden group">
             <img 

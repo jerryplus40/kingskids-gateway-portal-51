@@ -1099,7 +1099,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/b4b12bb8-bed2-4ebc-931c-a2a962b55df7.png" 
               alt="School Building"
-              className="w-full h-full object-contain md:object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
@@ -1109,7 +1109,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/59b5ff11-5cd8-4812-902f-16387f07dfa3.png" 
               alt="Students Learning"
-              className="w-full h-full object-contain md:object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
@@ -1119,7 +1119,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/87ff614b-72c4-4a5b-8918-743060138383.png" 
               alt="Educational Tour"
-              className="w-full h-full object-contain md:object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-school-gold/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
@@ -1129,7 +1129,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/graduation-kids-ceremony.jpg" 
               alt="Graduation Ceremony - Students"
-              className="w-full h-full object-contain md:object-cover md:object-left transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-cover object-left transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-school-green/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
@@ -1162,7 +1162,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/adeosin-adeola-adebimpe.jpg" 
               alt="Graduate - Adeosin Adeola Adebimpe"
-              className="w-full h-full object-contain md:object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
@@ -1172,7 +1172,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/ansel-joseph-akpan.jpg" 
               alt="Graduate - Ansel Joseph Akpan"
-              className="w-full h-full object-contain md:object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
@@ -1182,7 +1182,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/calistus-chimobi-chukwuma.jpg" 
               alt="Graduate - Calistus Chimobi Chukwuma"
-              className="w-full h-full object-contain md:object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-school-gold/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
@@ -1192,7 +1192,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/columbus-munachimso-oleka.jpg" 
               alt="Graduate - Columbus Munachimso Oleka"
-              className="w-full h-full object-contain md:object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-school-green/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
@@ -1225,7 +1225,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/gc5a0121er.jpg" 
               alt="Graduate - Outstanding Achievement"
-              className="w-full h-full object-contain md:object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
@@ -1235,7 +1235,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/imohabasi-emmanuel-akpabio.jpg" 
               alt="Graduate - Imohabasi Emmanuel Akpabio"
-              className="w-full h-full object-contain md:object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
@@ -1245,7 +1245,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/udoessien-godshand-etim.jpg" 
               alt="Graduate - Udoessien Godshand Etim"
-              className="w-full h-full object-contain md:object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-school-gold/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
@@ -1255,7 +1255,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/adeosin-adeola-adebimpe.jpg" 
               alt="Graduate Success Story"
-              className="w-full h-full object-contain md:object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-school-green/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>

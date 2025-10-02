@@ -752,7 +752,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             <Card className="group hover:shadow-elegant transition-all duration-500 hover:scale-105 border-0 shadow-card backdrop-blur-sm bg-gradient-card">
               <CardHeader className="text-center">
                 <div className="w-16 md:w-20 h-16 md:h-20 bg-gradient-to-br from-school-blue/20 to-school-blue/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500 overflow-hidden">
@@ -819,50 +819,28 @@ const Index = () => {
                 </Button>
               </CardContent>
             </Card>
-          </div>
 
-           {/* Foundation Card */}
-           <Card className="relative overflow-hidden bg-gradient-to-br from-accent/15 via-primary/10 to-school-gold/5 border-accent/30 shadow-elegant backdrop-blur-sm mx-3 sm:mx-0">
-             <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent animate-shimmer" />
-             <CardHeader className="relative z-10 px-4 sm:px-6 pb-4">
-               <div className="flex flex-col items-center space-y-4 text-center">
-                 <div className="w-20 h-20 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center animate-pulse-glow">
-                   <Users className="h-10 w-10 text-accent" />
-                 </div>
-                 <div className="w-full">
-                   <CardTitle className="text-accent text-xl sm:text-2xl md:text-3xl font-bold mb-2 leading-tight">Child and Youth Foundation</CardTitle>
-                   <CardDescription className="text-base sm:text-lg text-muted-foreground leading-relaxed px-2">Supporting underprivileged children's education across communities</CardDescription>
-                 </div>
-               </div>
-             </CardHeader>
-             <CardContent className="relative z-10 px-4 sm:px-6 pt-2">
-               <div className="space-y-6">
-                 <div className="w-full">
-                   <p className="text-muted-foreground mb-6 text-sm sm:text-base leading-relaxed text-center px-2">
-                     Our foundation provides educational opportunities for less privileged children through comprehensive scholarships, community outreach programs, and sustainable development initiatives.
-                   </p>
-                   <div className="grid grid-cols-2 gap-4 mb-6">
-                     <div className="text-center p-3 bg-gradient-to-br from-accent/10 to-accent/5 rounded-lg">
-                       <div className="text-2xl sm:text-3xl font-bold text-accent mb-1">500+</div>
-                       <div className="text-xs sm:text-sm text-muted-foreground">Children Supported</div>
-                     </div>
-                     <div className="text-center p-3 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg">
-                       <div className="text-2xl sm:text-3xl font-bold text-primary mb-1">15</div>
-                       <div className="text-xs sm:text-sm text-muted-foreground">Communities Reached</div>
-                     </div>
-                   </div>
-                 </div>
-                 <div className="flex flex-col space-y-3 w-full">
-                   <Button size="lg" asChild className="bg-accent hover:bg-accent/90 shadow-glow hover:shadow-elegant transition-all duration-500 py-3 sm:py-4 text-sm sm:text-base font-semibold w-full">
-                     <Link to="/foundation">
-                       <Heart className="w-4 h-4 mr-2" />
-                       View Foundation
-                     </Link>
-                   </Button>
-                 </div>
-               </div>
-             </CardContent>
-           </Card>
+            <Card className="group hover:shadow-elegant transition-all duration-500 hover:scale-105 border-0 shadow-card backdrop-blur-sm bg-gradient-card">
+              <CardHeader className="text-center">
+                <div className="w-16 md:w-20 h-16 md:h-20 bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500">
+                  <Users className="h-8 w-8 text-accent" />
+                </div>
+                <CardTitle className="text-accent text-lg md:text-xl font-bold">Child and Youth Foundation</CardTitle>
+                <CardDescription className="text-base md:text-lg">Community Support</CardDescription>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
+                  Supporting underprivileged children's education across communities through scholarships and outreach.
+                </p>
+                <Button className="w-full bg-accent hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
+                  <Link to="/foundation">
+                    <Heart className="w-4 h-4 mr-2" />
+                    Learn More
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 

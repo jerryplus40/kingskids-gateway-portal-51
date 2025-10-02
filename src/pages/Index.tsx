@@ -768,7 +768,7 @@ const Index = () => {
                 <Button className="w-full bg-school-blue hover:bg-school-blue/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                   <Link to="/montessori">
                     <Calendar className="w-4 h-4 mr-2" />
-                    View Dashboard
+                    Learn More
                   </Link>
                 </Button>
               </CardContent>
@@ -789,7 +789,7 @@ const Index = () => {
                 <Button className="w-full bg-school-orange hover:bg-school-orange/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                   <Link to="/highschool">
                     <Award className="w-4 h-4 mr-2" />
-                    View Dashboard
+                    Learn More
                   </Link>
                 </Button>
               </CardContent>
@@ -814,7 +814,7 @@ const Index = () => {
                 <Button className="w-full bg-school-green hover:bg-school-green/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                   <Link to="/basicstudies">
                     <BookOpen className="w-4 h-4 mr-2" />
-                    View Dashboard
+                    Learn More
                   </Link>
                 </Button>
               </CardContent>

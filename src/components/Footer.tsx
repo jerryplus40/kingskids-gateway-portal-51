@@ -55,19 +55,23 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-primary" />
-                <span className="text-background/80 text-sm">+2348058403852</span>
+                <a href="tel:+2348058403852" className="text-background/80 text-sm hover:text-background transition-colors">+2348058403852</a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-background/80 text-sm">info@kingskidschools.com</span>
+                <a href="mailto:info@kingskidschools.com" className="text-background/80 text-sm hover:text-background transition-colors">info@kingskidschools.com</a>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-primary mt-0.5" />
                 <span className="text-background/80 text-sm">
                   <strong>MONTESSORI:</strong><br/>
-                  Plot 185, Line F, Ewet Housing Estate, Uyo, Akwa Ibom State<br/>
+                  <a href="https://maps.google.com/?q=Plot+185,+Line+F,+Ewet+Housing+Estate,+Uyo,+Akwa+Ibom+State" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">
+                    Plot 185, Line F, Ewet Housing Estate, Uyo, Akwa Ibom State
+                  </a><br/>
                   <strong>HIGH SCHOOL:</strong><br/>
-                  Plot 14, Line J, Sam Edem Street, Ewet Housing Estate, Uyo, Akwa Ibom State
+                  <a href="https://maps.google.com/?q=Plot+14,+Line+J,+Sam+Edem+Street,+Ewet+Housing+Estate,+Uyo,+Akwa+Ibom+State" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">
+                    Plot 14, Line J, Sam Edem Street, Ewet Housing Estate, Uyo, Akwa Ibom State
+                  </a>
                 </span>
               </li>
             </ul>

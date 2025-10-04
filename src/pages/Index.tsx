@@ -503,28 +503,37 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-4 bg-gradient-to-br from-muted/30 to-background">
-        <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="animate-fade-up">
-              <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
-                About King's Kids Schools
-              </Badge>
-              <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground leading-tight">
-                Excellence in Education
-                <span className="text-primary block">Since 2014</span>
-              </h3>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Established in February 2014. King's Kids Christian Schools offers a specialised education built upon Christian principles and the drive for excellence.
-              </p>
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="text-center p-6 bg-card rounded-2xl shadow-card">
-                  <div className="text-3xl font-bold text-primary mb-2">2000+</div>
-                  <div className="text-muted-foreground">Alumni Success Stories</div>
+      <section id="about" className="py-24 px-4 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
+        {/* Decorative background elements */}
+        <div className="absolute inset-0 pointer-events-none opacity-30">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+        </div>
+        
+        <div className="container mx-auto relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+            <div className="animate-fade-up space-y-8">
+              <div>
+                <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 shadow-sm hover:shadow-md transition-shadow">
+                  About King's Kids Schools
+                </Badge>
+                <h3 className="text-4xl lg:text-6xl font-display font-bold mb-6 text-foreground leading-tight tracking-tight">
+                  Excellence in Education
+                  <span className="text-primary block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Since 2014</span>
+                </h3>
+                <p className="text-xl text-muted-foreground leading-relaxed">
+                  Established in February 2014. King's Kids Christian Schools offers a specialised education built upon Christian principles and the drive for excellence.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-2 gap-6">
+                <div className="group text-center p-8 bg-gradient-to-br from-card to-primary/5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-border/50">
+                  <div className="text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-3">2000+</div>
+                  <div className="text-sm font-medium text-muted-foreground">Alumni Success Stories</div>
                 </div>
-                <div className="text-center p-6 bg-card rounded-2xl shadow-card">
-                  <div className="text-3xl font-bold text-school-green mb-2">98%</div>
-                  <div className="text-muted-foreground">Parent Satisfaction</div>
+                <div className="group text-center p-8 bg-gradient-to-br from-card to-school-green/5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-border/50">
+                  <div className="text-5xl font-bold bg-gradient-to-r from-school-green to-accent bg-clip-text text-transparent mb-3">98%</div>
+                  <div className="text-sm font-medium text-muted-foreground">Parent Satisfaction</div>
                 </div>
               </div>
             </div>
@@ -580,61 +589,73 @@ const Index = () => {
       </section>
 
       {/* Excellence Section */}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground">
+      <section className="py-24 px-4 bg-gradient-to-br from-muted/50 via-background to-muted/30 relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute inset-0 pointer-events-none opacity-20">
+          <div className="absolute top-40 right-20 w-64 h-64 bg-accent/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-40 left-20 w-80 h-80 bg-primary/20 rounded-full blur-3xl" />
+        </div>
+        
+        <div className="container mx-auto relative z-10">
+          <div className="text-center mb-20">
+            <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 shadow-sm">
+              Our Core Values
+            </Badge>
+            <h3 className="text-4xl lg:text-6xl font-display font-bold mb-6 text-foreground leading-tight tracking-tight">
               Excellence in Education
-              <span className="text-primary block">Since 2014</span>
+              <span className="text-primary block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Since 2014</span>
             </h3>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
             {/* Our Mission */}
-            <Card className="group hover:shadow-elegant transition-all duration-500 hover:scale-105 border-0 shadow-card backdrop-blur-sm bg-card">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500">
-                  <Heart className="h-8 w-8 text-primary" />
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 bg-gradient-to-br from-card via-card to-primary/5 border-primary/20 overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <CardHeader className="text-center relative z-10">
+                <div className="w-20 h-20 bg-gradient-to-br from-primary/30 to-primary/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
+                  <Heart className="h-10 w-10 text-primary" />
                 </div>
                 <CardTitle className="text-primary text-2xl font-bold mb-4">Our Mission</CardTitle>
               </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-muted-foreground leading-relaxed">
+              <CardContent className="text-center relative z-10">
+                <p className="text-muted-foreground leading-relaxed text-base">
                   To provide exceptional Christian education that nurtures academic excellence, character development, and spiritual growth in every student, preparing them to be servant leaders in their communities and beyond.
                 </p>
               </CardContent>
             </Card>
 
             {/* Our Vision */}
-            <Card className="group hover:shadow-elegant transition-all duration-500 hover:scale-105 border-0 shadow-card backdrop-blur-sm bg-card">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-school-blue/20 to-school-blue/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500">
-                  <Star className="h-8 w-8 text-school-blue" />
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 bg-gradient-to-br from-card via-card to-school-blue/5 border-school-blue/20 overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-school-blue/0 via-school-blue/0 to-school-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <CardHeader className="text-center relative z-10">
+                <div className="w-20 h-20 bg-gradient-to-br from-school-blue/30 to-school-blue/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
+                  <Star className="h-10 w-10 text-school-blue" />
                 </div>
                 <CardTitle className="text-school-blue text-2xl font-bold mb-4">Our Vision</CardTitle>
               </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-muted-foreground leading-relaxed">
+              <CardContent className="text-center relative z-10">
+                <p className="text-muted-foreground leading-relaxed text-base">
                   To be the leading Christian educational institution, recognized globally for producing well-rounded graduates who excel academically, demonstrate strong moral character, and positively impact society.
                 </p>
               </CardContent>
             </Card>
 
             {/* Core Values */}
-            <Card className="group hover:shadow-elegant transition-all duration-500 hover:scale-105 border-0 shadow-card backdrop-blur-sm bg-card">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500">
-                  <Award className="h-8 w-8 text-accent" />
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 bg-gradient-to-br from-card via-card to-accent/5 border-accent/20 overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/0 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <CardHeader className="text-center relative z-10">
+                <div className="w-20 h-20 bg-gradient-to-br from-accent/30 to-accent/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
+                  <Award className="h-10 w-10 text-accent" />
                 </div>
                 <CardTitle className="text-accent text-2xl font-bold mb-4">Core Values</CardTitle>
               </CardHeader>
-              <CardContent className="text-center">
-                <ul className="text-muted-foreground leading-relaxed space-y-2">
-                  <li>• <strong>Excellence</strong> in all endeavors</li>
-                  <li>• <strong>Integrity</strong> and moral character</li>
-                  <li>• <strong>Compassion</strong> and service to others</li>
-                  <li>• <strong>Innovation</strong> in learning and teaching</li>
-                  <li>• <strong>Faith</strong> as our foundation</li>
+              <CardContent className="text-center relative z-10">
+                <ul className="text-muted-foreground leading-relaxed space-y-3 text-base">
+                  <li className="flex items-center justify-center gap-2"><span className="text-accent">✦</span> <strong>Excellence</strong> in all endeavors</li>
+                  <li className="flex items-center justify-center gap-2"><span className="text-accent">✦</span> <strong>Integrity</strong> and moral character</li>
+                  <li className="flex items-center justify-center gap-2"><span className="text-accent">✦</span> <strong>Compassion</strong> and service to others</li>
+                  <li className="flex items-center justify-center gap-2"><span className="text-accent">✦</span> <strong>Innovation</strong> in learning and teaching</li>
+                  <li className="flex items-center justify-center gap-2"><span className="text-accent">✦</span> <strong>Faith</strong> as our foundation</li>
                 </ul>
               </CardContent>
             </Card>
@@ -643,16 +664,22 @@ const Index = () => {
       </section>
 
       {/* Three Column Gallery Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-school-blue/5 via-background to-accent/5">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
+      <section className="py-24 px-4 bg-gradient-to-br from-school-blue/5 via-background to-accent/5 relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute inset-0 pointer-events-none opacity-20">
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-school-blue/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-accent/20 rounded-full blur-3xl" />
+        </div>
+        
+        <div className="container mx-auto relative z-10">
+          <div className="text-center mb-20">
+            <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 shadow-sm hover:shadow-md transition-shadow">
               Learning Experience
             </Badge>
-            <h3 className="text-4xl lg:text-5xl font-display font-bold mb-6 text-foreground">
+            <h3 className="text-4xl lg:text-6xl font-display font-bold mb-6 text-foreground leading-tight tracking-tight">
               Discover Our Learning Environment
             </h3>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Experience hands-on learning through our specialized programs
             </p>
           </div>
@@ -740,32 +767,39 @@ const Index = () => {
       </section>
 
       {/* Schools Section */}
-      <section id="schools" className="py-12 md:py-20 px-2 sm:px-4">
-        <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-12 md:mb-16 px-2">
-            <Badge className="mb-4 sm:mb-6 bg-accent/10 text-accent border-accent/20">
+      <section id="schools" className="py-20 md:py-28 px-2 sm:px-4 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
+        {/* Decorative background */}
+        <div className="absolute inset-0 pointer-events-none opacity-20">
+          <div className="absolute top-40 right-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 left-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl" />
+        </div>
+        
+        <div className="container mx-auto max-w-7xl relative z-10">
+          <div className="text-center mb-16 md:mb-20 px-2">
+            <Badge className="mb-6 bg-accent/10 text-accent border-accent/20 shadow-sm hover:shadow-md transition-shadow">
               Educational Programs
             </Badge>
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4 sm:mb-6 text-foreground leading-tight">Our Schools</h3>
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 text-foreground leading-tight tracking-tight">Our Schools</h3>
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2">
               Choose the perfect educational journey for your child with our comprehensive range of programs
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            <Card className="group hover:shadow-elegant transition-all duration-500 hover:scale-105 border-0 shadow-card backdrop-blur-sm bg-gradient-card">
-              <CardHeader className="text-center">
-                <div className="w-16 md:w-20 h-16 md:h-20 bg-gradient-to-br from-school-blue/20 to-school-blue/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500 overflow-hidden">
-                  <img src={montessoriLogo} alt="Montessori Logo" className="h-full w-full object-contain p-1" />
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-3 bg-gradient-to-br from-card to-school-blue/5 border-school-blue/20 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-school-blue/0 to-school-blue/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <CardHeader className="text-center relative z-10">
+                <div className="w-20 md:w-24 h-20 md:h-24 bg-gradient-to-br from-school-blue/30 to-school-blue/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 overflow-hidden shadow-lg">
+                  <img src={montessoriLogo} alt="Montessori Logo" className="h-full w-full object-contain p-2" />
                 </div>
-                <CardTitle className="text-school-blue text-lg md:text-xl font-bold">King's Kids Montessori</CardTitle>
-                <CardDescription className="text-base md:text-lg">Foundation Learning</CardDescription>
+                <CardTitle className="text-school-blue text-xl md:text-2xl font-bold mb-2">King's Kids Montessori</CardTitle>
+                <CardDescription className="text-base md:text-lg font-medium">Foundation Learning</CardDescription>
               </CardHeader>
-              <CardContent className="text-center">
+              <CardContent className="text-center relative z-10">
                 <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
                   Preschool: Creche, Foundation 1 & 2, Reception. Grade 1 - 5.
                 </p>
-                <Button className="w-full bg-school-blue hover:bg-school-blue/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
+                <Button className="w-full bg-school-blue hover:bg-school-blue/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" asChild>
                   <Link to="/montessori">
                     <Calendar className="w-4 h-4 mr-2" />
                     Learn More
@@ -774,19 +808,20 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-elegant transition-all duration-500 hover:scale-105 border-0 shadow-card backdrop-blur-sm bg-gradient-card">
-              <CardHeader className="text-center">
-                <div className="w-16 md:w-20 h-16 md:h-20 bg-gradient-to-br from-school-orange/20 to-school-orange/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500 overflow-hidden">
-                  <img src={highSchoolLogo} alt="High School Logo" className="h-full w-full object-contain p-1" />
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-3 bg-gradient-to-br from-card to-school-orange/5 border-school-orange/20 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-school-orange/0 to-school-orange/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <CardHeader className="text-center relative z-10">
+                <div className="w-20 md:w-24 h-20 md:h-24 bg-gradient-to-br from-school-orange/30 to-school-orange/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 overflow-hidden shadow-lg">
+                  <img src={highSchoolLogo} alt="High School Logo" className="h-full w-full object-contain p-2" />
                 </div>
-                <CardTitle className="text-school-orange text-lg md:text-xl font-bold">King's Kids High School</CardTitle>
-                <CardDescription className="text-base md:text-lg">Secondary Education</CardDescription>
+                <CardTitle className="text-school-orange text-xl md:text-2xl font-bold mb-2">King's Kids High School</CardTitle>
+                <CardDescription className="text-base md:text-lg font-medium">Secondary Education</CardDescription>
               </CardHeader>
-              <CardContent className="text-center">
+              <CardContent className="text-center relative z-10">
                 <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
                   Preparing students for Junior Cambridge 1-3 and Senior Cambridge 1-3, including WAEC and NECO.
                 </p>
-                <Button className="w-full bg-school-orange hover:bg-school-orange/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
+                <Button className="w-full bg-school-orange hover:bg-school-orange/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" asChild>
                   <Link to="/highschool">
                     <Award className="w-4 h-4 mr-2" />
                     Learn More
@@ -795,23 +830,24 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-elegant transition-all duration-500 hover:scale-105 border-0 shadow-card backdrop-blur-sm bg-gradient-card">
-              <CardHeader className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-br from-school-green/20 to-school-green/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500 overflow-hidden">
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-3 bg-gradient-to-br from-card to-school-green/5 border-school-green/20 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-school-green/0 to-school-green/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <CardHeader className="text-center relative z-10">
+                <div className="w-20 md:w-24 h-20 md:h-24 bg-gradient-to-br from-school-green/30 to-school-green/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 overflow-hidden shadow-lg">
                   <img 
                     src={kingsKidsLogo} 
                     alt="King's Kids Basic Studies Logo" 
-                    className="w-16 h-16 object-contain"
+                    className="w-16 md:w-20 h-16 md:h-20 object-contain"
                   />
                 </div>
-                <CardTitle className="text-school-green text-xl font-bold">King's Kids Basic Studies</CardTitle>
-                <CardDescription className="text-lg">Primary 1-6 • Foundation Education</CardDescription>
+                <CardTitle className="text-school-green text-xl md:text-2xl font-bold mb-2">King's Kids Basic Studies</CardTitle>
+                <CardDescription className="text-base md:text-lg font-medium">Primary 1-6 • Foundation Education</CardDescription>
               </CardHeader>
-              <CardContent className="text-center">
-                <p className="mb-6 text-muted-foreground leading-relaxed">
+              <CardContent className="text-center relative z-10">
+                <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
                   Strong academic foundation with emphasis on literacy, numeracy and character development.
                 </p>
-                <Button className="w-full bg-school-green hover:bg-school-green/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
+                <Button className="w-full bg-school-green hover:bg-school-green/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" asChild>
                   <Link to="/basicstudies">
                     <BookOpen className="w-4 h-4 mr-2" />
                     Learn More
@@ -820,19 +856,20 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-elegant transition-all duration-500 hover:scale-105 border-0 shadow-card backdrop-blur-sm bg-gradient-card">
-              <CardHeader className="text-center">
-                <div className="w-16 md:w-20 h-16 md:h-20 bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse-glow transition-all duration-500">
-                  <Users className="h-8 w-8 text-accent" />
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-3 bg-gradient-to-br from-card to-accent/5 border-accent/20 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/0 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <CardHeader className="text-center relative z-10">
+                <div className="w-20 md:w-24 h-20 md:h-24 bg-gradient-to-br from-accent/30 to-accent/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
+                  <Users className="h-10 w-10 md:h-12 md:w-12 text-accent" />
                 </div>
-                <CardTitle className="text-accent text-lg md:text-xl font-bold">Child and Youth Foundation</CardTitle>
-                <CardDescription className="text-base md:text-lg">Community Support</CardDescription>
+                <CardTitle className="text-accent text-xl md:text-2xl font-bold mb-2">Child and Youth Foundation</CardTitle>
+                <CardDescription className="text-base md:text-lg font-medium">Community Support</CardDescription>
               </CardHeader>
-              <CardContent className="text-center">
+              <CardContent className="text-center relative z-10">
                 <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
                   Supporting underprivileged children's education across communities through scholarships and outreach.
                 </p>
-                <Button className="w-full bg-accent hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
+                <Button className="w-full bg-accent hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" asChild>
                   <Link to="/foundation">
                     <Heart className="w-4 h-4 mr-2" />
                     Learn More

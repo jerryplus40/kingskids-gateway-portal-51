@@ -148,13 +148,12 @@ const Header = () => {
                       Home
                     </Link>
                     
-                     {/* About Us Submenu - Collapsible */}
-                    <Collapsible>
-                      <CollapsibleTrigger className="flex items-center justify-between w-full px-4 py-3 text-sm font-semibold rounded-xl bg-gradient-to-r from-secondary/10 to-accent/5 text-foreground hover:from-secondary/15 hover:to-accent/10 transition-all duration-200 border border-secondary/10 shadow-sm">
+                    {/* About Us Section - Always Open */}
+                    <div className="space-y-2">
+                      <div className="flex items-center px-4 py-3 text-sm font-semibold rounded-xl bg-gradient-to-r from-secondary/10 to-accent/5 text-foreground border border-secondary/10 shadow-sm">
                         About Us
-                        <ChevronDown className="h-4 w-4 transition-transform data-[state=open]:rotate-180 text-secondary" />
-                      </CollapsibleTrigger>
-                      <CollapsibleContent className="ml-4 mt-3 space-y-2 pb-3 bg-background/50 backdrop-blur-sm rounded-lg border border-border/30 p-2">
+                      </div>
+                      <div className="ml-4 space-y-2 bg-background/50 backdrop-blur-sm rounded-lg border border-border/30 p-2">
                         <Link to="/about#history" className="flex items-center text-sm py-3 px-4 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 border-l-2 border-transparent hover:border-primary bg-card/50" onClick={handleAboutNav('history')}>
                           <span className="text-xs mr-3 text-muted-foreground">📚</span>
                           Our History
@@ -183,8 +182,8 @@ const Header = () => {
                           <span className="text-xs mr-3 text-muted-foreground">🎓</span>
                           Alumni
                         </Link>
-                      </CollapsibleContent>
-                    </Collapsible>
+                      </div>
+                    </div>
                     
                     {/* Facilities Submenu - Collapsible */}
                     <Collapsible>

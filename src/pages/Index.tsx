@@ -20,7 +20,10 @@ import {
   Award,
   Menu,
   X,
-  ChevronDown
+  ChevronDown,
+  Target,
+  Eye,
+  Sparkles
 } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import Navigation from "@/components/Navigation";
@@ -613,7 +616,7 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <CardHeader className="text-center relative z-10">
                 <div className="w-20 h-20 bg-gradient-to-br from-primary/30 to-primary/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
-                  <Heart className="h-10 w-10 text-primary" />
+                  <Target className="h-10 w-10 text-primary" />
                 </div>
                 <CardTitle className="text-primary text-2xl font-bold mb-4">Our Mission</CardTitle>
               </CardHeader>
@@ -629,7 +632,7 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-school-blue/0 via-school-blue/0 to-school-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <CardHeader className="text-center relative z-10">
                 <div className="w-20 h-20 bg-gradient-to-br from-school-blue/30 to-school-blue/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
-                  <Star className="h-10 w-10 text-school-blue" />
+                  <Eye className="h-10 w-10 text-school-blue" />
                 </div>
                 <CardTitle className="text-school-blue text-2xl font-bold mb-4">Our Vision</CardTitle>
               </CardHeader>
@@ -645,7 +648,7 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/0 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <CardHeader className="text-center relative z-10">
                 <div className="w-20 h-20 bg-gradient-to-br from-accent/30 to-accent/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
-                  <Award className="h-10 w-10 text-accent" />
+                  <Sparkles className="h-10 w-10 text-accent" />
                 </div>
                 <CardTitle className="text-accent text-2xl font-bold mb-4">Core Values</CardTitle>
               </CardHeader>

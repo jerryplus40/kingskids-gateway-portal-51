@@ -41,7 +41,7 @@ const Footer = () => {
 
           <div>
             <h4 className="font-semibold mb-6 text-lg">Quick Links</h4>
-            <ul className="space-y-3">
+            <ul className="grid grid-cols-2 lg:grid-cols-1 gap-x-4 gap-y-3">
               <li><Link to="/about" className="text-background/80 hover:text-background transition-colors">About Us</Link></li>
               <li><Link to="/montessori" className="text-background/80 hover:text-background transition-colors">Our Schools</Link></li>
               <li><Link to="/how-to-apply" className="text-background/80 hover:text-background transition-colors">Admissions</Link></li>

@@ -844,11 +844,11 @@ const Index = () => {
                   />
                 </div>
                 <CardTitle className="text-school-green text-xl md:text-2xl font-bold mb-2">King's Kids Basic Studies</CardTitle>
-                <CardDescription className="text-base md:text-lg font-medium">Primary 1-6 • Foundation Education</CardDescription>
+                <CardDescription className="text-base md:text-lg font-medium">Degree Foundation and Cambridge A-Level Programmes</CardDescription>
               </CardHeader>
               <CardContent className="text-center relative z-10">
                 <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
-                  Strong academic foundation with emphasis on literacy, numeracy and character development.
+                  Preparing Students for Degree foundation and Cambridge A-level Programmes including SAT, TOFEL and IELTS examinations.
                 </p>
                 <Button className="w-full bg-school-green hover:bg-school-green/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" asChild>
                   <Link to="/basicstudies">

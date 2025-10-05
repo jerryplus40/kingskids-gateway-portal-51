@@ -526,14 +526,14 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="grid grid-cols-2 gap-6">
-                <div className="group text-center p-8 bg-gradient-to-br from-card to-primary/5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-border/50">
-                  <div className="text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-3">2000+</div>
-                  <div className="text-sm font-medium text-muted-foreground">Alumni Success Stories</div>
+              <div className="grid grid-cols-2 gap-4 md:gap-6">
+                <div className="group text-center p-4 md:p-8 bg-gradient-to-br from-card to-primary/5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-border/50">
+                  <div className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2 md:mb-3">2000+</div>
+                  <div className="text-xs sm:text-sm font-medium text-muted-foreground whitespace-nowrap">Alumni Success<br className="md:hidden" /> Stories</div>
                 </div>
-                <div className="group text-center p-8 bg-gradient-to-br from-card to-school-green/5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-border/50">
-                  <div className="text-5xl font-bold bg-gradient-to-r from-school-green to-accent bg-clip-text text-transparent mb-3">98%</div>
-                  <div className="text-sm font-medium text-muted-foreground">Parent Satisfaction</div>
+                <div className="group text-center p-4 md:p-8 bg-gradient-to-br from-card to-school-green/5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-border/50">
+                  <div className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-school-green to-accent bg-clip-text text-transparent mb-2 md:mb-3">98%</div>
+                  <div className="text-xs sm:text-sm font-medium text-muted-foreground whitespace-nowrap">Parent<br className="md:hidden" /> Satisfaction</div>
                 </div>
               </div>
             </div>
@@ -650,12 +650,12 @@ const Index = () => {
                 <CardTitle className="text-accent text-2xl font-bold mb-4">Core Values</CardTitle>
               </CardHeader>
               <CardContent className="text-center relative z-10">
-                <ul className="text-muted-foreground leading-relaxed space-y-3 text-base">
-                  <li className="flex items-center justify-center gap-2"><span className="text-accent">✦</span> <strong>Excellence</strong> in all endeavors</li>
-                  <li className="flex items-center justify-center gap-2"><span className="text-accent">✦</span> <strong>Integrity</strong> and moral character</li>
-                  <li className="flex items-center justify-center gap-2"><span className="text-accent">✦</span> <strong>Compassion</strong> and service to others</li>
-                  <li className="flex items-center justify-center gap-2"><span className="text-accent">✦</span> <strong>Innovation</strong> in learning and teaching</li>
-                  <li className="flex items-center justify-center gap-2"><span className="text-accent">✦</span> <strong>Faith</strong> as our foundation</li>
+                <ul className="text-muted-foreground leading-relaxed space-y-3 text-sm md:text-base">
+                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent flex-shrink-0 mt-1 sm:mt-0">✦</span> <span className="text-left sm:text-center"><strong>Excellence</strong> in all endeavors</span></li>
+                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent flex-shrink-0 mt-1 sm:mt-0">✦</span> <span className="text-left sm:text-center"><strong>Integrity</strong> and moral character</span></li>
+                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent flex-shrink-0 mt-1 sm:mt-0">✦</span> <span className="text-left sm:text-center"><strong>Compassion</strong> and service to others</span></li>
+                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent flex-shrink-0 mt-1 sm:mt-0">✦</span> <span className="text-left sm:text-center"><strong>Innovation</strong> in learning and teaching</span></li>
+                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent flex-shrink-0 mt-1 sm:mt-0">✦</span> <span className="text-left sm:text-center"><strong>Faith</strong> as our foundation</span></li>
                 </ul>
               </CardContent>
             </Card>

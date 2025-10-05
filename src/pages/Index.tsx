@@ -527,13 +527,13 @@ const Index = () => {
               </div>
               
               <div className="grid grid-cols-2 gap-4 md:gap-6">
-                <div className="group text-center p-4 md:p-8 bg-gradient-to-br from-card to-primary/5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-border/50">
+                <div className="group text-center p-3 sm:p-4 md:p-8 bg-gradient-to-br from-card to-primary/5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-border/50">
                   <div className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2 md:mb-3">2000+</div>
-                  <div className="text-xs sm:text-sm font-medium text-muted-foreground whitespace-nowrap">Alumni Success<br className="md:hidden" /> Stories</div>
+                  <div className="text-[10px] leading-tight sm:text-sm font-medium text-muted-foreground">Alumni Success Stories</div>
                 </div>
-                <div className="group text-center p-4 md:p-8 bg-gradient-to-br from-card to-school-green/5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-border/50">
+                <div className="group text-center p-3 sm:p-4 md:p-8 bg-gradient-to-br from-card to-school-green/5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-border/50">
                   <div className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-school-green to-accent bg-clip-text text-transparent mb-2 md:mb-3">98%</div>
-                  <div className="text-xs sm:text-sm font-medium text-muted-foreground whitespace-nowrap">Parent<br className="md:hidden" /> Satisfaction</div>
+                  <div className="text-[10px] leading-tight sm:text-sm font-medium text-muted-foreground">Parent Satisfaction</div>
                 </div>
               </div>
             </div>

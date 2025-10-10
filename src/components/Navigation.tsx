@@ -22,12 +22,12 @@ const Navigation = () => {
           </NavigationMenuLink>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
+        <NavigationMenuItem className="relative">
           <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
             About Us
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2">
+            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
               <NavigationMenuLink asChild>
                 <Link
                   to="/about#history"
@@ -88,12 +88,12 @@ const Navigation = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
+        <NavigationMenuItem className="relative">
           <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
             Facilities
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2">
+            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
               <NavigationMenuLink asChild>
                 <Link
                   to="/classrooms"
@@ -146,12 +146,12 @@ const Navigation = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
+        <NavigationMenuItem className="relative">
           <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
             Admission
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2">
+            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
               <NavigationMenuLink asChild>
                 <Link
                   to="/how-to-apply"
@@ -196,12 +196,12 @@ const Navigation = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
+        <NavigationMenuItem className="relative">
           <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
             Our Schools
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2">
+            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
               <NavigationMenuLink asChild>
                 <Link
                   to="#"
@@ -230,12 +230,12 @@ const Navigation = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
+        <NavigationMenuItem className="relative">
           <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
             Media
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2">
+            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
               <NavigationMenuLink asChild>
                 <Link
                   to="/gallery"

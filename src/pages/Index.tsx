@@ -100,7 +100,7 @@ const Index = () => {
       </div>
 
       {/* Header */}
-      <header className="border-b backdrop-blur-md shadow-card sticky top-0 z-50" style={{ background: 'linear-gradient(to right, hsl(var(--school-orange) / 0.08) 0%, hsl(var(--school-orange) / 0.12) 50%, hsl(var(--school-orange) / 0.08) 100%)' }}>
+      <header className="border-b bg-card/95 backdrop-blur-md shadow-card sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">

@@ -679,7 +679,7 @@ const Index = () => {
             <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 shadow-sm hover:shadow-md transition-shadow">
               Learning Experience
             </Badge>
-            <h3 className="text-4xl lg:text-6xl font-display font-bold mb-6 text-foreground leading-tight tracking-tight">
+            <h3 className="text-4xl lg:text-6xl font-display font-bold mb-6 leading-tight tracking-tight" style={{ color: 'hsl(var(--school-orange))' }}>
               Discover Our Learning Environment
             </h3>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">

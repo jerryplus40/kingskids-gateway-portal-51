@@ -512,23 +512,24 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 px-4 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
+      <section id="about" className="py-24 px-4 bg-gradient-to-br from-primary/8 via-background to-school-orange/8 relative overflow-hidden">
         {/* Decorative background elements */}
-        <div className="absolute inset-0 pointer-events-none opacity-30">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+        <div className="absolute inset-0 pointer-events-none opacity-40">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-school-orange/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse" />
         </div>
         
         <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
             <div className="animate-fade-up space-y-8">
               <div>
-                <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 shadow-sm hover:shadow-md transition-shadow">
+                <Badge className="mb-6 bg-gradient-to-r from-primary/15 to-school-orange/15 text-primary border-primary/30 shadow-soft hover:shadow-card transition-all hover:scale-105">
                   About King's Kids Schools
                 </Badge>
                 <h3 className="text-4xl lg:text-6xl font-display font-bold mb-6 text-foreground leading-tight tracking-tight">
                   Excellence in Education
-                  <span className="text-primary block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Since 2014</span>
+                  <span className="block mt-3 bg-gradient-to-r from-primary via-accent to-school-orange bg-clip-text text-transparent animate-gradient-shift bg-[length:200%_auto]">Since 2014</span>
                 </h3>
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   Established in February 2014. King's Kids Christian Schools offers a specialised education built upon Christian principles and the drive for excellence.
@@ -536,13 +537,19 @@ const Index = () => {
               </div>
               
               <div className="grid grid-cols-2 gap-4 md:gap-6">
-                <div className="group text-center p-3 sm:p-4 md:p-8 bg-gradient-to-br from-card to-primary/5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-border/50">
-                  <div className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2 md:mb-3">2000+</div>
-                  <div className="text-[10px] leading-tight sm:text-sm font-medium text-muted-foreground">Alumni Success Stories</div>
+                <div className="group relative text-center p-3 sm:p-4 md:p-8 bg-gradient-to-br from-card via-primary/5 to-accent/10 rounded-2xl shadow-card hover:shadow-glow transition-all duration-500 hover:scale-110 hover:-rotate-1 border border-primary/20 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="relative z-10">
+                    <div className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-school-gold bg-clip-text text-transparent mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">2000+</div>
+                    <div className="text-[10px] leading-tight sm:text-sm font-medium text-muted-foreground">Alumni Success Stories</div>
+                  </div>
                 </div>
-                <div className="group text-center p-3 sm:p-4 md:p-8 bg-gradient-to-br from-card to-school-green/5 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-border/50">
-                  <div className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-school-green to-accent bg-clip-text text-transparent mb-2 md:mb-3">98%</div>
-                  <div className="text-[10px] leading-tight sm:text-sm font-medium text-muted-foreground">Parent Satisfaction</div>
+                <div className="group relative text-center p-3 sm:p-4 md:p-8 bg-gradient-to-br from-card via-school-green/5 to-accent/10 rounded-2xl shadow-card hover:shadow-glow transition-all duration-500 hover:scale-110 hover:rotate-1 border border-school-green/20 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-school-green/0 via-school-green/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="relative z-10">
+                    <div className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-school-green via-accent to-school-blue bg-clip-text text-transparent mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">98%</div>
+                    <div className="text-[10px] leading-tight sm:text-sm font-medium text-muted-foreground">Parent Satisfaction</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -598,33 +605,35 @@ const Index = () => {
       </section>
 
       {/* Excellence Section */}
-      <section className="py-24 px-4 bg-gradient-to-br from-muted/50 via-background to-muted/30 relative overflow-hidden">
+      <section className="py-24 px-4 bg-gradient-to-br from-accent/8 via-background via-50% to-primary/8 relative overflow-hidden">
         {/* Decorative elements */}
-        <div className="absolute inset-0 pointer-events-none opacity-20">
-          <div className="absolute top-40 right-20 w-64 h-64 bg-accent/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-40 left-20 w-80 h-80 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute inset-0 pointer-events-none opacity-30">
+          <div className="absolute top-40 right-20 w-64 h-64 bg-school-gold/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-40 left-20 w-80 h-80 bg-primary/25 rounded-full blur-3xl animate-float" />
+          <div className="absolute top-1/3 left-1/3 w-72 h-72 bg-accent/15 rounded-full blur-3xl" />
         </div>
         
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-20">
-            <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 shadow-sm">
+            <Badge className="mb-6 bg-gradient-to-r from-accent/15 to-primary/15 text-primary border-accent/30 shadow-soft hover:shadow-card transition-all hover:scale-105">
               Our Core Values
             </Badge>
             <h3 className="text-4xl lg:text-6xl font-display font-bold mb-6 text-foreground leading-tight tracking-tight">
-              Excellence in Education
-              <span className="text-primary block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Since 2014</span>
+              <span style={{ color: 'hsl(var(--school-orange))' }}>Discover Our Learning Environment</span>
+              <span className="block mt-3 bg-gradient-to-r from-school-blue via-accent to-school-gold bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-shift">Building Tomorrow's Leaders</span>
             </h3>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
             {/* Our Mission */}
-            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 bg-gradient-to-br from-card via-card to-primary/5 border-primary/20 overflow-hidden relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <Card className="group hover:shadow-glow transition-all duration-500 hover:scale-105 hover:-translate-y-3 bg-gradient-to-br from-card via-primary/5 to-accent/10 border-primary/30 overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
               <CardHeader className="text-center relative z-10">
-                <div className="w-20 h-20 bg-gradient-to-br from-primary/30 to-primary/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
-                  <Target className="h-10 w-10 text-primary" />
+                <div className="w-20 h-20 bg-gradient-to-br from-primary/40 to-accent/20 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 shadow-card group-hover:shadow-glow">
+                  <Target className="h-10 w-10 text-primary drop-shadow-lg" />
                 </div>
-                <CardTitle className="text-primary text-2xl font-bold mb-4">Our Mission</CardTitle>
+                <CardTitle className="text-primary text-2xl font-bold mb-4 group-hover:text-accent transition-colors">Our Mission</CardTitle>
               </CardHeader>
               <CardContent className="text-center relative z-10">
                 <p className="text-muted-foreground leading-relaxed text-base">
@@ -634,13 +643,14 @@ const Index = () => {
             </Card>
 
             {/* Our Vision */}
-            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 bg-gradient-to-br from-card via-card to-school-blue/5 border-school-blue/20 overflow-hidden relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-school-blue/0 via-school-blue/0 to-school-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <Card className="group hover:shadow-glow transition-all duration-500 hover:scale-105 hover:-translate-y-3 bg-gradient-to-br from-card via-school-blue/5 to-school-gold/10 border-school-blue/30 overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-school-blue/5 via-school-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-school-blue/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
               <CardHeader className="text-center relative z-10">
-                <div className="w-20 h-20 bg-gradient-to-br from-school-blue/30 to-school-blue/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
-                  <Eye className="h-10 w-10 text-school-blue" />
+                <div className="w-20 h-20 bg-gradient-to-br from-school-blue/40 to-school-gold/20 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 shadow-card group-hover:shadow-glow">
+                  <Eye className="h-10 w-10 text-school-blue drop-shadow-lg" />
                 </div>
-                <CardTitle className="text-school-blue text-2xl font-bold mb-4">Our Vision</CardTitle>
+                <CardTitle className="text-school-blue text-2xl font-bold mb-4 group-hover:text-school-gold transition-colors">Our Vision</CardTitle>
               </CardHeader>
               <CardContent className="text-center relative z-10">
                 <p className="text-muted-foreground leading-relaxed text-base">
@@ -650,13 +660,14 @@ const Index = () => {
             </Card>
 
             {/* Core Values */}
-            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 bg-gradient-to-br from-card via-card to-accent/5 border-accent/20 overflow-hidden relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/0 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <Card className="group hover:shadow-glow transition-all duration-500 hover:scale-105 hover:-translate-y-3 bg-gradient-to-br from-card via-accent/5 to-school-green/10 border-accent/30 overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-school-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
               <CardHeader className="text-center relative z-10">
-                <div className="w-20 h-20 bg-gradient-to-br from-accent/30 to-accent/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
-                  <Sparkles className="h-10 w-10 text-accent" />
+                <div className="w-20 h-20 bg-gradient-to-br from-accent/40 to-school-green/20 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 shadow-card group-hover:shadow-glow">
+                  <Sparkles className="h-10 w-10 text-accent drop-shadow-lg" />
                 </div>
-                <CardTitle className="text-accent text-2xl font-bold mb-4">Core Values</CardTitle>
+                <CardTitle className="text-accent text-2xl font-bold mb-4 group-hover:text-school-green transition-colors">Core Values</CardTitle>
               </CardHeader>
               <CardContent className="text-center relative z-10">
                 <ul className="text-muted-foreground leading-relaxed space-y-3 text-sm md:text-base">
@@ -776,16 +787,17 @@ const Index = () => {
       </section>
 
       {/* Schools Section */}
-      <section id="schools" className="py-20 md:py-28 px-2 sm:px-4 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
+      <section id="schools" className="py-20 md:py-28 px-2 sm:px-4 bg-gradient-to-br from-school-blue/8 via-background via-50% to-school-orange/8 relative overflow-hidden">
         {/* Decorative background */}
-        <div className="absolute inset-0 pointer-events-none opacity-20">
-          <div className="absolute top-40 right-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 left-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl" />
+        <div className="absolute inset-0 pointer-events-none opacity-30">
+          <div className="absolute top-40 right-10 w-96 h-96 bg-school-blue/25 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 left-10 w-80 h-80 bg-school-orange/20 rounded-full blur-3xl animate-float" />
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-school-gold/15 rounded-full blur-3xl" />
         </div>
         
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-16 md:mb-20 px-2">
-            <Badge className="mb-6 bg-accent/10 text-accent border-accent/20 shadow-sm hover:shadow-md transition-shadow">
+            <Badge className="mb-6 bg-gradient-to-r from-school-blue/15 to-school-orange/15 text-school-blue border-school-blue/30 shadow-soft hover:shadow-card transition-all hover:scale-105">
               Educational Programs
             </Badge>
             <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 text-foreground leading-tight tracking-tight">Our Schools</h3>
@@ -795,10 +807,11 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-3 bg-gradient-to-br from-card to-school-blue/5 border-school-blue/20 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-school-blue/0 to-school-blue/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <Card className="group hover:shadow-glow transition-all duration-500 hover:scale-110 hover:-translate-y-4 bg-gradient-to-br from-card via-school-blue/8 to-school-blue/15 border-school-blue/30 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-school-blue/0 via-school-blue/10 to-school-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 right-0 w-40 h-40 bg-school-blue/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700" />
               <CardHeader className="text-center relative z-10">
-                <div className="w-20 md:w-24 h-20 md:h-24 bg-gradient-to-br from-school-blue/30 to-school-blue/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 overflow-hidden shadow-lg">
+                <div className="w-20 md:w-24 h-20 md:h-24 bg-gradient-to-br from-school-blue/50 to-school-blue/20 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 overflow-hidden shadow-card group-hover:shadow-glow">
                   <img src={montessoriLogo} alt="Montessori Logo" className="h-full w-full object-contain p-2" />
                 </div>
                 <CardTitle className="text-school-blue text-xl md:text-2xl font-bold mb-2">King's Kids Montessori</CardTitle>
@@ -808,7 +821,7 @@ const Index = () => {
                 <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
                   Preschool: Creche, Foundation 1 & 2, Reception. Grade 1 - 5.
                 </p>
-                <Button className="w-full bg-school-blue hover:bg-school-blue/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" asChild>
+                <Button className="w-full bg-school-blue hover:bg-school-blue/90 shadow-card hover:shadow-glow transition-all duration-300 hover:scale-110" asChild>
                   <Link to="/montessori">
                     <Calendar className="w-4 h-4 mr-2" />
                     Learn More
@@ -817,10 +830,11 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-3 bg-gradient-to-br from-card to-school-orange/5 border-school-orange/20 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-school-orange/0 to-school-orange/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <Card className="group hover:shadow-glow transition-all duration-500 hover:scale-110 hover:-translate-y-4 bg-gradient-to-br from-card via-school-orange/8 to-school-orange/15 border-school-orange/30 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-school-orange/0 via-school-orange/10 to-school-orange/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 right-0 w-40 h-40 bg-school-orange/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700" />
               <CardHeader className="text-center relative z-10">
-                <div className="w-20 md:w-24 h-20 md:h-24 bg-gradient-to-br from-school-orange/30 to-school-orange/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 overflow-hidden shadow-lg">
+                <div className="w-20 md:w-24 h-20 md:h-24 bg-gradient-to-br from-school-orange/50 to-school-orange/20 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 overflow-hidden shadow-card group-hover:shadow-glow">
                   <img src={highSchoolLogo} alt="High School Logo" className="h-full w-full object-contain p-2" />
                 </div>
                 <CardTitle className="text-school-orange text-xl md:text-2xl font-bold mb-2">King's Kids High School</CardTitle>
@@ -830,7 +844,7 @@ const Index = () => {
                 <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
                   Preparing students for Junior Cambridge 1-3 and Senior Cambridge 1-3, including WAEC and NECO.
                 </p>
-                <Button className="w-full bg-school-orange hover:bg-school-orange/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" asChild>
+                <Button className="w-full bg-school-orange hover:bg-school-orange/90 shadow-card hover:shadow-glow transition-all duration-300 hover:scale-110" asChild>
                   <Link to="/highschool">
                     <Award className="w-4 h-4 mr-2" />
                     Learn More
@@ -839,10 +853,11 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-3 bg-gradient-to-br from-card to-school-green/5 border-school-green/20 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-school-green/0 to-school-green/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <Card className="group hover:shadow-glow transition-all duration-500 hover:scale-110 hover:-translate-y-4 bg-gradient-to-br from-card via-school-green/8 to-school-green/15 border-school-green/30 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-school-green/0 via-school-green/10 to-school-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 right-0 w-40 h-40 bg-school-green/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700" />
               <CardHeader className="text-center relative z-10">
-                <div className="w-20 md:w-24 h-20 md:h-24 bg-gradient-to-br from-school-green/30 to-school-green/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 overflow-hidden shadow-lg">
+                <div className="w-20 md:w-24 h-20 md:h-24 bg-gradient-to-br from-school-green/50 to-school-green/20 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 overflow-hidden shadow-card group-hover:shadow-glow">
                   <img 
                     src={kingsKidsLogo} 
                     alt="King's Kids Basic Studies Logo" 
@@ -856,7 +871,7 @@ const Index = () => {
                 <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
                   Preparing Students for Degree foundation and Cambridge A-level Programmes including SAT, TOFEL and IELTS examinations.
                 </p>
-                <Button className="w-full bg-school-green hover:bg-school-green/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" asChild>
+                <Button className="w-full bg-school-green hover:bg-school-green/90 shadow-card hover:shadow-glow transition-all duration-300 hover:scale-110" asChild>
                   <Link to="/basicstudies">
                     <BookOpen className="w-4 h-4 mr-2" />
                     Learn More
@@ -865,11 +880,12 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-3 bg-gradient-to-br from-card to-accent/5 border-accent/20 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/0 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <Card className="group hover:shadow-glow transition-all duration-500 hover:scale-110 hover:-translate-y-4 bg-gradient-to-br from-card via-accent/8 to-accent/15 border-accent/30 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/10 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 right-0 w-40 h-40 bg-accent/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700" />
               <CardHeader className="text-center relative z-10">
-                <div className="w-20 md:w-24 h-20 md:h-24 bg-gradient-to-br from-accent/30 to-accent/10 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
-                  <Users className="h-10 w-10 md:h-12 md:w-12 text-accent" />
+                <div className="w-20 md:w-24 h-20 md:h-24 bg-gradient-to-br from-accent/50 to-accent/20 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 shadow-card group-hover:shadow-glow">
+                  <Users className="h-10 w-10 md:h-12 md:w-12 text-accent drop-shadow-lg" />
                 </div>
                 <CardTitle className="text-accent text-xl md:text-2xl font-bold mb-2">Child and Youth Foundation</CardTitle>
                 <CardDescription className="text-base md:text-lg font-medium">Community Support</CardDescription>
@@ -878,7 +894,7 @@ const Index = () => {
                 <p className="mb-6 text-muted-foreground leading-relaxed text-sm md:text-base">
                   Supporting underprivileged children's education across communities through scholarships and outreach.
                 </p>
-                <Button className="w-full bg-accent hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" asChild>
+                <Button className="w-full bg-accent hover:bg-accent/90 shadow-card hover:shadow-glow transition-all duration-300 hover:scale-110" asChild>
                   <Link to="/foundation">
                     <Heart className="w-4 h-4 mr-2" />
                     Learn More

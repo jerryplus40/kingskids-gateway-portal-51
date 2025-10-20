@@ -333,6 +333,9 @@ const Index = () => {
                     src="/lovable-uploads/b4b12bb8-bed2-4ebc-931c-a2a962b55df7.png" 
                     alt="King's Kids Christian School Building" 
                     className="w-full h-full object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns"
+                    loading="eager"
+                    fetchPriority="high"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-school-blue/75 to-accent/65" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent" />
@@ -385,6 +388,9 @@ const Index = () => {
                     src="/lovable-uploads/59b5ff11-5cd8-4812-902f-16387f07dfa3.png" 
                     alt="King's Kids School Campus" 
                     className="w-full h-full object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns-reverse"
+                    loading="eager"
+                    fetchPriority="high"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-school-blue/70 to-accent/60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />

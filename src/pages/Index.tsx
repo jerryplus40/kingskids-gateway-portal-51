@@ -349,16 +349,16 @@ const Index = () => {
                 </div>
                 
                 {/* Content */}
-                <div className="relative z-20 container mx-auto px-4 text-center">
-                  <Badge className="mb-6 md:mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md animate-fade-in shadow-lg">
+                <div className="relative z-20 container mx-auto px-4 text-center group/hero">
+                  <Badge className="mb-6 md:mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md shadow-lg opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     <Star className="w-4 h-4 mr-2" />
                     A Christian Cambridge School
                   </Badge>
-                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 md:mb-8 text-white animate-fade-up leading-tight">
+                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 md:mb-8 text-white leading-tight opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     King's Kids
-                    <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent animate-pulse-glow font-display">No Substitute!</span>
+                    <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent font-display">No Substitute!</span>
                   </h2>
-                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 max-w-4xl mx-auto animate-fade-up leading-relaxed">
+                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 max-w-4xl mx-auto leading-relaxed opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     Great Things Are Happening Here - Join our family of exceptional schools offering world-class Christian education.
                   </p>
                 </div>
@@ -389,16 +389,16 @@ const Index = () => {
                 </div>
                 
                 {/* Content */}
-                <div className="relative z-20 container mx-auto px-4 text-center">
-                  <Badge className="mb-6 md:mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md animate-fade-in shadow-lg">
+                <div className="relative z-20 container mx-auto px-4 text-center group/hero">
+                  <Badge className="mb-6 md:mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md shadow-lg opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     <BookOpen className="w-4 h-4 mr-2" />
                     Ecclesiastes 12:1
                   </Badge>
-                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 md:mb-8 text-white animate-fade-up leading-tight">
+                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 md:mb-8 text-white leading-tight opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     Remember Now Your Creator
-                    <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent animate-pulse-glow font-display">In The Days Of Your Youth</span>
+                    <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent font-display">In The Days Of Your Youth</span>
                   </h2>
-                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 max-w-4xl mx-auto animate-fade-up leading-relaxed">
+                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 max-w-4xl mx-auto leading-relaxed opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     Building character and faith alongside academic excellence for over 28 years.
                   </p>
                 </div>
@@ -426,16 +426,16 @@ const Index = () => {
                 </div>
                 
                 {/* Content */}
-                <div className="relative z-20 container mx-auto px-4 text-center">
-                  <Badge className="mb-6 md:mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md animate-fade-in shadow-lg">
+                <div className="relative z-20 container mx-auto px-4 text-center group/hero">
+                  <Badge className="mb-6 md:mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md shadow-lg opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     <MapPin className="w-4 h-4 mr-2" />
                     Educational Excellence
                   </Badge>
-                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 md:mb-8 text-white animate-fade-up leading-tight">
+                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 md:mb-8 text-white leading-tight opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     Empowering Young Minds
-                    <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent animate-pulse-glow font-display">Beyond The Classroom</span>
+                    <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent font-display">Beyond The Classroom</span>
                   </h2>
-                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 max-w-4xl mx-auto animate-fade-up leading-relaxed">
+                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 max-w-4xl mx-auto leading-relaxed opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     Our students explore the world, gaining real-world experience through educational tours and practical learning.
                   </p>
                 </div>

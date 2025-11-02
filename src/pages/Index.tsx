@@ -480,26 +480,6 @@ const Index = () => {
                       </Link>
                     </Button>
                   </div>
-
-                  {/* Statistics */}
-                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mt-12 md:mt-16 animate-fade-up">
-                    <div className="text-center">
-                      <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent mb-1 md:mb-2">28+</div>
-                      <div className="text-white/80 font-medium text-xs md:text-sm">Years of Excellence</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-school-gold mb-1 md:mb-2">2000+</div>
-                      <div className="text-white/80 font-medium text-xs md:text-sm">Students Graduated</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-school-green mb-1 md:mb-2">50+</div>
-                      <div className="text-white/80 font-medium text-xs md:text-sm">Expert Teachers</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-school-orange mb-1 md:mb-2">4</div>
-                      <div className="text-white/80 font-medium text-xs md:text-sm">School Levels</div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </CarouselItem>

@@ -358,23 +358,9 @@ const Index = () => {
                     King's Kids
                     <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent animate-pulse-glow font-display">No Substitute!</span>
                   </h2>
-                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 mb-8 md:mb-10 max-w-4xl mx-auto animate-fade-up leading-relaxed">
+                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 max-w-4xl mx-auto animate-fade-up leading-relaxed">
                     Great Things Are Happening Here - Join our family of exceptional schools offering world-class Christian education.
                   </p>
-                  <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 animate-scale-in">
-                    <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105">
-                      <Link to="/montessori">
-                        <GraduationCap className="w-5 h-5 mr-2" />
-                        Apply Now
-                      </Link>
-                    </Button>
-                    <Button size="lg" variant="outline" asChild className="border-white/40 text-blue-400 hover:text-blue-300 hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
-                      <Link to="#schools">
-                        <BookOpen className="w-5 h-5 mr-2" />
-                        Explore Schools
-                      </Link>
-                    </Button>
-                  </div>
                 </div>
               </div>
             </CarouselItem>
@@ -412,23 +398,9 @@ const Index = () => {
                     Remember Now Your Creator
                     <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent animate-pulse-glow font-display">In The Days Of Your Youth</span>
                   </h2>
-                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 mb-8 md:mb-10 max-w-4xl mx-auto animate-fade-up leading-relaxed">
+                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 max-w-4xl mx-auto animate-fade-up leading-relaxed">
                     Building character and faith alongside academic excellence for over 28 years.
                   </p>
-                  <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 animate-scale-in">
-                    <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105">
-                      <Link to="#about">
-                        <Heart className="w-5 h-5 mr-2" />
-                        Our Mission
-                      </Link>
-                    </Button>
-                    <Button size="lg" variant="outline" asChild className="border-white/40 text-blue-400 hover:text-blue-300 hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
-                      <Link to="#contact">
-                        <Users className="w-5 h-5 mr-2" />
-                        Join Our Family
-                      </Link>
-                    </Button>
-                  </div>
                 </div>
               </div>
             </CarouselItem>
@@ -463,23 +435,9 @@ const Index = () => {
                     Empowering Young Minds
                     <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent animate-pulse-glow font-display">Beyond The Classroom</span>
                   </h2>
-                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 mb-8 md:mb-10 max-w-4xl mx-auto animate-fade-up leading-relaxed">
+                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 max-w-4xl mx-auto animate-fade-up leading-relaxed">
                     Our students explore the world, gaining real-world experience through educational tours and practical learning.
                   </p>
-                  <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 animate-scale-in">
-                    <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-elegant hover:shadow-glow transition-all duration-300 hover:scale-105">
-                      <Link to="#programs">
-                        <Award className="w-5 h-5 mr-2" />
-                        Our Programs
-                      </Link>
-                    </Button>
-                    <Button size="lg" variant="outline" asChild className="border-white/40 text-blue-400 hover:text-blue-300 hover:bg-white/15 backdrop-blur-md shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105">
-                      <Link to="#gallery">
-                        <Calendar className="w-5 h-5 mr-2" />
-                        View Gallery
-                      </Link>
-                    </Button>
-                  </div>
                 </div>
               </div>
             </CarouselItem>

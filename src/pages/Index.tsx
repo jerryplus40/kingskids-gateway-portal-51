@@ -330,8 +330,8 @@ const Index = () => {
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img 
-                    src="/lovable-uploads/b4b12bb8-bed2-4ebc-931c-a2a962b55df7.png" 
-                    alt="King's Kids Christian School Building" 
+                    src="/lovable-uploads/hero-slide-1.jpg" 
+                    alt="King's Kids Christian School Students"
                     className="w-full h-full object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns"
                     loading="eager"
                     fetchPriority="high"
@@ -371,8 +371,8 @@ const Index = () => {
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img 
-                    src="/lovable-uploads/59b5ff11-5cd8-4812-902f-16387f07dfa3.png" 
-                    alt="King's Kids School Campus" 
+                    src="/lovable-uploads/hero-slide-2.jpg" 
+                    alt="King's Kids School Students"
                     className="w-full h-full object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns-reverse"
                     loading="eager"
                     fetchPriority="high"
@@ -411,8 +411,8 @@ const Index = () => {
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img 
-                    src="/lovable-uploads/87ff614b-72c4-4a5b-8918-743060138383.png" 
-                    alt="King's Kids Students Educational Tour" 
+                    src="/lovable-uploads/hero-slide-3.jpg" 
+                    alt="King's Kids Senior Students"
                     className="w-full h-full object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/75 via-school-blue/65 to-accent/55" />

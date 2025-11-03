@@ -326,7 +326,7 @@ const Index = () => {
           <CarouselContent>
             {/* Slide 1 - School Building Front */}
             <CarouselItem>
-              <div className="relative min-h-[70vh] md:min-h-[80vh] flex flex-col items-center justify-end">
+              <div className="relative min-h-[100vh] md:min-h-[80vh] flex flex-col items-center justify-end">
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img 
@@ -368,7 +368,7 @@ const Index = () => {
 
             {/* Slide 2 - Remember Your Creator */}
             <CarouselItem>
-              <div className="relative min-h-[70vh] md:min-h-[80vh] flex flex-col items-center justify-end">
+              <div className="relative min-h-[100vh] md:min-h-[80vh] flex flex-col items-center justify-end">
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img 
@@ -409,7 +409,7 @@ const Index = () => {
 
             {/* Slide 3 - Educational Tour */}
             <CarouselItem>
-              <div className="relative min-h-[70vh] md:min-h-[80vh] flex flex-col items-center justify-end">
+              <div className="relative min-h-[100vh] md:min-h-[80vh] flex flex-col items-center justify-end">
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img 

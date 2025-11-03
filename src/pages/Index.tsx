@@ -326,20 +326,20 @@ const Index = () => {
           <CarouselContent>
             {/* Slide 1 - School Building Front */}
             <CarouselItem>
-              <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center">
+              <div className="relative min-h-[70vh] md:min-h-[80vh] flex flex-col items-center justify-end">
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img 
                     src="/lovable-uploads/hero-slide-1.jpg" 
                     alt="King's Kids Christian School Students"
-                    className="w-full h-full object-cover md:object-cover object-center transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns"
+                    className="w-full h-full object-contain md:object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns"
                     loading="eager"
                     fetchPriority="high"
                     decoding="async"
                     style={{ objectPosition: 'center center' }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-school-blue/75 to-accent/65" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
                 </div>
 
                 {/* Floating geometric shapes */}
@@ -350,16 +350,16 @@ const Index = () => {
                 </div>
                 
                 {/* Content */}
-                <div className="relative z-20 container mx-auto px-4 text-center group/hero">
-                  <Badge className="mb-6 md:mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md shadow-lg opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
-                    <Star className="w-4 h-4 mr-2" />
+                <div className="relative z-20 container mx-auto px-4 text-center group/hero flex flex-col justify-end pb-8 md:pb-12">
+                  <Badge className="mb-3 bg-white/20 text-white border-white/30 backdrop-blur-md shadow-lg opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500 text-xs">
+                    <Star className="w-3 h-3 mr-1" />
                     A Christian Cambridge School
                   </Badge>
-                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 md:mb-8 text-white leading-tight opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-3 text-white leading-tight opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     King's Kids
                     <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent font-display">No Substitute!</span>
                   </h2>
-                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 max-w-4xl mx-auto leading-relaxed opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
+                  <p className="text-sm md:text-base lg:text-lg text-white/95 max-w-4xl mx-auto leading-relaxed opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     Great Things Are Happening Here - Join our family of exceptional schools offering world-class Christian education.
                   </p>
                 </div>
@@ -368,20 +368,20 @@ const Index = () => {
 
             {/* Slide 2 - Remember Your Creator */}
             <CarouselItem>
-              <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center">
+              <div className="relative min-h-[70vh] md:min-h-[80vh] flex flex-col items-center justify-end">
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img 
                     src="/lovable-uploads/hero-slide-2.jpg" 
                     alt="King's Kids School Students"
-                    className="w-full h-full object-cover md:object-cover object-center transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns-reverse"
+                    className="w-full h-full object-contain md:object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns-reverse"
                     loading="eager"
                     fetchPriority="high"
                     decoding="async"
                     style={{ objectPosition: 'center center' }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-school-blue/70 to-accent/60" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
                 </div>
 
                 {/* Floating geometric shapes */}
@@ -391,16 +391,16 @@ const Index = () => {
                 </div>
                 
                 {/* Content */}
-                <div className="relative z-20 container mx-auto px-4 text-center group/hero">
-                  <Badge className="mb-6 md:mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md shadow-lg opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
-                    <BookOpen className="w-4 h-4 mr-2" />
+                <div className="relative z-20 container mx-auto px-4 text-center group/hero flex flex-col justify-end pb-8 md:pb-12">
+                  <Badge className="mb-3 bg-white/20 text-white border-white/30 backdrop-blur-md shadow-lg opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500 text-xs">
+                    <BookOpen className="w-3 h-3 mr-1" />
                     Ecclesiastes 12:1
                   </Badge>
-                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 md:mb-8 text-white leading-tight opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-3 text-white leading-tight opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     Remember Now Your Creator
                     <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent font-display">In The Days Of Your Youth</span>
                   </h2>
-                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 max-w-4xl mx-auto leading-relaxed opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
+                  <p className="text-sm md:text-base lg:text-lg text-white/95 max-w-4xl mx-auto leading-relaxed opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     Building character and faith alongside academic excellence for over 28 years.
                   </p>
                 </div>
@@ -409,20 +409,20 @@ const Index = () => {
 
             {/* Slide 3 - Educational Tour */}
             <CarouselItem>
-              <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center">
+              <div className="relative min-h-[70vh] md:min-h-[80vh] flex flex-col items-center justify-end">
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img 
                     src="/lovable-uploads/hero-slide-3.jpg" 
                     alt="King's Kids Senior Students"
-                    className="w-full h-full object-cover md:object-cover object-center transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns"
+                    className="w-full h-full object-contain md:object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns"
                     loading="eager"
                     fetchPriority="high"
                     decoding="async"
                     style={{ objectPosition: 'center center' }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/75 via-school-blue/65 to-accent/55" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
                 </div>
 
                 {/* Floating geometric shapes */}
@@ -432,16 +432,16 @@ const Index = () => {
                 </div>
                 
                 {/* Content */}
-                <div className="relative z-20 container mx-auto px-4 text-center group/hero">
-                  <Badge className="mb-6 md:mb-8 bg-white/20 text-white border-white/30 backdrop-blur-md shadow-lg opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
-                    <MapPin className="w-4 h-4 mr-2" />
+                <div className="relative z-20 container mx-auto px-4 text-center group/hero flex flex-col justify-end pb-8 md:pb-12">
+                  <Badge className="mb-3 bg-white/20 text-white border-white/30 backdrop-blur-md shadow-lg opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500 text-xs">
+                    <MapPin className="w-3 h-3 mr-1" />
                     Educational Excellence
                   </Badge>
-                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 md:mb-8 text-white leading-tight opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-3 text-white leading-tight opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     Empowering Young Minds
                     <span className="text-accent block bg-gradient-to-r from-accent to-school-gold bg-clip-text text-transparent font-display">Beyond The Classroom</span>
                   </h2>
-                  <p className="text-lg md:text-xl lg:text-2xl text-white/95 max-w-4xl mx-auto leading-relaxed opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
+                  <p className="text-sm md:text-base lg:text-lg text-white/95 max-w-4xl mx-auto leading-relaxed opacity-0 group-hover/hero:opacity-100 transition-opacity duration-500">
                     Our students explore the world, gaining real-world experience through educational tours and practical learning.
                   </p>
                 </div>

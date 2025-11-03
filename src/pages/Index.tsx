@@ -332,10 +332,11 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/hero-slide-1.jpg" 
                     alt="King's Kids Christian School Students"
-                    className="w-full h-full object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns"
+                    className="w-full h-full object-cover md:object-cover object-center transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns"
                     loading="eager"
                     fetchPriority="high"
                     decoding="async"
+                    style={{ objectPosition: 'center center' }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-school-blue/75 to-accent/65" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent" />
@@ -373,10 +374,11 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/hero-slide-2.jpg" 
                     alt="King's Kids School Students"
-                    className="w-full h-full object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns-reverse"
+                    className="w-full h-full object-cover md:object-cover object-center transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns-reverse"
                     loading="eager"
                     fetchPriority="high"
                     decoding="async"
+                    style={{ objectPosition: 'center center' }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-school-blue/70 to-accent/60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
@@ -413,7 +415,11 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/hero-slide-3.jpg" 
                     alt="King's Kids Senior Students"
-                    className="w-full h-full object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns"
+                    className="w-full h-full object-cover md:object-cover object-center transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns"
+                    loading="eager"
+                    fetchPriority="high"
+                    decoding="async"
+                    style={{ objectPosition: 'center center' }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/75 via-school-blue/65 to-accent/55" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent" />

@@ -6,6 +6,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  NavigationMenuViewport,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
@@ -272,6 +273,7 @@ const Navigation = () => {
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
+      <NavigationMenuViewport />
     </NavigationMenu>
   );
 };

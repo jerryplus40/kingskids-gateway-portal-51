@@ -326,7 +326,7 @@ const Index = () => {
           <CarouselContent>
             {/* Slide 1 - School Building Front */}
             <CarouselItem>
-              <div className="relative min-h-[70vh] md:min-h-[80vh] flex flex-col items-center justify-end">
+              <div className="relative min-h-fit md:min-h-[80vh] flex flex-col items-center justify-end">
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img 
@@ -368,11 +368,11 @@ const Index = () => {
 
             {/* Slide 2 - Remember Your Creator */}
             <CarouselItem>
-              <div className="relative min-h-[70vh] md:min-h-[80vh] flex flex-col items-center justify-end">
+              <div className="relative min-h-fit md:min-h-[80vh] flex flex-col items-center justify-end">
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img 
-                    src="/lovable-uploads/hero-slide-2.jpg" 
+                    src="/lovable-uploads/hero-slide-2.jpg"
                     alt="King's Kids School Students"
                     className="w-full h-full object-contain md:object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns-reverse"
                     loading="eager"
@@ -409,11 +409,11 @@ const Index = () => {
 
             {/* Slide 3 - Educational Tour */}
             <CarouselItem>
-              <div className="relative min-h-[70vh] md:min-h-[80vh] flex flex-col items-center justify-end">
+              <div className="relative min-h-fit md:min-h-[80vh] flex flex-col items-center justify-end">
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img 
-                    src="/lovable-uploads/hero-slide-3.jpg" 
+                    src="/lovable-uploads/hero-slide-3.jpg"
                     alt="King's Kids Senior Students"
                     className="w-full h-full object-contain md:object-cover transition-transform duration-[8000ms] ease-linear hover:scale-105 animate-ken-burns"
                     loading="eager"

@@ -28,7 +28,7 @@ const Navigation = () => {
             About Us
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
+            <div className="w-full md:w-64 p-2 bg-background border rounded-md shadow-lg">
               <NavigationMenuLink asChild>
                 <Link
                   to="/about#history"
@@ -94,7 +94,7 @@ const Navigation = () => {
             Facilities
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
+            <div className="w-full md:w-64 p-2 bg-background border rounded-md shadow-lg">
               <NavigationMenuLink asChild>
                 <Link
                   to="/classrooms"
@@ -152,7 +152,7 @@ const Navigation = () => {
             Admission
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
+            <div className="w-full md:w-64 p-2 bg-background border rounded-md shadow-lg">
               <NavigationMenuLink asChild>
                 <Link
                   to="/how-to-apply"
@@ -202,7 +202,7 @@ const Navigation = () => {
             Our Schools
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
+            <div className="w-full md:w-64 p-2 bg-background border rounded-md shadow-lg">
               <NavigationMenuLink asChild>
                 <Link
                   to="#"
@@ -236,7 +236,7 @@ const Navigation = () => {
             Media
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
+            <div className="w-full md:w-64 p-2 bg-background border rounded-md shadow-lg">
               <NavigationMenuLink asChild>
                 <Link
                   to="/gallery"

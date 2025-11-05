@@ -145,8 +145,61 @@ The educational arm of CYF, under the umbrella of King's Kids Christian Schools,
         </div>
       </section>
 
+      {/* Vision, Mission & Values Section */}
+      <section className="py-20 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-8 text-center">
+                <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center">
+                  <Award className="w-10 h-10 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-primary">Our Mission</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  By promoting a life-long learning, using best practices, in an environment where Christian principles are taught, modeled and practiced.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-8 text-center">
+                <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-secondary/20 to-secondary/10 flex items-center justify-center">
+                  <GraduationCap className="w-10 h-10 text-secondary" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-primary">Our Vision</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  To raise God-fearing Generals for God, with a holistic and excellent education, who will function effectively and uphold the pillars of influence in the global community.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-8 text-center">
+                <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center">
+                  <BookOpen className="w-10 h-10 text-accent" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-primary">Core Values</h3>
+                <div className="text-left space-y-2">
+                  <p className="text-muted-foreground"><span className="font-bold text-primary">D</span> - Discipline</p>
+                  <p className="text-muted-foreground"><span className="font-bold text-primary">E</span> - Excellence</p>
+                  <p className="text-muted-foreground"><span className="font-bold text-primary">P</span> - Professionalism</p>
+                  <p className="text-muted-foreground"><span className="font-bold text-primary">T</span> - Trustworthiness</p>
+                  <p className="text-muted-foreground"><span className="font-bold text-primary">H</span> - Hardwork</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <Badge variant="outline" className="text-lg px-6 py-2">
+              Motto: Education with Character
+            </Badge>
+          </div>
+        </div>
+      </section>
+
       {/* Departments Section */}
-      <section id="departments" className="py-20 bg-muted/50">
+      <section id="departments" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge variant="outline" className="mb-4">Academic Excellence</Badge>

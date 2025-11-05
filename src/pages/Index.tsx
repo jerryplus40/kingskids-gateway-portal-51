@@ -569,23 +569,6 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Our Mission */}
-            <Card className="group hover:shadow-glow transition-all duration-500 hover:scale-105 hover:-translate-y-3 bg-gradient-to-br from-card via-primary/5 to-accent/10 border-primary/30 overflow-hidden relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
-              <CardHeader className="text-center relative z-10">
-                <div className="w-20 h-20 bg-gradient-to-br from-primary/40 to-accent/20 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 shadow-card group-hover:shadow-glow">
-                  <Target className="h-10 w-10 text-primary drop-shadow-lg" />
-                </div>
-                <CardTitle className="text-primary text-2xl font-bold mb-4 group-hover:text-accent transition-colors">Our Mission</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center relative z-10">
-                <p className="text-muted-foreground leading-relaxed text-base">
-                  To provide exceptional Christian education that nurtures academic excellence, character development, and spiritual growth in every student, preparing them to be servant leaders in their communities and beyond.
-                </p>
-              </CardContent>
-            </Card>
-
             {/* Our Vision */}
             <Card className="group hover:shadow-glow transition-all duration-500 hover:scale-105 hover:-translate-y-3 bg-gradient-to-br from-card via-school-blue/5 to-school-gold/10 border-school-blue/30 overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-br from-school-blue/5 via-school-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -598,7 +581,24 @@ const Index = () => {
               </CardHeader>
               <CardContent className="text-center relative z-10">
                 <p className="text-muted-foreground leading-relaxed text-base">
-                  To be the leading Christian educational institution, recognized globally for producing well-rounded graduates who excel academically, demonstrate strong moral character, and positively impact society.
+                  To raise God-fearing Generals for God, with a holistic and excellent education, who will function effectively and uphold the pillars of influence in the global community.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Our Mission */}
+            <Card className="group hover:shadow-glow transition-all duration-500 hover:scale-105 hover:-translate-y-3 bg-gradient-to-br from-card via-primary/5 to-accent/10 border-primary/30 overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
+              <CardHeader className="text-center relative z-10">
+                <div className="w-20 h-20 bg-gradient-to-br from-primary/40 to-accent/20 rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 shadow-card group-hover:shadow-glow">
+                  <Target className="h-10 w-10 text-primary drop-shadow-lg" />
+                </div>
+                <CardTitle className="text-primary text-2xl font-bold mb-4 group-hover:text-accent transition-colors">Our Mission</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center relative z-10">
+                <p className="text-muted-foreground leading-relaxed text-base">
+                  By promoting a life-long learning, using best practices, in an environment where Christian principles are taught, modeled and practiced.
                 </p>
               </CardContent>
             </Card>
@@ -614,12 +614,12 @@ const Index = () => {
                 <CardTitle className="text-accent text-2xl font-bold mb-4 group-hover:text-school-green transition-colors">Core Values</CardTitle>
               </CardHeader>
               <CardContent className="text-center relative z-10">
-                <ul className="text-muted-foreground leading-relaxed space-y-3 text-sm md:text-base">
-                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent flex-shrink-0 mt-1 sm:mt-0">✦</span> <span className="text-left sm:text-center"><strong>Excellence</strong> in all endeavors</span></li>
-                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent flex-shrink-0 mt-1 sm:mt-0">✦</span> <span className="text-left sm:text-center"><strong>Integrity</strong> and moral character</span></li>
-                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent flex-shrink-0 mt-1 sm:mt-0">✦</span> <span className="text-left sm:text-center"><strong>Compassion</strong> and service to others</span></li>
-                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent flex-shrink-0 mt-1 sm:mt-0">✦</span> <span className="text-left sm:text-center"><strong>Innovation</strong> in learning and teaching</span></li>
-                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent flex-shrink-0 mt-1 sm:mt-0">✦</span> <span className="text-left sm:text-center"><strong>Faith</strong> as our foundation</span></li>
+                <ul className="text-muted-foreground leading-relaxed space-y-2 text-sm md:text-base">
+                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent font-bold flex-shrink-0 mt-1 sm:mt-0">D</span> <span className="text-left sm:text-center">Discipline</span></li>
+                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent font-bold flex-shrink-0 mt-1 sm:mt-0">E</span> <span className="text-left sm:text-center">Excellence</span></li>
+                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent font-bold flex-shrink-0 mt-1 sm:mt-0">P</span> <span className="text-left sm:text-center">Professionalism</span></li>
+                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent font-bold flex-shrink-0 mt-1 sm:mt-0">T</span> <span className="text-left sm:text-center">Trustworthiness</span></li>
+                  <li className="flex items-start sm:items-center justify-center gap-2"><span className="text-accent font-bold flex-shrink-0 mt-1 sm:mt-0">H</span> <span className="text-left sm:text-center">Hardwork</span></li>
                 </ul>
               </CardContent>
             </Card>

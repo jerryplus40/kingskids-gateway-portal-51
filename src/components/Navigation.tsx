@@ -22,12 +22,12 @@ const Navigation = () => {
           </NavigationMenuLink>
         </NavigationMenuItem>
 
-        <NavigationMenuItem className="relative">
-          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+        <NavigationMenuItem className="relative max-md:w-full">
+          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium max-md:hidden">
             About Us
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
+            <div className="w-64 p-2 bg-background border rounded-md shadow-lg max-md:w-full max-md:border-0 max-md:shadow-none max-md:p-0">
               <NavigationMenuLink asChild>
                 <Link
                   to="/about#history"
@@ -88,12 +88,12 @@ const Navigation = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem className="relative">
-          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+        <NavigationMenuItem className="relative max-md:w-full">
+          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium max-md:hidden">
             Facilities
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
+            <div className="w-64 p-2 bg-background border rounded-md shadow-lg max-md:w-full max-md:border-0 max-md:shadow-none max-md:p-0">
               <NavigationMenuLink asChild>
                 <Link
                   to="/classrooms"
@@ -146,12 +146,12 @@ const Navigation = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem className="relative">
-          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+        <NavigationMenuItem className="relative max-md:w-full">
+          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium max-md:hidden">
             Admission
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
+            <div className="w-64 p-2 bg-background border rounded-md shadow-lg max-md:w-full max-md:border-0 max-md:shadow-none max-md:p-0">
               <NavigationMenuLink asChild>
                 <Link
                   to="/how-to-apply"
@@ -196,12 +196,12 @@ const Navigation = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem className="relative">
-          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+        <NavigationMenuItem className="relative max-md:w-full">
+          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium max-md:hidden">
             Our Schools
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
+            <div className="w-64 p-2 bg-background border rounded-md shadow-lg max-md:w-full max-md:border-0 max-md:shadow-none max-md:p-0">
               <NavigationMenuLink asChild>
                 <Link
                   to="#"
@@ -230,12 +230,12 @@ const Navigation = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem className="relative">
-          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+        <NavigationMenuItem className="relative max-md:w-full">
+          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium max-md:hidden">
             Media
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2 bg-background border rounded-md shadow-lg">
+            <div className="w-64 p-2 bg-background border rounded-md shadow-lg max-md:w-full max-md:border-0 max-md:shadow-none max-md:p-0">
               <NavigationMenuLink asChild>
                 <Link
                   to="/gallery"

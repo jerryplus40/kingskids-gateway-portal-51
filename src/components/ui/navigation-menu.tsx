@@ -11,7 +11,7 @@ const NavigationMenu = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <NavigationMenuPrimitive.Root
     ref={ref}
-    className={cn("relative z-10 flex w-full md:max-w-max flex-1 items-center justify-start md:justify-center", className)}
+    className={cn("relative z-10 flex max-w-max flex-1 items-center justify-center", className)}
     {...props}
   >
     {children}
@@ -25,7 +25,7 @@ const NavigationMenuList = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <NavigationMenuPrimitive.List
     ref={ref}
-    className={cn("group flex flex-1 w-full list-none flex-col items-start justify-start space-y-1 md:flex-row md:items-center md:justify-center md:space-x-1 md:space-y-0", className)}
+    className={cn("group flex flex-1 list-none items-center justify-center space-x-1", className)}
     {...props}
   />
 ));
@@ -62,7 +62,7 @@ const NavigationMenuContent = React.forwardRef<
   <NavigationMenuPrimitive.Content
     ref={ref}
     className={cn(
-      "left-0 top-0 w-full md:absolute md:top-full md:mt-2 md:w-auto z-50 data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=from-]:slide-in-from-top-2 data-[motion^=to-]:fade-out data-[motion^=to-]:slide-out-to-top-2",
+      "absolute left-0 top-full mt-2 w-auto data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=from-]:slide-in-from-top-2 data-[motion^=to-]:fade-out data-[motion^=to-]:slide-out-to-top-2",
       className,
     )}
     {...props}
@@ -79,7 +79,7 @@ const NavigationMenuViewport = React.forwardRef<
   <div className={cn("absolute top-full z-50 flex justify-center w-full")}>
     <NavigationMenuPrimitive.Viewport
       className={cn(
-        "origin-top relative mt-2 h-[var(--radix-navigation-menu-viewport-height)] w-[calc(100vw-2rem)] overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-lg data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out data-[state=closed]:zoom-out-95 data-[state=open]:fade-in data-[state=open]:zoom-in-95 data-[state=open]:slide-in-from-top-2 md:w-[var(--radix-navigation-menu-viewport-width)]",
+        "origin-top relative mt-2 h-[var(--radix-navigation-menu-viewport-height)] overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-lg data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out data-[state=closed]:zoom-out-95 data-[state=open]:fade-in data-[state=open]:zoom-in-95 data-[state=open]:slide-in-from-top-2 md:w-[var(--radix-navigation-menu-viewport-width)]",
         "transition-[width,height,transform] duration-300 ease-in-out",
         className,
       )}

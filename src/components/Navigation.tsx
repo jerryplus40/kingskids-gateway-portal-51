@@ -24,7 +24,20 @@ const Navigation = () => {
         </NavigationMenuItem>
 
         <NavigationMenuItem className="relative max-md:w-full">
-          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium max-md:w-full max-md:justify-between">
+          <NavigationMenuTrigger 
+            className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium max-md:w-full max-md:justify-between"
+            onPointerDown={(e) => {
+              // On mobile, ensure single click opens the menu
+              if (window.innerWidth < 768) {
+                e.preventDefault();
+                const trigger = e.currentTarget;
+                const isOpen = trigger.getAttribute('data-state') === 'open';
+                if (!isOpen) {
+                  trigger.click();
+                }
+              }
+            }}
+          >
             About Us
           </NavigationMenuTrigger>
           <NavigationMenuContent>

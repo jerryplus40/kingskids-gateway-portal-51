@@ -9,6 +9,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
+import { BookOpen, Building2, Users, UserCog, Briefcase, GraduationCap } from "lucide-react";
 
 const Navigation = () => {
   return (
@@ -23,64 +24,71 @@ const Navigation = () => {
         </NavigationMenuItem>
 
         <NavigationMenuItem className="relative max-md:w-full">
-          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium max-md:hidden">
+          <NavigationMenuTrigger className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
             About Us
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-64 p-2 bg-background border rounded-md shadow-lg max-md:w-full max-md:border-0 max-md:shadow-none max-md:p-0">
+            <div className="w-64 p-2 bg-background border rounded-md shadow-lg max-md:w-full max-md:border-0 max-md:shadow-none max-md:p-1">
               <NavigationMenuLink asChild>
                 <Link
                   to="/about#history"
-                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  className="flex items-center gap-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
+                  <BookOpen className="h-4 w-4 text-primary" />
                   <div className="text-sm font-medium leading-none">Our History</div>
                 </Link>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
                   to="/about#departments"
-                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  className="flex items-center gap-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
+                  <Building2 className="h-4 w-4 text-primary" />
                   <div className="text-sm font-medium leading-none">Departments/Units</div>
                 </Link>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
                   to="/about#board"
-                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  className="flex items-center gap-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
+                  <Users className="h-4 w-4 text-primary" />
                   <div className="text-sm font-medium leading-none">Board of Governors</div>
                 </Link>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
                   to="/about#management"
-                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  className="flex items-center gap-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
+                  <UserCog className="h-4 w-4 text-primary" />
                   <div className="text-sm font-medium leading-none">Management Team</div>
                 </Link>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
                   to="/about#staff"
-                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  className="flex items-center gap-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
+                  <Users className="h-4 w-4 text-primary" />
                   <div className="text-sm font-medium leading-none">Staff Directory</div>
                 </Link>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
                   to="/careers"
-                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  className="flex items-center gap-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
+                  <Briefcase className="h-4 w-4 text-primary" />
                   <div className="text-sm font-medium leading-none">Careers</div>
                 </Link>
               </NavigationMenuLink>
               <NavigationMenuLink asChild>
                 <Link
                   to="/alumni"
-                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  className="flex items-center gap-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                 >
+                  <GraduationCap className="h-4 w-4 text-primary" />
                   <div className="text-sm font-medium leading-none">Alumni</div>
                 </Link>
               </NavigationMenuLink>

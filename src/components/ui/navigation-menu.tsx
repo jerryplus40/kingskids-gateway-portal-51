@@ -25,7 +25,7 @@ const NavigationMenuList = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <NavigationMenuPrimitive.List
     ref={ref}
-    className={cn("group flex flex-1 list-none items-center justify-center space-x-1 max-md:flex-col max-md:space-x-0 max-md:space-y-1 max-md:w-full", className)}
+    className={cn("group flex flex-1 list-none items-center justify-center space-x-1", className)}
     {...props}
   />
 ));
@@ -34,7 +34,7 @@ NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName;
 const NavigationMenuItem = NavigationMenuPrimitive.Item;
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50 max-md:w-full max-md:justify-start",
+  "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50",
 );
 
 const NavigationMenuTrigger = React.forwardRef<
@@ -62,8 +62,7 @@ const NavigationMenuContent = React.forwardRef<
   <NavigationMenuPrimitive.Content
     ref={ref}
     className={cn(
-      "absolute left-0 top-full mt-2 w-auto data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=from-]:slide-in-from-top-2 data-[motion^=to-]:fade-out data-[motion^=to-]:slide-out-to-top-2 md:absolute md:left-0",
-      "max-md:relative max-md:left-auto max-md:top-auto max-md:mt-0 max-md:block max-md:w-full",
+      "absolute left-0 top-full mt-2 w-auto data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=from-]:slide-in-from-top-2 data-[motion^=to-]:fade-out data-[motion^=to-]:slide-out-to-top-2",
       className,
     )}
     {...props}

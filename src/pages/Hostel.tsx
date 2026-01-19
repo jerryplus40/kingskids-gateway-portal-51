@@ -1,11 +1,36 @@
-import { Home, Wifi, Utensils, Shield } from "lucide-react";
+import { useState } from "react";
+import { Home, Wifi, Utensils, Shield, Camera } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ImageLightbox from "@/components/ImageLightbox";
+
+const hostelGalleryImages = [
+  {
+    src: "/lovable-uploads/hostel-room-1.jpg",
+    caption: "Boys Hostel Room – Well-Ventilated with Sturdy Bunk Beds"
+  },
+  {
+    src: "/lovable-uploads/hostel-room-2.jpg",
+    caption: "Girls Hostel Interior – Clean & Colorful Living Space"
+  },
+  {
+    src: "/lovable-uploads/girls-hostel-room.jpg",
+    caption: "Air-Conditioned Girls Hostel Room – Safe & Comfortable"
+  }
+];
 
 const Hostel = () => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const openLightbox = (index: number) => {
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-background">
       <Header />
@@ -71,8 +96,49 @@ const Hostel = () => {
         </div>
       </section>
 
-      {/* Accommodation Types */}
+      {/* Photo Gallery */}
       <section className="py-16 px-4 bg-muted/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 text-primary mb-4">
+              <Camera className="h-6 w-6" />
+              <span className="text-sm font-semibold uppercase tracking-wider">Gallery</span>
+            </div>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Our Comfortable Rooms</h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Take a virtual tour of our clean, safe, and comfortable hostel accommodations 
+              designed for a conducive living and learning environment
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {hostelGalleryImages.map((image, index) => (
+              <div
+                key={index}
+                className="group cursor-pointer overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                onClick={() => openLightbox(index)}
+              >
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={image.src}
+                    alt={image.caption}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                <div className="bg-card p-4">
+                  <p className="text-sm font-medium text-foreground text-center">
+                    {image.caption}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Accommodation Types */}
+      <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Accommodation Options</h2>
@@ -131,7 +197,7 @@ const Hostel = () => {
       </section>
 
       {/* Facilities & Rules */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-muted/30">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl font-bold text-foreground mb-6">Hostel Facilities</h2>
@@ -168,7 +234,7 @@ const Hostel = () => {
       </section>
 
       {/* Meal Plans */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Dining Services</h2>
@@ -230,7 +296,7 @@ const Hostel = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-muted/30">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-foreground mb-6">
             Experience Hostel Life
@@ -248,6 +314,15 @@ const Hostel = () => {
           </div>
         </div>
       </section>
+
+      <ImageLightbox
+        images={hostelGalleryImages}
+        isOpen={lightboxOpen}
+        currentIndex={currentImageIndex}
+        onClose={() => setLightboxOpen(false)}
+        onNavigate={setCurrentImageIndex}
+      />
+
       <Footer />
     </div>
   );

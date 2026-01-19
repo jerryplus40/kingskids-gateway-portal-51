@@ -12,7 +12,10 @@ import {
   Calendar,
   Download,
   Upload,
-  Phone
+  Phone,
+  Camera,
+  Clipboard,
+  ShoppingBag
 } from "lucide-react";
 
 const HowToApply = () => {
@@ -122,6 +125,68 @@ const HowToApply = () => {
                   <p className="text-muted-foreground">
                     Receive admission decision and complete enrollment process
                   </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* What to Bring Section */}
+            <div className="grid md:grid-cols-2 gap-8 mt-12">
+              <Card className="border-l-4 border-l-primary">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Clipboard className="h-5 w-5 text-primary" />
+                    What to Bring
+                  </CardTitle>
+                  <CardDescription>
+                    Required items for admission
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <Camera className="h-4 w-4 text-primary mt-1 shrink-0" />
+                      <span>Two (2) recent passport photographs</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <FileText className="h-4 w-4 text-primary mt-1 shrink-0" />
+                      <span>A copy of last term's result and/or transfer certificate (where applicable)</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <FileText className="h-4 w-4 text-primary mt-1 shrink-0" />
+                      <span>Photocopy of birth certificate or age declaration</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <FileText className="h-4 w-4 text-primary mt-1 shrink-0" />
+                      <span>A comprehensive medical report specifying allergies and conditions suffered by the student (if any) on assumption</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <FileText className="h-4 w-4 text-primary mt-1 shrink-0" />
+                      <span>Certificate of Origin</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-l-accent">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <ShoppingBag className="h-5 w-5 text-accent" />
+                    School Uniforms
+                  </CardTitle>
+                  <CardDescription>
+                    Uniform purchase information
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    Uniforms are to be purchased by the students from the school. Our uniforms are available in all sizes and can be purchased at the school's uniform store during office hours.
+                  </p>
+                  <div className="mt-4 p-4 bg-accent/10 rounded-lg">
+                    <p className="text-sm font-medium">Note:</p>
+                    <p className="text-sm text-muted-foreground">
+                      Please wait until admission is confirmed before purchasing uniforms to ensure proper sizing.
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
             </div>

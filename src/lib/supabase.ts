@@ -1,30 +1,30 @@
-import { createClient } from '@supabase/supabase-js'
-
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
-
-console.log('Supabase environment check:', {
-  url: supabaseUrl ? 'Set' : 'Missing',
-  key: supabaseAnonKey ? 'Set' : 'Missing',
-  actualUrl: supabaseUrl?.substring(0, 30) + '...' || 'undefined'
-})
-
-if (!supabaseUrl || !supabaseAnonKey) {
-  console.error('Missing Supabase environment variables. Please check your Supabase connection.')
-}
-
-export const supabase = createClient(
-  supabaseUrl || 'https://placeholder.supabase.co',
-  supabaseAnonKey || 'placeholder-key'
-)
+export { supabase } from '@/integrations/supabase/client'
 
 export type UserRole = 'student' | 'parent' | 'teacher' | 'admin' | 'finance' | 'foundation'
 
+export const ROLE_LABELS: Record<UserRole, string> = {
+  student: 'Student',
+  parent: 'Parent',
+  teacher: 'Teacher',
+  admin: 'Administrator',
+  finance: 'Finance Officer',
+  foundation: 'Foundation Manager',
+}
+
+export const ROLE_HOME: Record<UserRole, string> = {
+  student: '/basicstudies',
+  parent: '/montessori',
+  teacher: '/highschool',
+  admin: '/admin/users',
+  finance: '/basicstudies',
+  foundation: '/foundation',
+}
+
 export interface UserProfile {
   id: string
-  email: string
-  role: UserRole
-  full_name?: string
+  email: string | null
+  full_name?: string | null
+  role?: UserRole
   created_at: string
   updated_at: string
 }

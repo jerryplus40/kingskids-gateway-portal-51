@@ -8,7 +8,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { GraduationCap, User, Lock, Loader2, UserPlus } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { toast } from "sonner";
-import { UserRole } from "@/lib/supabase";
+import { ROLE_HOME, ROLE_LABELS, UserRole } from "@/lib/supabase";
+import { supabase } from "@/integrations/supabase/client";
+
 import { SignUpDialog } from "@/components/auth/SignUpDialog";
 
 const Login = () => {
@@ -59,14 +61,6 @@ const Login = () => {
   };
 
 
-  const roles: Array<{ value: UserRole; label: string; color: string }> = [
-    { value: "student", label: "Student", color: "bg-school-blue" },
-    { value: "parent", label: "Parent", color: "bg-school-green" },
-    { value: "teacher", label: "Teacher", color: "bg-school-orange" },
-    { value: "admin", label: "Administrator", color: "bg-primary" },
-    { value: "finance", label: "Finance Officer", color: "bg-accent" },
-    { value: "foundation", label: "Foundation Manager", color: "bg-destructive" }
-  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary/5 via-accent/5 to-school-green/5 flex items-center justify-center p-4">
@@ -93,39 +87,8 @@ const Login = () => {
           </CardHeader>
           <CardContent>
             <form onSubmit={handleLogin} className="space-y-6">
-              {/* Role Selection */}
-              <div className="space-y-3">
-                <Label>Select Your Role</Label>
-                <div className="grid grid-cols-2 gap-3">
-                  {roles.map((roleOption) => (
-                    <Button
-                      key={roleOption.value}
-                      type="button"
-                      variant={role === roleOption.value ? "default" : "outline"}
-                      className={`justify-center py-3 px-4 text-sm transition-all cursor-pointer ${
-                        role === roleOption.value 
-                          ? "bg-primary text-primary-foreground shadow-md ring-2 ring-primary/20" 
-                          : "hover:bg-primary/10 hover:border-primary hover:text-primary border-2"
-                      }`}
-                      onClick={() => {
-                        setRole(roleOption.value);
-                        console.log("Role selected:", roleOption.value);
-                      }}
-                      onKeyDown={(e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
-                          e.preventDefault();
-                          setRole(roleOption.value);
-                        }
-                      }}
-                      tabIndex={0}
-                      aria-pressed={role === roleOption.value}
-                      aria-label={`Select ${roleOption.label} role`}
-                    >
-                      {roleOption.label}
-                    </Button>
-                  ))}
-                </div>
-              </div>
+
+
 
               {/* Email Input */}
               <div className="space-y-2">

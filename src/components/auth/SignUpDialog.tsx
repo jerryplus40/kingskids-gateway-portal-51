@@ -5,7 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { User, Lock, Mail, Loader2 } from "lucide-react";
-import { supabase, UserRole } from "@/lib/supabase";
+import { supabase } from "@/integrations/supabase/client";
+import { ROLE_LABELS, UserRole } from "@/lib/supabase";
 import { toast } from "sonner";
 
 interface SignUpDialogProps {
@@ -25,52 +26,32 @@ export const SignUpDialog = ({ children }: SignUpDialogProps) => {
     setIsLoading(true);
 
     try {
-      console.log("Creating account:", { email, fullName, role });
-      
-      // Sign up the user
-      const { data, error: signUpError } = await supabase.auth.signUp({
-        email,
+      const { data, error } = await supabase.auth.signUp({
+        email: email.trim().toLowerCase(),
         password,
         options: {
-          data: {
-            full_name: fullName,
-            role: role,
-          }
-        }
+          emailRedirectTo: window.location.origin,
+          data: { full_name: fullName, role },
+        },
       });
 
-      if (signUpError) {
-        console.error("Sign up error:", signUpError);
-        toast.error(`Sign up failed: ${signUpError.message}`);
+      if (error) {
+        toast.error(error.message);
         return;
       }
 
-      if (data.user) {
-        // Create user profile
-        const { error: profileError } = await supabase
-          .from('user_profiles')
-          .insert({
-            id: data.user.id,
-            email: email,
-            full_name: fullName,
-            role: role,
-          });
-
-        if (profileError) {
-          console.error("Profile creation error:", profileError);
-          toast.error("Account created but profile setup failed. Please contact support.");
-        } else {
-          toast.success("Account created successfully! You can now log in.");
-          setOpen(false);
-          // Reset form
-          setEmail("");
-          setPassword("");
-          setFullName("");
-          setRole("student");
-        }
+      if (data.session) {
+        toast.success("Account created — you're signed in.");
+      } else {
+        toast.success("Account created. Check your email to confirm, then sign in.");
       }
-    } catch (error: any) {
-      console.error("Sign up error:", error);
+
+      setOpen(false);
+      setEmail("");
+      setPassword("");
+      setFullName("");
+      setRole("student");
+    } catch (error) {
       toast.error("An unexpected error occurred during sign up");
     } finally {
       setIsLoading(false);
@@ -79,71 +60,38 @@ export const SignUpDialog = ({ children }: SignUpDialogProps) => {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        {children}
-      </DialogTrigger>
+      <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle>Create Account</DialogTitle>
-          <DialogDescription>
-            Create a new account to access the school portal
-          </DialogDescription>
+          <DialogDescription>Create a new account to access the school portal</DialogDescription>
         </DialogHeader>
-        
+
         <form onSubmit={handleSignUp} className="space-y-4">
-          {/* Full Name */}
           <div className="space-y-2">
             <Label htmlFor="fullName">Full Name</Label>
             <div className="relative">
               <User className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-              <Input
-                id="fullName"
-                type="text"
-                placeholder="Enter your full name"
-                value={fullName}
-                onChange={(e) => setFullName(e.target.value)}
-                className="pl-10"
-                required
-              />
+              <Input id="fullName" type="text" placeholder="Enter your full name" value={fullName} onChange={(e) => setFullName(e.target.value)} className="pl-10" required />
             </div>
           </div>
 
-          {/* Email */}
           <div className="space-y-2">
             <Label htmlFor="signupEmail">Email</Label>
             <div className="relative">
               <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-              <Input
-                id="signupEmail"
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="pl-10"
-                required
-              />
+              <Input id="signupEmail" type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} className="pl-10" required />
             </div>
           </div>
 
-          {/* Password */}
           <div className="space-y-2">
             <Label htmlFor="signupPassword">Password</Label>
             <div className="relative">
               <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-              <Input
-                id="signupPassword"
-                type="password"
-                placeholder="Enter your password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="pl-10"
-                required
-                minLength={6}
-              />
+              <Input id="signupPassword" type="password" placeholder="At least 6 characters" value={password} onChange={(e) => setPassword(e.target.value)} className="pl-10" required minLength={6} />
             </div>
           </div>
 
-          {/* Role Selection */}
           <div className="space-y-2">
             <Label htmlFor="signupRole">Role</Label>
             <Select value={role} onValueChange={(value: UserRole) => setRole(value)}>
@@ -151,26 +99,15 @@ export const SignUpDialog = ({ children }: SignUpDialogProps) => {
                 <SelectValue placeholder="Select your role" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="student">Student</SelectItem>
-                <SelectItem value="parent">Parent</SelectItem>
-                <SelectItem value="teacher">Teacher</SelectItem>
-                <SelectItem value="admin">Administrator</SelectItem>
-                <SelectItem value="finance">Finance Officer</SelectItem>
-                <SelectItem value="foundation">Foundation Manager</SelectItem>
+                {(Object.keys(ROLE_LABELS) as UserRole[]).map((r) => (
+                  <SelectItem key={r} value={r}>{ROLE_LABELS[r]}</SelectItem>
+                ))}
               </SelectContent>
             </Select>
           </div>
 
-          {/* Submit Button */}
           <Button type="submit" className="w-full" disabled={isLoading}>
-            {isLoading ? (
-              <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Creating Account...
-              </>
-            ) : (
-              "Create Account"
-            )}
+            {isLoading ? (<><Loader2 className="mr-2 h-4 w-4 animate-spin" />Creating Account...</>) : "Create Account"}
           </Button>
         </form>
       </DialogContent>

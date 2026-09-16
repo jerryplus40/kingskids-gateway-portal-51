@@ -8,7 +8,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { GraduationCap, User, Lock, Loader2, UserPlus } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { toast } from "sonner";
-import { UserRole } from "@/lib/supabase";
+import { ROLE_HOME, ROLE_LABELS, UserRole } from "@/lib/supabase";
+import { supabase } from "@/integrations/supabase/client";
+
 import { SignUpDialog } from "@/components/auth/SignUpDialog";
 
 const Login = () => {
@@ -16,69 +18,49 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [role, setRole] = useState<UserRole>("student");
   const [isLoading, setIsLoading] = useState(false);
-  
+
   const { signIn } = useAuth();
   const navigate = useNavigate();
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    
-    console.log("Login attempt:", { email, password: password ? "***" : "empty", role });
-    
+
     try {
       const { error } = await signIn(email, password);
-      
-      console.log("Login result:", { error: error?.message || "none" });
-      
+
       if (error) {
-        toast.error(`Login failed: ${error.message}`);
-        console.error("Login error details:", error);
-      } else {
-        toast.success(`Login successful! Welcome ${role}!`);
-        console.log("Login successful, navigating based on role:", role);
-        
-        // Navigate based on actual user profile role, not selected role
-        const actualRole = error ? null : role; // In demo mode, use selected role
-        switch (actualRole) {
-          case "student":
-            navigate("/basicstudies");
-            break;
-          case "parent":
-            navigate("/montessori");
-            break;
-          case "teacher":
-            navigate("/highschool");
-            break;
-          case "admin":
-            navigate("/highschool");
-            break;
-          case "finance":
-            navigate("/basicstudies");
-            break;
-          case "foundation":
-            navigate("/foundation");
-            break;
-          default:
-            navigate("/");
-        }
+        toast.error(
+          error.message === "Invalid login credentials"
+            ? "That email and password don't match an account. Check the details, or ask the school office to create your account."
+            : error.message
+        );
+        return;
       }
+
+      const { data: { user } } = await supabase.auth.getUser();
+      let actualRole: UserRole | null = null;
+
+      if (user) {
+        const { data } = await supabase
+          .from("user_roles")
+          .select("role")
+          .eq("user_id", user.id)
+          .limit(1)
+          .maybeSingle();
+        actualRole = ((data as { role: UserRole } | null)?.role) ?? null;
+      }
+
+      toast.success(`Welcome back${actualRole ? `, ${ROLE_LABELS[actualRole]}` : ""}!`);
+      navigate(actualRole ? ROLE_HOME[actualRole] : "/");
     } catch (error: any) {
       toast.error("An unexpected error occurred during login");
-      console.error("Login error:", error);
     } finally {
       setIsLoading(false);
     }
   };
 
-  const roles: Array<{ value: UserRole; label: string; color: string }> = [
-    { value: "student", label: "Student", color: "bg-school-blue" },
-    { value: "parent", label: "Parent", color: "bg-school-green" },
-    { value: "teacher", label: "Teacher", color: "bg-school-orange" },
-    { value: "admin", label: "Administrator", color: "bg-primary" },
-    { value: "finance", label: "Finance Officer", color: "bg-accent" },
-    { value: "foundation", label: "Foundation Manager", color: "bg-destructive" }
-  ];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary/5 via-accent/5 to-school-green/5 flex items-center justify-center p-4">
@@ -105,39 +87,8 @@ const Login = () => {
           </CardHeader>
           <CardContent>
             <form onSubmit={handleLogin} className="space-y-6">
-              {/* Role Selection */}
-              <div className="space-y-3">
-                <Label>Select Your Role</Label>
-                <div className="grid grid-cols-2 gap-3">
-                  {roles.map((roleOption) => (
-                    <Button
-                      key={roleOption.value}
-                      type="button"
-                      variant={role === roleOption.value ? "default" : "outline"}
-                      className={`justify-center py-3 px-4 text-sm transition-all cursor-pointer ${
-                        role === roleOption.value 
-                          ? "bg-primary text-primary-foreground shadow-md ring-2 ring-primary/20" 
-                          : "hover:bg-primary/10 hover:border-primary hover:text-primary border-2"
-                      }`}
-                      onClick={() => {
-                        setRole(roleOption.value);
-                        console.log("Role selected:", roleOption.value);
-                      }}
-                      onKeyDown={(e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
-                          e.preventDefault();
-                          setRole(roleOption.value);
-                        }
-                      }}
-                      tabIndex={0}
-                      aria-pressed={role === roleOption.value}
-                      aria-label={`Select ${roleOption.label} role`}
-                    >
-                      {roleOption.label}
-                    </Button>
-                  ))}
-                </div>
-              </div>
+
+
 
               {/* Email Input */}
               <div className="space-y-2">
@@ -188,18 +139,11 @@ const Login = () => {
 
             {/* Additional Links */}
             <div className="mt-6 space-y-3">
-              {/* Demo Account Info */}
-              <div className="bg-muted/50 p-4 rounded-lg border">
-                <h4 className="font-semibold text-sm mb-2 text-muted-foreground">Demo Accounts for Testing:</h4>
-                <div className="grid grid-cols-1 gap-2 text-xs text-muted-foreground">
-                  <div>• <strong>Student:</strong> student@kingskids.edu / password123</div>
-                  <div>• <strong>Teacher:</strong> teacher@kingskids.edu / password123</div>
-                  <div>• <strong>Parent:</strong> parent@kingskids.edu / password123</div>
-                  <div>• <strong>Admin:</strong> admin@kingskids.edu / password123</div>
-                  <div>• <strong>Finance:</strong> finance@kingskids.edu / password123</div>
-                  <div>• <strong>Foundation:</strong> foundation@kingskids.edu / password123</div>
-                </div>
+              <div className="bg-muted/50 p-4 rounded-lg border text-xs text-muted-foreground">
+                Use the email and password given to you by the school. Administrators can create
+                accounts for teachers, students, parents and staff on the Portal Accounts page.
               </div>
+
               
               <div className="text-center">
                 <a href="#" className="text-sm text-primary hover:underline">
